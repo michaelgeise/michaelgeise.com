@@ -509,7 +509,7 @@ _________________________________________________________ -->
 							<div class="col-md-12 bonus">
 								<i class="fa fa-rocket"></i>
 								<h3>Bonus Points</h3>
-								<p>When I'm not staring at a computer screen, I like making watercolor paintings, listing to music, and going hiking.</p>
+								<p>When I'm not staring at a computer screen, I like making watercolor paintings, listening to music, and hiking.</p>
 							</div>
 						</div>
 
