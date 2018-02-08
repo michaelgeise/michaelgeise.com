@@ -99,7 +99,7 @@ _________________________________________________________ -->
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
 			<div class="container">
 				<div class="navbar-header">
-					<a class="navbar-brand" href="/" title="View michaelgeise.com"><img src="images/mg-logo.png" class="img-responsive" alt="MG logo" title="Go to intro section"></a>
+					<a class="navbar-brand" href="/" title="View michaelgeise.com"><img src="images/mg-logo.png" class="img-responsive" alt="MG logo"></a>
 				</div>
 			</div>
 		</nav>
@@ -166,7 +166,7 @@ _________________________________________________________ -->
 						<div class="row">
 							<div class="col-sm-6 col-sm-offset-3 col-xs-12">
 								<p><a href="https://en.wikipedia.org/wiki/M%C3%BCller-Lyer_illusion" target="_blank" title="Wikipedia knows all">Learn more</a> about the Müller-Lyer Illusion</p>
-								<a href="/" title="view micahelgeise.com" class="btn btn-primary btn-lg">More about Michael Geise</a>
+								<a href="/" title="view michaelgeise.com" class="btn btn-primary btn-lg">More about Michael Geise</a>
 							</div>
 						</div>
 
