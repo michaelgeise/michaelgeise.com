@@ -166,7 +166,7 @@ _________________________________________________________ -->
 						<div class="row">
 							<div class="col-sm-6 col-sm-offset-3 col-xs-12">
 								<p><a href="https://en.wikipedia.org/wiki/M%C3%BCller-Lyer_illusion" target="_blank" title="Wikipedia knows all">Learn more</a> about the Müller-Lyer Illusion</p>
-								<a href="/" title="view michaelgeise.com" class="btn btn-primary btn-lg">More about Michael Geise</a>
+								<a href="/" title="view michaelgeise.com" class="btn btn-primary btn-lg">About Michael</a>
 							</div>
 						</div>
 
