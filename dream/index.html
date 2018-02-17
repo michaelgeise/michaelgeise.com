@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Michael Geise | Front-End Demo</title>
+	<meta name="description" content="Day to night - night to dream">
+	<meta name="author" content="Michael Geise">
+	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css?v=1.0">
+	<link rel="stylesheet" href="css/normalize.css?v=1.0">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+<body>
+	<main>
+		<section class="awake">
+			<section class="day">
+				<div class="sun">
+					<img src="images/sun.svg" alt="Rotating sun" class="rotating" />
+				</div>
+				<div class="clouds clouds-left">
+					<img src="images/clouds.svg" alt="Lazy clouds" />
+				</div>
+				<div class="clouds clouds-right">
+					<img src="images/clouds.svg" alt="Lazy clouds" />
+				</div>
+				<div class="direction">
+					<p>Shrink the window <i class="fas fa-angle-double-left"></i></p>
+				</div>
+				<footer>
+					<div></div>
+					<div></div>
+					<div></div>
+				</footer>
+			</section>
+			<section class="night">
+				<div class="stars">
+					<img src="images/stars.svg" alt="Beautiful stars" />
+				</div>
+				<div class="moon">
+					<img src="images/moon.svg" alt="Full moon" class="rotating" />
+				</div>
+				<span class="sleep-button">Start Dreaming</span>
+			</section>
+		</section>
+		<section class="dream hidden">
+			<section class="ocean">
+				<div class="water">
+					<div class="boat">
+						<img src="images/boat.svg" alt="Sail boat" />
+					</div>
+				</div>
+				<div class="deep">
+					<div class="whale">
+						<img src="images/whale.svg" alt="Big whale" />
+					</div>
+					<span class="sleep-button">Wake Up</span>
+				</div>
+				<div class="direction">
+					<p class="pulsate">Expand the window <i class="fas fa-angle-double-right"></i></p>
+				</div>
+			</section>
+		</section>
+	</main>
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$( document ).ready(function() {
+			$('.sleep-button').on('click', function(e) {
+					$('.dream, .awake').toggleClass("hidden");
+				e.preventDefault();
+			});
+		});
+	</script>
+</body>
+</html>
