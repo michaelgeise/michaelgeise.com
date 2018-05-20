@@ -24,7 +24,7 @@ function initMap() {
       // infoWindow.setContent('Location found.');
       // infoWindow.open(map);
       // map.setCenter(pos);
-      var position = 'images/position.svg';
+      var position = 'woodlands/images/position.svg';
       var positionMarker = new google.maps.Marker({
         position: pos,
         map: map,
@@ -40,7 +40,7 @@ function initMap() {
   }
 
 
-  var grave = 'images/grave.svg';
+  var grave = 'woodlands/images/grave.svg';
   
   // J Brington
   jbrinton = new google.maps.Marker({

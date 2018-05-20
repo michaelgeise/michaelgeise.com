@@ -136,7 +136,7 @@ a:hover {
 	50% { transform: scale(1); opacity: 1; }
 	100% { transform: scale(0.9); opacity: 0.7; }
 }
-img[src^='images/position.svg']{
+img[src^='woodlands/images/position.svg']{
 	-webkit-animation: pulse 3s infinite ease-in-out;
 	-o-animation: pulse 3s infinite ease-in-out;
 	-ms-animation: pulse 3s infinite ease-in-out; 
