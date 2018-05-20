@@ -12,33 +12,45 @@ function initMap() {
   });
   infoWindow = new google.maps.InfoWindow;
 
-  // Try HTML5 geolocation.
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function(position) {
-      var pos = {
-        lat: position.coords.latitude,
-        lng: position.coords.longitude
-      };
+  
 
-      // infoWindow.setPosition(pos);
-      // infoWindow.setContent('Location found.');
-      // infoWindow.open(map);
-      // map.setCenter(pos);
-      var position = 'woodlands/images/position.svg';
-      var positionMarker = new google.maps.Marker({
-        position: pos,
-        map: map,
-        title: 'position!',
-        icon: new google.maps.MarkerImage( position, null, null, null, new google.maps.Size(20,20))
+
+  /*global gmap */
+  function getUserLocation(map) {
+    // Try HTML5 geolocation.
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function(position) {
+        var pos = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude
+        };
+
+        // infoWindow.setPosition(pos);
+        // infoWindow.setContent('Location found.');
+        // infoWindow.open(map);
+        // map.setCenter(pos);
+        var position = 'woodlands/images/position.svg';
+        var positionMarker = new google.maps.Marker({
+          position: pos,
+          map: map,
+          title: 'position!',
+          icon: new google.maps.MarkerImage( position, null, null, null, new google.maps.Size(20,20))
+        });
+      }, function() {
+        handleLocationError(true, infoWindow, map.getCenter());
       });
-    }, function() {
-      handleLocationError(true, infoWindow, map.getCenter());
-    });
-  } else {
-    // Browser doesn't support Geolocation
-    handleLocationError(false, infoWindow, map.getCenter());
+    } else {
+      // Browser doesn't support Geolocation
+      handleLocationError(false, infoWindow, map.getCenter());
+    }
   }
 
+  if (navigator.geolocation) {
+      getUserLocation(gmap);
+      setInterval(function () {
+          getUserLocation(gmap);
+      }, 5000);
+  }
 
   var grave = 'woodlands/images/grave.svg';
   

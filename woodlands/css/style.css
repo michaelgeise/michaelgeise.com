@@ -150,6 +150,6 @@ img[src^='woodlands/images/position.svg']{
 	color: #666;
 }
 
-/*.modal-content h5, .modal-content p {
-	display: block;
-}*/
+.modal img {
+	margin-bottom: 1rem;
+}
