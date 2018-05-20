@@ -11,7 +11,7 @@ function initMap() {
     fullscreenControl: false
   });
   infoWindow = new google.maps.InfoWindow;
-  
+
   /*global gmap */
   function getUserLocation(map) {
       if (navigator.geolocation) {
@@ -23,7 +23,7 @@ function initMap() {
                   getUserLocation.user_marker = new google.maps.Marker({
                       position:point,
                       map:map,
-                      icon:'woodlands/images/position.svg'
+                      icon:'images/position.svg'
                   });
                   getUserLocation.user_marker_window = new google.maps.InfoWindow({
                       content:'You'
@@ -45,7 +45,7 @@ function initMap() {
       }, 5000);
   }
 
-  var grave = 'woodlands/images/grave.svg';
+  var grave = 'images/grave.svg';
   
   // J Brington
   jbrinton = new google.maps.Marker({
