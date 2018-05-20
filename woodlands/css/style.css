@@ -142,6 +142,8 @@ img[src^='woodlands/images/position.svg']{
 	-ms-animation: pulse 3s infinite ease-in-out; 
 	-moz-animation: pulse 3s infinite ease-in-out; 
 	animation: pulse 3s infinite ease-in-out;
+	max-height: 40px;
+	max-width: 40px;
 }
 .modal-title {
 	color: #006C46;

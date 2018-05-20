@@ -11,38 +11,31 @@ function initMap() {
     fullscreenControl: false
   });
   infoWindow = new google.maps.InfoWindow;
-
   
-
-
   /*global gmap */
   function getUserLocation(map) {
-    // Try HTML5 geolocation.
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(function(position) {
-        var pos = {
-          lat: position.coords.latitude,
-          lng: position.coords.longitude
-        };
+      if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function (position) {
+              var point = new google.maps.LatLng(position.coords.latitude,
+                  position.coords.longitude);
 
-        // infoWindow.setPosition(pos);
-        // infoWindow.setContent('Location found.');
-        // infoWindow.open(map);
-        // map.setCenter(pos);
-        var position = 'woodlands/images/position.svg';
-        var positionMarker = new google.maps.Marker({
-          position: pos,
-          map: map,
-          title: 'position!',
-          icon: new google.maps.MarkerImage( position, null, null, null, new google.maps.Size(20,20))
-        });
-      }, function() {
-        handleLocationError(true, infoWindow, map.getCenter());
-      });
-    } else {
-      // Browser doesn't support Geolocation
-      handleLocationError(false, infoWindow, map.getCenter());
-    }
+              if (typeof getUserLocation.user_marker == 'undefined') {
+                  getUserLocation.user_marker = new google.maps.Marker({
+                      position:point,
+                      map:map,
+                      icon:'woodlands/images/position.svg'
+                  });
+                  getUserLocation.user_marker_window = new google.maps.InfoWindow({
+                      content:'You'
+                  });
+
+                  google.maps.event.addListener(getUserLocation.user_marker, 'click', function () {
+                      getUserLocation.user_marker_window.open(getUserLocation.user_marker);
+                  });
+              }
+              getUserLocation.user_marker.setPosition(point);
+          });
+      }
   }
 
   if (navigator.geolocation) {
