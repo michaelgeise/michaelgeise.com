@@ -235,12 +235,6 @@
 	  }
 	})
 
-	//sweet alerts
-	$(document).ready(function () {
-	  $('body').on('click', '.btn.btn-primary', function () {
-	  	swal("Here's a message!")
-	  });
-	});
 	</script>
   </body>
 </html>

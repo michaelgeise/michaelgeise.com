@@ -1,9 +1,7 @@
-* {
-	font-family: 'Courgette', sans-serif;
-}
 body {
 	max-height: 100vh;
 	overflow: hidden;
+	font-family: 'Courgette', sans-serif;
 }
 .hidden, .hidden * {
 	opacity: 0;
@@ -309,6 +307,18 @@ section {
 	}
 	.ocean .sleep-button, .whale{
 		display: none;
+	}
+}
+@media (max-width: 1000px) {
+	.day {
+		background-color: #7f4aff;
+		background: linear-gradient(#7f4aff, #e0bef5);
+	}
+}
+@media (max-width: 950px) {
+	.day {
+		background-color: #7818a0;
+		background: linear-gradient(#7818a0, #466ec7);
 	}
 }
 @media (max-width: 900px) {
