@@ -26,7 +26,7 @@
 
 	<meta name="keywords" content="">
 
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
 
 
 	<!-- Bootstrap and Font Awesome css -->
