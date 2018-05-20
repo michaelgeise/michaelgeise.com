@@ -1,0 +1,155 @@
+/* Optional: Makes the sample page fill the window. */
+html, body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	color: #666;
+	max-height: 100vh;
+	overflow-y: hidden;
+}
+h1, h2, h3, h4 {
+	font-family: 'Italianno', cursive;
+}
+
+/* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+#map {
+	height: calc(100vh - 49px);
+}
+section, div {
+	box-sizing: border-box;
+}
+.header {
+	height: 48px;
+	padding: 6px 2%;
+	background-color: #f1f1f1;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+	margin-bottom: 1px;
+	transition: all 1s;
+}
+.header.load {
+	height: 100vh;
+	padding: 0;
+	background-color: #ffffff;
+	box-shadow: none;
+	margin: 0;
+	text-align: center;
+	color: #006C46;
+}
+.load .hero {
+	height: 50vh;
+	background-image: url(../images/hero.svg);
+	background-position: 3% bottom;
+    background-size: 166%;
+	background-repeat: no-repeat;
+	transition: all 1s;
+}
+@media screen and (min-width: 600px) {
+	.load .hero {
+		background-position: 56% bottom;
+		background-size: contain;
+	}
+}
+h1 {
+	font-size: 22px;
+	margin-bottom: 0;
+	transition: all 1s;
+	cursor: pointer;
+}
+.load h1 {
+	font-size: 48px;
+	padding-top: 25vh;
+	cursor: default;
+}
+.load .hint {
+	display: none;
+}
+.hint {
+	font-size: 10px;
+	margin-top: 0;
+	color: #999;
+	transition: all 1s;
+	cursor: pointer;
+}
+.address {
+	display: none;
+	transition: all 1s;
+}
+.load .address {
+	display: block;
+}
+.enter-button {
+	background-color: #f1f1f1;
+	text-align: center;
+	display: none;
+	transition: all .3s;
+}
+.load .enter-button {
+	background: rgb(39,188,84);
+	background: linear-gradient(0deg, rgba(39,188,84,1) 0%, rgba(171,240,192,1) 100%);
+	height: 50vh;
+	cursor: pointer;
+	display: block;
+}
+.enter-button:hover {
+	background: rgb(36,208,88);
+	background: linear-gradient(0deg, rgba(36,208,88,1) 0%, rgba(214,254,226,1) 100%);
+}
+.enter-button i {
+	transition: all .3s;
+	color: #ffffff;
+	font-size: 100px;
+	margin-top: calc(25vh - 100px);
+}
+.enter-button:hover i {
+	transform: translate(0, -5px);
+}
+.load .btn-light {
+	display: none;
+}
+.btn-light {
+    color: #666;
+    background-color: #f1f1f1;
+    border-color: #f1f1f1;
+	transition: all 1s;
+}
+.btn-success {
+	background-color: #03B338;
+	border-color: #03B338;
+}
+a {
+	color: #03B338;
+}
+a:hover {
+	color: #20D356;
+}
+@-webkit-keyframes pulse {
+	0% { -webkit-transform: scale(0.9); opacity: 0.7; }
+	50% { -webkit-transform: scale(1); opacity: 1; }
+	100% { -webkit-transform: scale(0.9); opacity: 0.7; }
+}
+
+@keyframes pulse {
+	0% { transform: scale(0.9); opacity: 0.7; }
+	50% { transform: scale(1); opacity: 1; }
+	100% { transform: scale(0.9); opacity: 0.7; }
+}
+img[src^='images/position.svg']{
+	-webkit-animation: pulse 3s infinite ease-in-out;
+	-o-animation: pulse 3s infinite ease-in-out;
+	-ms-animation: pulse 3s infinite ease-in-out; 
+	-moz-animation: pulse 3s infinite ease-in-out; 
+	animation: pulse 3s infinite ease-in-out;
+}
+.modal-title {
+	color: #006C46;
+}
+.modal-title small {
+	color: #666;
+}
+
+/*.modal-content h5, .modal-content p {
+	display: block;
+}*/
