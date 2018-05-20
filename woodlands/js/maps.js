@@ -46,9 +46,9 @@ function initMap() {
   }
 
   if (navigator.geolocation) {
-      getUserLocation(gmap);
+      getUserLocation(map);
       setInterval(function () {
-          getUserLocation(gmap);
+          getUserLocation(map);
       }, 5000);
   }
 
