@@ -132,6 +132,18 @@ function initMap() {
       $('#t-evans').modal('show');
   });
 
+  // T Baba
+  tbaba = new google.maps.Marker({
+    position: {lat: 39.947818, lng: -75.202227},
+    map: map,
+    title: 'tbaba',
+    icon: new google.maps.MarkerImage( grave, null, null, null, new google.maps.Size(28,32))
+  });
+
+  google.maps.event.addListener(tbaba, 'click', function() {
+      $('#t-baba').modal('show');
+  });
+
 }
 
 
