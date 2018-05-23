@@ -38,7 +38,7 @@ section, div {
 	color: #006C46;
 }
 .load .hero {
-	height: 50vh;
+	height: 60vh;
 	background-image: url(../images/hero.svg);
 	background-position: 3% bottom;
     background-size: 166%;
@@ -60,7 +60,7 @@ h1 {
 }
 .load h1 {
 	font-size: 48px;
-	padding-top: 25vh;
+	padding-top: 35vh;
 	cursor: default;
 	display: inline-block;
     margin-left: calc(50% - 101px);
@@ -81,6 +81,12 @@ h1 {
 .header:not(.load) .hint {
 	transition-delay: 1s;
 }
+.header:not(.load) .enter-button {
+	opacity: 0;
+	height: 0;
+	margin: 0;
+	transition: all .3s;
+}
 .address {
 	opacity: 0;
 	height: 0;
@@ -92,33 +98,34 @@ h1 {
 	height: auto;
 	opacity: 1;
 	transition-delay: 1s;
-	margin-left: calc(50% - 89px);
+	margin-top: calc(40vh - 108px);
 }
-.enter-button {
+.title {
+	opacity: 0;
+	height: 0;
+	margin: 0;
+	transition: all .6s;
+}
+.load .title {
+	display: inline-block;
+	height: auto;
+	opacity: 1;
+	transition-delay: 1s;
+	margin-left: calc(50% - 115px);
+}
+.sub-hero {
 	background-color: #f1f1f1;
 	text-align: center;
 	height: 0;
 	transition: all .3s;
+	padding-top: 30px;
 }
-.load .enter-button {
-	background: rgb(39,188,84);
-	background: linear-gradient(0deg, rgba(39,188,84,1) 0%, rgba(171,240,192,1) 100%);
-	height: 50vh;
+.load .sub-hero {
+	background: rgb(229,255,237);
+	background: linear-gradient(180deg, rgba(229,255,237,1) 0%, rgba(52,255,114,1) 100%);
+	height: 40vh;
 	cursor: pointer;
 	display: block;
-}
-.enter-button:hover {
-	background: rgb(36,208,88);
-	background: linear-gradient(0deg, rgba(36,208,88,1) 0%, rgba(214,254,226,1) 100%);
-}
-.enter-button i {
-	transition: all .3s;
-	color: #ffffff;
-	font-size: 100px;
-	margin-top: calc(25vh - 100px);
-}
-.enter-button:hover i {
-	transform: translate(0, -5px);
 }
 .load .btn-light {
 	display: none;

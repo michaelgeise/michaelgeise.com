@@ -8,6 +8,7 @@ function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 39.947222, lng: -75.203219},
     zoom: 16,
+    gestureHandling: 'cooperative',
     fullscreenControl: false
   });
   infoWindow = new google.maps.InfoWindow;
