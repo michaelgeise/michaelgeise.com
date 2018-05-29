@@ -834,10 +834,21 @@
 
 				$(".enter-button").click(function(){
 				    $(".header").removeClass("load");
+				    window.location.hash = 'guide';
+    				return false;
 				});
 
 				$("h1, .hint").click(function(){
 				    $(".header").addClass("load");
+				    window.history.back();
+				});
+				$(window).on('popstate', function(event) {
+				  	if(window.location.hash) {
+					  $(".header").removeClass("load");
+					} else {
+					  $(".header").addClass("load");
+					  $('.modal').modal('hide');
+					}
 				});
 			});
 		</script>
