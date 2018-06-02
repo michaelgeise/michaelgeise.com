@@ -6,7 +6,6 @@ html, body {
 	margin: 0;
 	padding: 0;
 	color: #666;
-	overflow-y: hidden;
 }
 h1, h2, h3, h4 {
 	font-family: 'Italianno', cursive;
@@ -14,14 +13,13 @@ h1, h2, h3, h4 {
 
 /* Always set the map height explicitly to define the size of the div
 * element that contains the map. */
+.load + #map {
+	height: 0;
+	border-bottom: none;
+}
 #map {
 	height: calc(100vh - 49px);
 	border-bottom: 2vh solid #666666;
-}
-@media screen and (orientation:portrait) { 
-	#map {
-		border-bottom: 12vh solid #666666;
-	}
 }
 section, div {
 	box-sizing: border-box;
@@ -128,14 +126,6 @@ h1 {
 	height: 40vh;
 	display: block;
 	border-bottom: 2vh solid #34ff72;
-}
-@media screen and (orientation:portrait) { 
-	.load .address {
-		margin-top: calc(28vh - 108px);
-	}
-	.load .sub-hero {
-		border-bottom: 12vh solid #34ff72;
-	}
 }
 .load .btn-light {
 	position: absolute;
