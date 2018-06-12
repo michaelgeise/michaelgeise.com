@@ -211,7 +211,6 @@ _________________________________________________________ -->
 
 										<p class="buttons">
 											<a class="btn btn-primary" href="https://www.globalfit.com" target="_blank" title="View GlobalFit"><i class="fa fa-globe"></i> Visit globalfit</a>
-											<a class="btn btn-primary" href="https://globalfitrewards.com/" target="_blank" title="View GlobalFit Rewards"><i class="fa fa-globe"></i> Visit globalfitrewards</a>
 										</p>
 									</div>
 								</div>
@@ -234,7 +233,7 @@ _________________________________________________________ -->
 										<p>I instructed junior UI designers for its design and coded the front-end.</p>
 
 										<p class="buttons">
-											<a class="btn btn-primary" href="http://fitnessadvantage.optum.com/" target="_blank" title="View Optum Fitness Advantage"><i class="fa fa-globe"></i> Visit website</a>
+											<a class="btn btn-primary" href="https://fitnessadvantage.optum.com/" target="_blank" title="View Optum Fitness Advantage"><i class="fa fa-globe"></i> Visit website</a>
 										</p>
 									</div>
 
@@ -254,7 +253,7 @@ _________________________________________________________ -->
 
 									<div class="sr-only reference-description" data-images="images/portfolio/hidden-gallery1.jpg,images/portfolio/hidden-gallery2.jpg">
 
-										<p>This is a side project to gain experience with <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> and <a href="https://www.meteor.com/" target="_blank">Meteor.js</a>. I used MongoDB to manage and load artwork, NodeJS via Meteor.js to handle the server, and Bootstrap, Meteor.js’s Spacebars templating system and jQuery on the frontend. The Hidden Gallery is a custom built content management system to showcase some of my paintings. Don't forget to <a href="http://hiddengallery.michaelgeise.com/guestbook" target="_blank">sign the guest book</a>.</p>
+										<p>This is a side project to gain experience with <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> and <a href="https://www.meteor.com/" target="_blank">Meteor.js</a>. I used MongoDB to manage and load artwork, NodeJS via Meteor.js to handle the server, and Bootstrap, Meteor.js’s Spacebars templating system and jQuery on the frontend. The Hidden Gallery is a custom built content management system to showcase some of my paintings. Don't forget to <a href="http://hiddengallery.michaelgeise.com/guestbook" target="_blank">sign the guest book</a>.</p>
 
 										<p class="buttons">
 											<a class="btn btn-primary" href="http://hiddengallery.michaelgeise.com/" target="_blank" title="View the Hidden Gallery"><i class="fa fa-globe"></i> Visit website</a>
@@ -478,30 +477,12 @@ _________________________________________________________ -->
 						<div class="row">
 
 							<div class="col-md-8 col-md-offset-2">
-								<form role="form" id="email-form" method="post">
-
-									<div class="controls">
-
-										<div class="row">
-											<div class="col-md-12 form-group required">
-												<label for="name">Your Name</label>
-												<input type="text" name="name" class="form-control" placeholder="Buzz Aldrin" required="required" maxlength="80">
-											</div>
-											<div class="col-md-12 form-group required">
-												<label for="email">Your Email</label>
-												<input type="email" name="email" class="form-control" placeholder="buzzlightyear@example.com" required="required" maxlength="80">
-											</div>
-											<div class="col-md-12 form-group required">
-												<label for="comment">Your Message</label>
-												<textarea name="comment" class="form-control" placeholder="Let's blast off!" rows="4" maxlength="10000" required="required"></textarea>
-											</div>
-											<div class="col-md-12 text-center">
-												<input type="submit" class="btn btn-primary btn-lg" value="Send message">
-											</div>
-										</div>
+								<div class="row">
+									<div class="col-md-12 text-center">
+										<h3>Please Message Me On LinkedIn</h3>
+										<a href="https://www.linkedin.com/in/michael-geise-20875623/" title="View LinkedIn" class="btn btn-primary btn-lg" target="_blank">Contact</a>
 									</div>
-
-								</form>
+								</div>
 							</div>
 
 						</div>
