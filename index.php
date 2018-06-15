@@ -329,9 +329,9 @@ _________________________________________________________ -->
 								<div class="icon"><i class="fa fa-html5"></i>
 								</div>
 								<h3 class="heading">Relevant Skills</h3>
-								<p>HTML5 | CSS3 | SASS | JavaScript | jQuery | Bootstrap | Git | SVN | Symfony | Meteor | PHP</p>
-								<p>Adobe ( Photoshop | Illustrator | InDesign | Premiere Pro | After Effects | Dreamweaver)</p>
-								<p>Google Analytics | WordPress | MailChimp | HubSpot</p>
+								<p>Mockups & Wireframes | Prototyping | UX Research</p>
+								<p>HTML5 & CSS3 | JavaScript & jQuery | Bootstrap | Git | PHP(Symfony) & MVC</p>
+								<p>Adobe Creative Cloud | Sketch | Google Analytics | HubSpot</p>
 							</div>
 
 							<div class="col-md-4" data-animate="fadeInUp">
@@ -341,8 +341,9 @@ _________________________________________________________ -->
 								<p><a href="http://www.cba.pitt.edu/" title="CBA Pitt!" target="_blank">University of Pittsburgh, College of Business Administration</a>
 								<br>Major:  Marketing | Minor:  Studio Arts
 								<br>Graduation Date:  April 2010</p>
-								<p>Lunametrics Google Analytics Training</p>
-								<p>Sandler Sales Training</p>
+								<p>The Interaction Design Foundation
+								<br>Lunametrics Google Analytics Training
+								<br>Sandler Sales Training</p>
 							</div>
 
 						</div>
@@ -351,10 +352,7 @@ _________________________________________________________ -->
 
 						<div class="text-center">
 
-							<p class="lead">Would you like to see my complete resume?</p>
-
-							<p><a href="#contact" class="btn btn-default btn-lg scrollTo">Contact me</a>
-							</p>
+							<p class="lead">Please contact me to see my complete resume.</p>
 
 						</div>
 
