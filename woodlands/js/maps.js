@@ -456,8 +456,30 @@ function initMap() {
       $('#h-wood').modal('show');
   });
 
-}
+  // A Fisher
+  afisher = new google.maps.Marker({
+    position: {lat: 39.945996, lng: -75.200017},
+    map: map,
+    title: 'afisher',
+    icon: new google.maps.MarkerImage( grave, null, null, null, new google.maps.Size(28,32))
+  });
 
+  google.maps.event.addListener(afisher, 'click', function() {
+      $('#a-fisher').modal('show');
+  });
+
+ // E Souder
+  esouder = new google.maps.Marker({
+    position: {lat: 39.946331, lng: -75.203174},  
+    map: map,
+    title: 'esouder',
+    icon: new google.maps.MarkerImage( grave, null, null, null, new google.maps.Size(28,32))
+  });
+
+  google.maps.event.addListener(esouder, 'click', function() {
+      $('#e-souder').modal('show');
+  });
+}
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   infoWindow.setPosition(pos);
