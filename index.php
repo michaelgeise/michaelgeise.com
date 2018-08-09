@@ -204,13 +204,14 @@ _________________________________________________________ -->
 										</div>
 									</a>
 
-									<div class="sr-only reference-description" data-images="images/portfolio/globalfit1.jpg,images/portfolio/globalfit2.jpg,images/portfolio/globalfit3.jpg,images/portfolio/globalfit4.jpg">
+									<div class="sr-only reference-description" data-images="images/portfolio/globalfit1.jpg,images/portfolio/globalfit2.jpg,images/portfolio/globalfit4.jpg,images/portfolio/omas1.jpg">
 
-										<p>Maintaining and designing GlobalFit.com for it’s millions of users has been my day job for the last few years. In addition to redesigning and implementing an entire new responsive front-end, I’ve also lead the design for many of their other web properties. Prior to my promotion as Sr. UI/UX Designer, I focused on the marketing department, where I carried out all of GlobalFit's digital marketing. Two examples of their large email campaigns sent to hundreds of thousands of people can be viewed <a href="emails/weight-loss/index.html" target="_blank" title="weight loss emial"> here</a> and <a href="emails/la24/index.html" target="_blank" title="gym email">here</a>.</p>
-										<p>In addition to the gym site, I also developed the front-end for the reimbursement platform, GlobalFit rewards.</p>
+										<p>Maintaining and designing GlobalFit.com for it’s millions of users has been my day job since 2013. In addition to redesigning and implementing an entire new responsive front-end, I’ve also lead the design for many of their other digital products. Prior to my promotion as Sr. UI/UX Designer, I focused on the marketing department, where I carried out all of GlobalFit's digital marketing. Two examples of their large email campaigns sent to hundreds of thousands of people can be viewed <a href="emails/weight-loss/index.html" target="_blank" rel="noopener noreferrer" title="weight loss emial"> here</a> and <a href="emails/la24/index.html" target="_blank" rel="noopener noreferrer" title="gym email">here</a>.</p>
+										<p>In addition to the gym site, I also developed the front-end for the reimbursement platform, <a href="https://globallife.globalfitrewards.com/" target="_blank" rel="noopener noreferrer" title="View GlobalFit Rewards">GlobalFit rewards.</a>, and a senior citizen gym network, <a href="https://fitnessadvantage.optum.com/" target="_blank" rel="noopener noreferrer" title="View Optum Fitness Advantage">Optum Fitness Advantage</a>.</p>
+										<p>Most recently I planned the UX of a studio, trainer, and gym pass app, <a href="https://www.globalfit.com/interstitial/anywhere" target="_blank" rel="noopener noreferrer" title="View GlobalFit Anywhere">GlobalFit Anywhere</a>.</p>
 
 										<p class="buttons">
-											<a class="btn btn-primary" href="https://www.globalfit.com" target="_blank" title="View GlobalFit"><i class="fa fa-globe"></i> Visit globalfit</a>
+											<a class="btn btn-primary" href="https://www.globalfit.com" target="_blank" rel="noopener noreferrer" title="View GlobalFit"><i class="fa fa-globe"></i> Visit globalfit</a>
 										</p>
 									</div>
 								</div>
@@ -219,24 +220,48 @@ _________________________________________________________ -->
 							<div class="reference-item">
 								<div class="reference">
 									<a href="#">
-										<img src="images/portfolio/omas-thumb.jpg" class="img-responsive" alt="Optum Fitness Advantage" />
+										<img src="images/portfolio/woodlands-thumb.jpg" class="img-responsive" alt="Optum Fitness Advantage" />
 
 										<div class="overlay">
-											<h3 class="reference-title">Optum Fitness Advantage</h3> 
-											<p>Check out UnitedHealthcare's gym site.</p>
+											<h3 class="reference-title">Interactive Cemetery Guide</h3> 
+											<p>See what lies beneath.</p>
 										</div>
 									</a>
 
-									<div class="sr-only reference-description" data-images="images/portfolio/omas1.jpg,images/portfolio/omas2.jpg">
+									<div class="sr-only reference-description" data-images="images/portfolio/woodlands1.jpg,images/portfolio/woodlands2.jpg">
 
-										<p>UnitedHealthcare hired GlobalFit to build a gym network site to accomodate their senior citizen members.  This site is designed for an older audience, including larger text and simpler design. The custom-built template can be reused for a new site with different colors, text, and images.</p>
-										<p>I instructed junior UI designers for its design and coded the front-end.</p>
+										<p>This is a personal project for a local park, The Woodlands, that is filled with very interesting (buried) people. The site uses HTML5 GPS and the Google Maps API to coordinate and display the user in the cemetery as well as the locations for the residents.  When a grave marker is click, a modal with information about the resident is displayed.</p>
+										<p>I started with the idea -  I then iterated to wireframes, mockups, first draft of code, user testing, and revisions.</p>
 
 										<p class="buttons">
-											<a class="btn btn-primary" href="https://fitnessadvantage.optum.com/" target="_blank" title="View Optum Fitness Advantage"><i class="fa fa-globe"></i> Visit website</a>
+											<a class="btn btn-primary" href="https://michaelgeise.com/woodlands/" target="_blank" rel="noopener noreferrer" title="View The Woodlands Interactive Cemetery Guide"><i class="fa fa-globe"></i> View Guide</a>
 										</p>
 									</div>
 
+								</div>
+							</div>
+
+							<div class="reference-item">
+								<div class="reference">
+									<a href="#">
+										<img src="images/portfolio/goosemonger-thumb.jpg" class="img-responsive" alt="Goosemonger" />
+
+										<div class="overlay">
+											<h3 class="reference-title">Goosemonger</h3> 
+											<p>Learn about the best kind of monger in these personal projects.</p>
+										</div>
+									</a>
+
+									<div class="sr-only reference-description" data-images="images/portfolio/goosemonger1.jpg,images/portfolio/goosemonger2.jpg,images/portfolio/gooseart.jpg">
+
+										<p>Goosemonger.com is a mock-product website built to give life to the Goosemonger G-1000. The site was created using <a href="https://angularjs.org/" target="_blank" rel="noopener noreferrer">AngularJS</a> and <a href="http://foundation.zurb.com/" target="_blank" rel="noopener noreferrer">Zurb Foundation</a>. It is very heavy in HTML5, CSS3, JavaScript and jQuery. It also uses animated gifs and vector graphics I created with Adobe After Effects, Photoshop, and Illustrator. Please sign up for updates about Goosemonger on the <a href="http://www.goosemonger.com/learn" target="_blank" rel="noopener noreferrer">Learn page</a>!</p>
+										<p>Gooseart is a personal project that creates automated geometric abstract art. A new and unique piece is created every time it is run by using JavaScript to fill in a SVG. I started with the idea -  I then iterated to wireframes, mockups, first draft of code, user testing, and revisions.</p>
+
+										<p class="buttons">
+											<a class="btn btn-primary" href="http://www.goosemonger.com/" target="_blank" rel="noopener noreferrer" title="View Goosemonger"><i class="fa fa-globe"></i> Goosemonger</a>
+											<a class="btn btn-primary" href="https://michaelgeise.com/gooseart/" target="_blank" rel="noopener noreferrer" title="View Gooseart"><i class="fa fa-globe"></i> Gooseart</a>
+										</p>
+									</div>
 								</div>
 							</div>
 
@@ -253,32 +278,10 @@ _________________________________________________________ -->
 
 									<div class="sr-only reference-description" data-images="images/portfolio/hidden-gallery1.jpg,images/portfolio/hidden-gallery2.jpg">
 
-										<p>This is a side project to gain experience with <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> and <a href="https://www.meteor.com/" target="_blank">Meteor.js</a>. I used MongoDB to manage and load artwork, NodeJS via Meteor.js to handle the server, and Bootstrap, Meteor.js’s Spacebars templating system and jQuery on the frontend. The Hidden Gallery is a custom built content management system to showcase some of my paintings. Don't forget to <a href="http://hiddengallery.michaelgeise.com/guestbook" target="_blank">sign the guest book</a>.</p>
+										<p>This is a side project to gain experience with <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">Bootstrap</a> and <a href="https://www.meteor.com/" target="_blank" rel="noopener noreferrer">Meteor.js</a>. I used MongoDB to manage and load artwork, NodeJS via Meteor.js to handle the server, and Bootstrap, Meteor.js’s Spacebars templating system and jQuery on the frontend. The Hidden Gallery is a custom built content management system to showcase some of my paintings. Don't forget to <a href="http://hiddengallery.michaelgeise.com/guestbook" target="_blank" rel="noopener noreferrer">sign the guest book</a>.</p>
 
 										<p class="buttons">
-											<a class="btn btn-primary" href="http://hiddengallery.michaelgeise.com/" target="_blank" title="View the Hidden Gallery"><i class="fa fa-globe"></i> Visit website</a>
-										</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="reference-item">
-								<div class="reference">
-									<a href="#">
-										<img src="images/portfolio/goosemonger-thumb.jpg" class="img-responsive" alt="Goosemonger" />
-
-										<div class="overlay">
-											<h3 class="reference-title">Goosemonger</h3> 
-											<p>Learn about the best kind of monger in this personal project.</p>
-										</div>
-									</a>
-
-									<div class="sr-only reference-description" data-images="images/portfolio/goosemonger1.jpg,images/portfolio/goosemonger2.jpg">
-
-										<p>This is a mock-product website built to give life to the Goosemonger G-1000. The site was created using <a href="https://angularjs.org/" target="_blank">AngularJS</a> and <a href="http://foundation.zurb.com/" target="_blank">Zurb Foundation</a>. It is very heavy in HTML5, CSS3, JavaScript and jQuery. It also uses animated gifs and vector graphics I created with Adobe After Effects, Photoshop, and Illustrator. Please sign up for updates about Goosemonger on the <a href="http://www.goosemonger.com/learn" target="_blank">Learn page</a>!</p>
-
-										<p class="buttons">
-											<a class="btn btn-primary" href="http://www.goosemonger.com/" target="_blank" title="View Goosemonger"><i class="fa fa-globe"></i> Visit website</a>
+											<a class="btn btn-primary" href="http://hiddengallery.michaelgeise.com/" target="_blank" rel="noopener noreferrer" title="View the Hidden Gallery"><i class="fa fa-globe"></i> Visit website</a>
 										</p>
 									</div>
 								</div>
@@ -317,11 +320,11 @@ _________________________________________________________ -->
 								<div class="icon"><i class="fa fa-briefcase"></i>
 								</div>
 								<h3 class="heading">Experience</h3>
-								<p>SR. UI/UX Designer @ <a href="https://www.globalfit.com" title="Where Wellness Meets Rewards" target="_blank">GlobalFit</a>
+								<p>SR. UI/UX Designer @ <a href="https://www.globalfit.com" title="Where Wellness Meets Rewards" target="_blank" rel="noopener noreferrer">GlobalFit</a>
 								<br>MAY 2016 - Present</p>
-								<p>Digital Marketing Manager @ <a href="https://www.globalfit.com" title="Where Wellness Meets Rewards" target="_blank">GlobalFit</a>
+								<p>Digital Marketing Manager @ <a href="https://www.globalfit.com" title="Where Wellness Meets Rewards" target="_blank" rel="noopener noreferrer">GlobalFit</a>
 								<br>MAY 2013 - May 2016</p>
-								<p>Marketing Coordinator @ <a href="https://www.hbinstrument.com" title="time, temperature or density H-B Instrument" target="_blank">H-B Instrument</a>
+								<p>Marketing Coordinator @ <a href="https://www.hbinstrument.com" title="time, temperature or density H-B Instrument" target="_blank" rel="noopener noreferrer">H-B Instrument</a>
 								<br>Sep 2011 - May 2013</p>
 							</div>
 
@@ -338,7 +341,7 @@ _________________________________________________________ -->
 								<div class="icon"><i class="fa fa-book"></i> 
 								</div>
 								<h3 class="heading">Education</h3>
-								<p><a href="http://www.cba.pitt.edu/" title="CBA Pitt!" target="_blank">University of Pittsburgh, College of Business Administration</a>
+								<p><a href="http://www.cba.pitt.edu/" title="CBA Pitt!" target="_blank" rel="noopener noreferrer">University of Pittsburgh, College of Business Administration</a>
 								<br>Major:  Marketing | Minor:  Studio Arts
 								<br>Graduation Date:  April 2010</p>
 								<p>The Interaction Design Foundation
@@ -478,7 +481,7 @@ _________________________________________________________ -->
 								<div class="row">
 									<div class="col-md-12 text-center">
 										<h3>Please Message Me On LinkedIn</h3>
-										<a href="https://www.linkedin.com/in/michael-geise-20875623/" title="View LinkedIn" class="btn btn-primary btn-lg" target="_blank">Contact</a>
+										<a href="https://www.linkedin.com/in/michael-geise-20875623/" title="View LinkedIn" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Contact</a>
 									</div>
 								</div>
 							</div>
@@ -488,7 +491,7 @@ _________________________________________________________ -->
 							<div class="col-md-12 bonus">
 								<i class="fa fa-rocket"></i>
 								<h3>Bonus Points</h3>
-								<p>When I'm not staring at a computer screen, I like making watercolor paintings, listening to music, and hiking.</p>
+								<p>When I'm not staring at a computer screen, I like following The Phillies, painting, listening to music, and hiking.</p>
 							</div>
 						</div>
 
@@ -514,7 +517,7 @@ _________________________________________________________ -->
 					<div class="col-sm-6">
 
 						<p class="social">
-							<a href="https://www.linkedin.com/in/michael-geise-20875623/" target="_blank" class="external linkedin" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-linkedin"></i></a>
+							<a href="https://www.linkedin.com/in/michael-geise-20875623/" target="_blank" rel="noopener noreferrer" class="external linkedin" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-linkedin"></i></a>
 						</p>
 					</div>
 					<!-- /.6 -->
