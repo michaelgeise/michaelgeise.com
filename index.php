@@ -207,7 +207,7 @@ _________________________________________________________ -->
 									<div class="sr-only reference-description" data-images="images/portfolio/globalfit1.jpg,images/portfolio/globalfit2.jpg,images/portfolio/globalfit4.jpg,images/portfolio/omas1.jpg">
 
 										<p>Maintaining and designing GlobalFit.com for it’s millions of users has been my day job since 2013. In addition to redesigning and implementing an entire new responsive front-end, I’ve also lead the design for many of their other digital products. Prior to my promotion as Sr. UI/UX Designer, I focused on the marketing department, where I carried out all of GlobalFit's digital marketing. Two examples of their large email campaigns sent to hundreds of thousands of people can be viewed <a href="emails/weight-loss/index.html" target="_blank" rel="noopener noreferrer" title="weight loss emial"> here</a> and <a href="emails/la24/index.html" target="_blank" rel="noopener noreferrer" title="gym email">here</a>.</p>
-										<p>In addition to the gym site, I also developed the front-end for the reimbursement platform, <a href="https://globallife.globalfitrewards.com/" target="_blank" rel="noopener noreferrer" title="View GlobalFit Rewards">GlobalFit rewards.</a>, and a senior citizen gym network, <a href="https://fitnessadvantage.optum.com/" target="_blank" rel="noopener noreferrer" title="View Optum Fitness Advantage">Optum Fitness Advantage</a>.</p>
+										<p>In addition to the gym site, I also developed the front-end for the reimbursement platform, <a href="https://globallife.globalfitrewards.com/" target="_blank" rel="noopener noreferrer" title="View GlobalFit Rewards">GlobalFit Rewards</a>, and a senior citizen gym network, <a href="https://fitnessadvantage.optum.com/" target="_blank" rel="noopener noreferrer" title="View Optum Fitness Advantage">Optum Fitness Advantage</a>.</p>
 										<p>Most recently I planned the UX of a studio, trainer, and gym pass app, <a href="https://www.globalfit.com/interstitial/anywhere" target="_blank" rel="noopener noreferrer" title="View GlobalFit Anywhere">GlobalFit Anywhere</a>.</p>
 
 										<p class="buttons">
@@ -254,12 +254,13 @@ _________________________________________________________ -->
 
 									<div class="sr-only reference-description" data-images="images/portfolio/goosemonger1.jpg,images/portfolio/goosemonger2.jpg,images/portfolio/gooseart.jpg">
 
-										<p>Goosemonger.com is a mock-product website built to give life to the Goosemonger G-1000. The site was created using <a href="https://angularjs.org/" target="_blank" rel="noopener noreferrer">AngularJS</a> and <a href="http://foundation.zurb.com/" target="_blank" rel="noopener noreferrer">Zurb Foundation</a>. It is very heavy in HTML5, CSS3, JavaScript and jQuery. It also uses animated gifs and vector graphics I created with Adobe After Effects, Photoshop, and Illustrator. Please sign up for updates about Goosemonger on the <a href="http://www.goosemonger.com/learn" target="_blank" rel="noopener noreferrer">Learn page</a>!</p>
+										
 										<p>Gooseart is a personal project that creates automated geometric abstract art. A new and unique piece is created every time it is run by using JavaScript to fill in a SVG. I started with the idea -  I then iterated to wireframes, mockups, first draft of code, user testing, and revisions.</p>
+										<p>Goosemonger.com is a mock-product website built to give life to the Goosemonger G-1000. The site was created using <a href="https://angularjs.org/" target="_blank" rel="noopener noreferrer">AngularJS</a> and <a href="http://foundation.zurb.com/" target="_blank" rel="noopener noreferrer">Zurb Foundation</a>. It is very heavy in HTML5, CSS3, JavaScript and jQuery. It also uses animated gifs and vector graphics I created with Adobe After Effects, Photoshop, and Illustrator. Please sign up for updates about Goosemonger on the <a href="http://www.goosemonger.com/learn" target="_blank" rel="noopener noreferrer">Learn page</a>!</p>
 
 										<p class="buttons">
-											<a class="btn btn-primary" href="http://www.goosemonger.com/" target="_blank" rel="noopener noreferrer" title="View Goosemonger"><i class="fa fa-globe"></i> Goosemonger</a>
 											<a class="btn btn-primary" href="https://michaelgeise.com/gooseart/" target="_blank" rel="noopener noreferrer" title="View Gooseart"><i class="fa fa-globe"></i> Gooseart</a>
+											<a class="btn btn-primary" href="http://www.goosemonger.com/" target="_blank" rel="noopener noreferrer" title="View Goosemonger"><i class="fa fa-globe"></i> Goosemonger</a>
 										</p>
 									</div>
 								</div>
