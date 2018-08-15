@@ -59,7 +59,7 @@ section {
 }
 @media only screen and (orientation: portrait) {
 	.thought h2 {
-		margin: 30vh auto
+		margin: 30vh auto 30px;
 	}
 }
 @keyframes blink {

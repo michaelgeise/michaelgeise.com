@@ -322,11 +322,11 @@ _________________________________________________________ -->
 								</div>
 								<h3 class="heading">Experience</h3>
 								<p>SR. UI/UX Designer @ <a href="https://www.globalfit.com" title="Where Wellness Meets Rewards" target="_blank" rel="noopener noreferrer">GlobalFit</a>
-								<br>MAY 2016 - Present</p>
+								<br>May 2016 - Present</p>
 								<p>Digital Marketing Manager @ <a href="https://www.globalfit.com" title="Where Wellness Meets Rewards" target="_blank" rel="noopener noreferrer">GlobalFit</a>
-								<br>MAY 2013 - May 2016</p>
+								<br>May 2013 - May 2016</p>
 								<p>Marketing Coordinator @ <a href="https://www.hbinstrument.com" title="time, temperature or density H-B Instrument" target="_blank" rel="noopener noreferrer">H-B Instrument</a>
-								<br>Sep 2011 - May 2013</p>
+								<br>September 2011 - May 2013</p>
 							</div>
 
 							<div class="col-md-4" data-animate="fadeInUp">
