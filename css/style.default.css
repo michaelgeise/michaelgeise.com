@@ -153,7 +153,7 @@ UNIVERSAL SECTION STYLES
   -webkit-backface-visibility: hidden;
 }
 .text-parallax.parallax-bg {
-  background: url('../images/divider-bg.jpg') center center no-repeat fixed;
+  background: url('../images/divider-bg.svg') center center no-repeat fixed;
   background-size: cover;
 }
 
