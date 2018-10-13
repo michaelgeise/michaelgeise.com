@@ -7,8 +7,6 @@ $(function () {
     utils();
     sliding();
     parallax();
-    contactForm();
-
 });
 
 $(window).load(function () {
@@ -354,30 +352,6 @@ function waypointsRefresh() {
     }, 1000);
 }
 
-function contactForm() {
-	$(document).ready(function(){
-		$('#email-form').on('submit',function(e) {
-	  		console.log($(this).closest('form').serialize());
-
-			$.ajax({
-				url:'send-email.php', //===PHP file name====
-				data:$(this).serialize(),
-				type:'POST',
-				success:function(data){
-					//Success Message == 'Title', 'Message body', Last one leave as it is
-					swal("Got it!", "Thanks for reaching out! I'll get back to you shortly!", "success");
-				},
-				error:function(data){
-					//Error Message == 'Title', 'Message body', Last one leave as it is
-					swal("Oops...", "Something went wrong :(", "error");
-				}
-			});
-			
-	    e.preventDefault(); //This is to Avoid Page Refresh and Fire the Event "Click"
-
-	  });
-	});
-}
 
     //header style
     $(window).scroll(function() {    

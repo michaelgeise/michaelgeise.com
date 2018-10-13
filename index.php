@@ -28,33 +28,22 @@
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
 
-
 	<!-- Bootstrap and Font Awesome css -->
 	<link href="css/font-awesome.css" rel="stylesheet">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Theme stylesheet -->
-	<link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
-
-	<!-- Custom stylesheet - for your changes -->
-	<link href="css/custom.css" rel="stylesheet">
-
-	<!-- owl carousel css -->
-
-	<link href="css/owl.carousel.css" rel="stylesheet">
-	<link href="css/owl.theme.css" rel="stylesheet">
+<!-- 	<link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+ -->	<link href="css/style.min.css" rel="stylesheet" id="theme-stylesheet">
 
 	<!-- CSS Animations -->
 	<link href="css/animate.css" rel="stylesheet">
-
-	<!-- Sweet Alerts -->
-	<link rel="stylesheet" type="text/css" href="css/sweetalert2.min.css">
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="images/mg-favicon.png">
 
 	<!-- Mordernizr -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script async src="js/modernizr-2.6.2.min.js"></script>
 
 	<!-- Responsivity for older IE -->
 	<!--[if lt IE 9]>
@@ -548,31 +537,28 @@ _________________________________________________________ -->
 	<script src="js/bootstrap.min.js"></script>
 
 	<!-- waypoints for scroll spy -->
-	<script src="js/waypoints.min.js"></script>
+	<script async src="js/waypoints.min.js"></script>
 
 	<!-- masonry layout -->
-	<script src="js/masonry.pkgd.min.js"></script>
+	<script async src="js/masonry.pkgd.min.js"></script>
 
 	<!-- owl carousel -->
-	<script src="js/owl.carousel.min.js"></script>
+	<script async src="js/owl.carousel.min.js"></script>
 
 
 	<!-- jQuery scroll to -->
-	<script src="js/jquery.scrollTo.min.js"></script>
+	<script async src="js/jquery.scrollTo.min.js"></script>
 
 	<!-- jQuery video background -->
-	<script src="js/jquery.vide.js"></script>
+	<script async src="js/jquery.vide.js"></script>
 
 
 	<!-- jQuery parallax -->
-	<script src="js/jquery.parallax-1.1.3.js"></script>
+	<script async src="js/jquery.parallax-1.1.3.js"></script>
 
-	<!-- Sweet Alerts -->
-	<script src="js/sweetalert2.min.js"></script>
 
 	<!-- main js file -->
-
-	<script src="js/front.js"></script>
+	<script async src="js/front.js"></script>
 
 
 </body>
