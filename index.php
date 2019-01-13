@@ -193,10 +193,10 @@ _________________________________________________________ -->
 										</div>
 									</a>
 
-									<div class="sr-only reference-description" data-images="images/portfolio/globalfit1.jpg,images/portfolio/globalfit2.jpg,images/portfolio/globalfit4.jpg,images/portfolio/omas1.jpg">
+									<div class="sr-only reference-description" data-images="images/portfolio/globalfit1.jpg,images/portfolio/globalfit2.jpg,images/portfolio/globalfit4.jpg">
 
-										<p>Maintaining and designing GlobalFit.com for it’s millions of users has been my day job since 2013. In addition to redesigning and implementing an entire new responsive front-end, I’ve also lead the design for many of their other digital products. Prior to my promotion as Sr. UI/UX Designer, I focused on the marketing department, where I carried out all of GlobalFit's digital marketing. Two examples of their large email campaigns sent to hundreds of thousands of people can be viewed <a href="emails/weight-loss/index.html" target="_blank" rel="noopener noreferrer" title="weight loss emial"> here</a> and <a href="emails/la24/index.html" target="_blank" rel="noopener noreferrer" title="gym email">here</a>.</p>
-										<p>In addition to the gym site, I also developed the front-end for the reimbursement platform, <a href="https://globallife.globalfitrewards.com/" target="_blank" rel="noopener noreferrer" title="View GlobalFit Rewards">GlobalFit Rewards</a>, and a senior citizen gym network, <a href="https://fitnessadvantage.optum.com/" target="_blank" rel="noopener noreferrer" title="View Optum Fitness Advantage">Optum Fitness Advantage</a>.</p>
+										<p>Maintaining and designing GlobalFit.com for it’s millions of users has been my day job since 2013. In addition to redesigning and implementing an entire new responsive front-end, I’ve also lead the design for many of their other digital products. Prior to my promotion as Sr. UI/UX Designer, I focused on marketing, where I carried out all of GlobalFit's digital marketing. Two examples of their large email campaigns sent to hundreds of thousands of people can be viewed <a href="emails/weight-loss/index.html" target="_blank" rel="noopener noreferrer" title="weight loss emial"> here</a> and <a href="emails/la24/index.html" target="_blank" rel="noopener noreferrer" title="gym email">here</a>.</p>
+										<p>In addition to the gym site, I also developed the front-end for the reimbursement platform, <a href="https://globallife.globalfitrewards.com/" target="_blank" rel="noopener noreferrer" title="View GlobalFit Rewards">GlobalFit Rewards</a>.</p>
 										<p>Most recently I planned the UX of a studio, trainer, and gym pass app, <a href="https://www.globalfit.com/interstitial/anywhere" target="_blank" rel="noopener noreferrer" title="View GlobalFit Anywhere">GlobalFit Anywhere</a>.</p>
 
 										<p class="buttons">
@@ -277,11 +277,8 @@ _________________________________________________________ -->
 								</div>
 							</div>
 
-							
-
 						</div>
 						<!-- /#references-masonry -->
-
 					</div>
 					<!-- /.12 -->
 				</div>
