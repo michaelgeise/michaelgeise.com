@@ -148,8 +148,8 @@ UNIVERSAL SECTION STYLES
 }
 
 .text-parallax {
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
   -webkit-backface-visibility: hidden;
 }
 .text-parallax.parallax-bg {
@@ -176,6 +176,9 @@ INTRO
   z-index: -1;
 /*  min-width: 100vw;
 */  min-height: 100vh;
+}
+#intro h4 {
+  line-height: 1.3;
 }
 #intro > div {
   opacity: .6;
@@ -331,6 +334,21 @@ SERVICES
 }
 .services p {
   font-size: 15px;
+}
+#value {
+  text-align: left;
+}
+
+.value-icon {
+    color: #6bb447;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 5px 5px 0 #f3f3f3;
+}
+#value .row .value-icon {
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out
 }
 /*
 
@@ -784,9 +802,29 @@ FOOTER
     margin-bottom: 20px;
   }
 }
+#footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+#footer ul a {
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+#footer ul a:hover {
+  background-color: #11213a;
+  text-decoration: none;
+}
+#footer li {
+  display: inline;
+  margin: 0 10px;
+}
+
 #footer p {
   margin: 0;
-  text-align: right;
   color: #eeeeee;
   font-family: 'Montserrat', sans-serif;
 }
@@ -1997,7 +2035,7 @@ a.list-group-item.active > .badge,
 }
 
 .bonus {
-  background: #6bb446;
+  background: #575757;
   color: #ffffff;
   padding: 5vh 15px;
   margin-top: 60px;
@@ -2005,7 +2043,7 @@ a.list-group-item.active > .badge,
 
 .bonus .fa {
   font-size: 60px;
-  text-shadow: 5px 5px 0 #4e942b;
+  text-shadow: 5px 5px 0 #3c3c3c;
 }
 
 #cover {

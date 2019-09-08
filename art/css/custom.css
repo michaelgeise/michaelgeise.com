@@ -1,0 +1,34 @@
+/* your styles go here */
+h1,h2,h3,h4,h5 {
+	font-family: 'Lora', serif;
+	color: #666;
+}
+.modal video {
+	position: relative;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	max-width: 1280px;
+	max-height: 800px;
+}
+.modal p {
+	color: #999;
+	font-size: 0.95rem;
+}
+span[data-toggle="modal"] {
+	cursor: pointer;
+}
+.box-masonry .box-masonry-image {
+	background: #fff;
+	padding: .5rem;
+}
+@media (max-width: 767px) {
+	.box-masonry {
+		text-align: center;
+	}
+	.box-masonry .box-masonry-image {
+		padding: 2rem .5rem;
+	}
+}

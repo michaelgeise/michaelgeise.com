@@ -364,9 +364,15 @@ function waypointsRefresh() {
         }
     });
 
+
     //loading screen
 	$(window).load(function(){
     	$('#cover').fadeOut(1000);
 	})
+	setTimeout(
+	  function() 
+	  {
+	    $('#cover').fadeOut(1000);
+	 }, 2000);
 
 
