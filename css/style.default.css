@@ -345,6 +345,11 @@ SERVICES
     text-align: center;
     text-shadow: 5px 5px 0 #f3f3f3;
 }
+@media (max-width: 767px) {
+  .value-icon {
+    text-align: left;
+  }
+}
 #value .row .value-icon {
   -webkit-transition: color 0.2s ease-out;
   -moz-transition: color 0.2s ease-out;
