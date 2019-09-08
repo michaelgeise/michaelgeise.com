@@ -34,9 +34,9 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Theme stylesheet -->
-	<link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
-	<!-- <link href="css/style.min.css" rel="stylesheet" id="theme-stylesheet">
- -->
+	<!-- <link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet"> -->
+	<link href="css/style.min.css" rel="stylesheet" id="theme-stylesheet">
+ 
 	<!-- CSS Animations -->
 	<link href="css/animate.css" rel="stylesheet">
 
