@@ -199,7 +199,7 @@ _________________________________________________________ -->
 							</div>
 						</div>
 						<div class="col-sm-9 col-lg-8">
-							<h3 class="heading">Value of Soft Skills</h3>
+							<h3 class="heading">Soft Skills</h3>
 							<p>Soft skills and communication keep teams running and stakeholders happy. Leveraging the <a href="https://www.discprofile.com/what-is-disc/overview/" target="_blank" title="DISC explanation">DISC System</a> is the biggest contributor to my understanding of the people around me.</p>
 						</div>
 					</div>
