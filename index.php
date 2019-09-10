@@ -44,7 +44,7 @@
 	<link rel="shortcut icon" href="images/mg-favicon.png">
 
 	<!-- Mordernizr -->
-	<script async src="js/modernizr-2.6.2.min.js"></script>
+	<script src="js/modernizr-2.6.2.min.js"></script>
 
 	<!-- Responsivity for older IE -->
 	<!--[if lt IE 9]>
