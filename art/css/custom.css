@@ -3,6 +3,9 @@ h1,h2,h3,h4,h5 {
 	font-family: 'Lora', serif;
 	color: #666;
 }
+.modal-title {
+	text-transform: uppercase;
+}
 .modal video {
 	position: relative;
 	right: 0;

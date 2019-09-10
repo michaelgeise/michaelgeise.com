@@ -1,20 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--
+ created with Free Online Sitemap Generator www.xml-sitemaps.com 
+-->
 <url>
-  <loc>http://www.michaelgeise.com/</loc>
+<loc>https://michaelgeise.com/</loc>
+<lastmod>2019-09-10T21:40:27+00:00</lastmod>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>http://www.michaelgeise.com/la24/index.html</loc>
-  <lastmod>2016-12-31T19:09:32+00:00</lastmod>
+<loc>https://michaelgeise.com/woodlands/</loc>
+<lastmod>2018-06-17T19:17:41+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.michaelgeise.com/weight-loss/index.html</loc>
-  <lastmod>2016-12-31T19:09:41+00:00</lastmod>
+<loc>https://michaelgeise.com/art/</loc>
+<lastmod>2019-09-09T21:04:23+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://michaelgeise.com/gooseart/</loc>
+<lastmod>2018-08-15T01:19:05+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://michaelgeise.com/dream/</loc>
+<lastmod>2018-05-20T19:49:48+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://michaelgeise.com/monster/</loc>
+<lastmod>2017-09-12T03:06:28+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://michaelgeise.com/lines</loc>
+<lastmod>2019-09-10T21:40:27+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 </urlset>
