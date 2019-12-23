@@ -292,7 +292,7 @@ _________________________________________________________ -->
 			<!-- *** CONTACT ***
 	_________________________________________________________ -->
 
-			<section class="section thanks" id="contact" data-animate="bounceIn">
+			<section class="section thanks" id="contact">
 				<div class="container">
 					<div class="col-md-12">
 
@@ -322,7 +322,7 @@ _________________________________________________________ -->
 			</div>
 			<!-- *** parrallax divider END *** -->
 
-			<section class="section thanks" id="bonus" data-animate="bounceIn">
+			<section class="section thanks" id="bonus">
 				<div class="container">
 					<div class="col-md-12">
 
