@@ -59,8 +59,8 @@ UNIVERSAL SECTION STYLES
   position: relative;
   padding-top: 60px;
   padding-bottom: 60px;
-  text-align: center;
-}
+/*  text-align: center;
+*/}
 .section:before,
 .section:after {
   content: " ";
@@ -148,8 +148,8 @@ UNIVERSAL SECTION STYLES
 }
 
 .text-parallax {
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+  padding-top: 5px;
+  padding-bottom: 0;
   -webkit-backface-visibility: hidden;
 }
 .text-parallax.parallax-bg {
@@ -318,7 +318,7 @@ SERVICES
 
 */
 #resume {
-  background: #2a4672;
+  /*background: #2a4672;*/
 }
 
 .services .icon {
@@ -1307,12 +1307,12 @@ body {
   background-color: #ffffff;
 }
 a {
-  color: #6bb446;
+  color: #004ec7;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #348e7b;
+  color: #428cff;
   text-decoration: underline;
 }
 a:focus {
@@ -2039,16 +2039,14 @@ a.list-group-item.active > .badge,
   animation: compshow 10s ease infinite;
 }
 
-.bonus {
-  background: #575757;
-  color: #ffffff;
-  padding: 5vh 15px;
-  margin-top: 60px;
+#bonus ul {    
+  list-style-type: none;
 }
-
-.bonus .fa {
-  font-size: 60px;
-  text-shadow: 5px 5px 0 #3c3c3c;
+#bonus ul li {
+  margin: 10px 0;
+  width: 48%;
+  display: inline-block;
+  min-width: 300px;
 }
 
 #cover {

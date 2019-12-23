@@ -21,7 +21,7 @@
 
 	<title>Michael Geise | Philadelphia-based Digital Product Designer </title>
 
-	<meta name="description" content="I am a Philadelphia-based technology enthusiast with a passion for design. I have experience in front-end development, UI/UX design, and digital marketing.">
+	<meta name="description" content="I am a Philadelphia-based technology enthusiast with a passion for design and a decade of experience in design, front-end development, and digital marketing.">
 	<meta name="author" content="Michael Geise">
 
 	<meta name="keywords" content="">
@@ -34,8 +34,8 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Theme stylesheet -->
-	<!-- <link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet"> -->
-	<link href="css/style.min.css" rel="stylesheet" id="theme-stylesheet">
+<!-- 	<link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+ -->	<link href="css/style.min.css" rel="stylesheet" id="theme-stylesheet">
  
 	<!-- CSS Animations -->
 	<link href="css/animate.css" rel="stylesheet">
@@ -148,7 +148,7 @@ _________________________________________________________ -->
 			<section class="section" id="value">
 				<div class="container">
 					<div class="row" data-animate="fadeInDown">
-						<div class="col-sm-12 col-lg-10 col-lg-offset-1">
+						<div class="col-sm-12">
 
 							<div class="mb20">
 								<h2 class="title" data-animate="fadeInUp">Value</h2>
@@ -219,53 +219,60 @@ _________________________________________________________ -->
 
 			<!-- *** SERVICES ***
 	_________________________________________________________ -->
-			<section class="section text-gradient" id="resume">
+			<section class="section" id="resume">
 				<div class="container">
 					<div class="col-md-12">
 						<h2 class="title" data-animate="fadeInDown">Resume</h2>
+						<p class="lead" data-animate="fadeInUp">Please contact me for my complete resume or work samples.</p>
 
-						<div class="row services">
-
-							<div class="col-md-4" data-animate="fadeInUp">
-								<div class="icon"><i class="fas fa-user-tie"></i>
+						<div class="row" data-animate="fadeInUp">
+							<div class="col-sm-3 col-lg-2 col-lg-offset-1">
+								<div class="value-icon"><i class="fas fa-user-tie"></i>
 								</div>
+							</div>
+							<div class="col-sm-9 col-lg-8">
 								<h3 class="heading">Experience</h3>
-								<p>UX / Product Design Consultant @ Chariot Solutions
-								<br>February 2019 - Present</p>
-								<p>SR. UI/UX Designer @ GlobalFit
-								<br>May 2016 - February 2019</p>
-								<p>Digital Marketing Manager @ GlobalFit
-								<br>May 2013 - May 2016</p>
-								<p>Marketing Coordinator @ H-B Instrument
-								<br>September 2011 - May 2013</p>
+								<h4>UX / Product Design Consultant @ Chariot Solutions</h4>
+								<small>February 2019 - Present</small>
+								<h4>SR. UI/UX Designer @ GlobalFit</h4>
+								<small>May 2016 - February 2019</small>
+								<h4>Digital Marketing Manager @ GlobalFit</h4>
+								<small>May 2013 - May 2016</small>
+								<h4>Marketing Coordinator @ H-B Instrument</h4>
+								<small>September 2011 - May 2013</small>
 							</div>
-
-							<div class="col-md-4" data-animate="fadeInUp">
-								<div class="icon"><i class="fas fa-object-group"></i>
+						</div>
+						<div class="row" data-animate="fadeInUp">
+							<div class="col-sm-3 col-lg-2 col-lg-offset-1">
+								<div class="value-icon"><i class="fas fa-object-group"></i>
 								</div>
-								<h3 class="heading">Relevant Skills</h3>
+							</div>
+							<div class="col-sm-9 col-lg-8">
+								<h3 class="heading">Specialties, Skills, &amp; Tools</h3>
 								<h4>Design</h4>
-								<p>Mockups & Wireframes | Prototyping | UX Research</p>
+								<small>Product Design | Responsive & Adaptive Design | User Research | Usability Testing | Mockups & Wireframes | Prototyping & Animation | Information Architecture | Workshops | Data Analysis</small>
 								<h4>Development</h4>
-								<p>HTML5 & CSS3 | JavaScript & jQuery | Bootstrap | Git | PHP & MVC</p>
+								<small>HTML5 & CSS3 | JavaScript & jQuery | Bootstrap | Git</small>
 								<h4>Tools</h4>
-								<p>Adobe Creative Cloud | Sketch | Figma | Miro | Google Analytics | HubSpot</p>
+								<small>Adobe Creative Cloud | Sketch | Figma | Miro | Google Analytics | HubSpot</small>
 							</div>
-
-							<div class="col-md-4" data-animate="fadeInUp">
-								<div class="icon"><i class="fas fa-university"></i> 
+						</div>
+						<div class="row" data-animate="fadeInUp">
+							<div class="col-sm-3 col-lg-2 col-lg-offset-1">
+								<div class="value-icon"><i class="fas fa-university"></i>
 								</div>
+							</div>
+							<div class="col-sm-9 col-lg-8">
 								<h3 class="heading">Education</h3>
 								<h4>College</h4>
-								<p>University of Pittsburgh, College of Business Administration
+								<small>University of Pittsburgh, College of Business Administration
 								<br>Major:  Marketing | Minor:  Studio Arts
-								<br>Graduation Date:  April 2010</p>
+								<br>Graduation Date:  April 2010</small>
 								<h4>Certifications &amp; Training</h4>
-								<p>The Interaction Design Foundation
+								<small>The Interaction Design Foundation
 								<br>Lunametrics Google Analytics Training
-								<br>Sandler Sales Training</p>
+								<br>Sandler Sales Training</small>
 							</div>
-
 						</div>
 					</div>
 					<!-- /.12 -->
@@ -288,24 +295,91 @@ _________________________________________________________ -->
 			<section class="section thanks" id="contact" data-animate="bounceIn">
 				<div class="container">
 					<div class="col-md-12">
-						<div class="row">
+
 							<h2 class="title" data-animate="fadeInDown">Contact</h2>
-							<img src="images/worksample.svg" alt="iPad with worksample" class="img-responsive">
-							<p class="lead" data-animate="fadeInUp">Thank you for your interest. Please contact me on LinkedIn to request work samples or my complete resume.</p>
-							<a href="https://www.linkedin.com/in/michael-geise-20875623/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-animate="fadeInUp">View LinkedIn Profile</a>
+
+							<div class="row" data-animate="fadeInUp">
+							<div class="col-sm-3 col-lg-2 col-lg-offset-1">
+								<div class="value-icon"><i class="fas fa-envelope"></i>
+								</div>
+							</div>
+							<div class="col-sm-9 col-lg-8">
+								<h3 class="heading">Thank You for Your Interest</h3>
+								<p>Please contact me on LinkedIn to request work samples or my complete resume.</p>
+								<a href="https://www.linkedin.com/in/michael-geise-20875623/" target="_blank" rel="noopener noreferrer" data-animate="fadeInUp"><i class="fas fa-external-link-square-alt"></i> View LinkedIn Profile</a>
+							</div>
 						</div>
 					</div>
+					<!-- /.12 -->
+				</div>
+				<!-- /.container -->
+			</section>
+			<!-- /.section -->
+			
+			<!-- *** parrallax divider ***
+	_________________________________________________________ -->
+			<div class="section text-parallax parallax-bg">
+			</div>
+			<!-- *** parrallax divider END *** -->
+
+			<section class="section thanks" id="bonus" data-animate="bounceIn">
+				<div class="container">
 					<div class="col-md-12">
-						<div class="row">
-							<div class="col-md-12 bonus">
-								<i class="fa fa-rocket"></i>
-								<h3>Bonus Points</h3>
+
+						<h2 class="title" data-animate="fadeInDown">Bonus Points</h2>
+
+						<div class="row" data-animate="fadeInUp">
+							<div class="col-sm-3 col-lg-2 col-lg-offset-1">
+								<div class="value-icon"><i class="fas fa-hiking"></i>
+								</div>
+							</div>
+							<div class="col-sm-9 col-lg-8">
+								<h3 class="heading">Interests</h3>
 								<p>When I'm not staring at a computer screen, I like following The Phillies, painting, listening to music, and hiking.</p>
 							</div>
 						</div>
-
+						<div class="row" data-animate="fadeInUp">
+							<div class="col-sm-3 col-lg-2 col-lg-offset-1">
+								<div class="value-icon"><i class="fas fa-rocket"></i>
+								</div>
+							</div>
+							<div class="col-sm-9 col-lg-8">
+								<h3 class="heading">More to Explore</h3>
+								<p>Here are some more of my projects:</p>
+								<ul>
+									<li>
+										<a href="woodlands/" title="Interactive Cemetary Guide" target="_blank"><i class="fas fa-external-link-square-alt"></i>
+Woodlands</a>
+									</li>
+									<li>
+										<a href="art/" title="Michaels Studio Art" target="_blank"><i class="fas fa-external-link-square-alt"></i>
+Art</a>
+									</li>
+									<li>
+										<a href="http://goosemonger.com" title="Goosemonger - The Best Kind of Monger" target="_blank"><i class="fas fa-external-link-square-alt"></i>
+Goosemonger</a>
+									</li>
+									<li>
+										<a href="gooseart/" title="Are by Goosemonger" target="_blank"><i class="fas fa-external-link-square-alt"></i>
+Gooseart</a>
+									</li>
+									<li>
+										<a href="dream/" title="Front-End Demo" target="_blank"><i class="fas fa-external-link-square-alt"></i>
+Dream</a>
+									</li>
+									<li>
+										<a href="monster/" title="Make a monster with Vue.js" target="_blank"><i class="fas fa-external-link-square-alt"></i>
+Monster Maker</a>
+									</li>
+									<li>
+										<a href="lines.php" title="Which line is longer?" target="_blank"><i class="fas fa-external-link-square-alt"></i>
+Lines</a>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
-					<!-- /.12 -->
+
 				</div>
 				<!-- /.container -->
 			</section>
@@ -320,45 +394,11 @@ _________________________________________________________ -->
 
 		<footer class="section" id="footer">
 			<div class="container">
-
-				<div class="row">
-					<div class="col-sm-12">
-						<p>More to explore:</p>
-					</div>
-				</div>
-				<div class="row" data-animate="fadeInDown">
-					<div class="col-sm-12">
-						<ul>
-							<li>
-								<a href="woodlands/" title="Interactive Cemetary Guide">Woodlands</a>
-							</li>
-							<li>
-								<a href="art/" title="Michaels Studio Art">Art</a>
-							</li>
-							<li>
-								<a href="http://goosemonger.com" title="Goosemonger - The Best Kind of Monger">Goosemonger</a>
-							</li>
-							<li>
-								<a href="gooseart/" title="Are by Goosemonger">Gooseart</a>
-							</li>
-							<li>
-								<a href="dream/" title="Front-End Demo">Dream</a>
-							</li>
-							<li>
-								<a href="monster/" title="Make a monster with Vue.js">Monster Maker</a>
-							</li>
-							<li>
-								<a href="lines.php" title="Which line is longer?">Lines</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-
 				<div class="row" data-animate="fadeInDown">
 					<div class="col-sm-6">
 						<p class="social"><a href="https://www.linkedin.com/in/michael-geise-20875623/" target="_blank" rel="noopener noreferrer" class="external linkedin"><i class="fab fa-linkedin"></i></a></p>
 					</div>
-					<div class="col-sm-6">
+					<div class="col-sm-6 text-right">
 						<p>&copy; Michael Geise <?php echo date("Y"); ?>  all rights reserved.</p>
 					</div>
 				</div>
