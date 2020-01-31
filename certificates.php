@@ -19,9 +19,9 @@
 	<meta name="googlebot" content="index,follow,snippet,archive">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Michael Geise | Lines </title>
+	<title>Michael Geise | Certificates </title>
 
-	<meta name="description" content="Find out which line is longer">
+	<meta name="description" content="UX & Design Certiicates">
 	<meta name="author" content="Michael Geise">
 
 	<meta name="keywords" content="">
@@ -39,10 +39,8 @@
 	<!-- Custom stylesheet - for your changes -->
 	<link href="css/custom.css" rel="stylesheet">
 	<style type="text/css">
-		.answer {
-			font-weight: bold;
-			color: #2a4672;
-			margin-bottom: 30px;
+		.full-content {
+			min-height: calc(100vh - 172px);
 		}
 	</style>
 	<!-- owl carousel css -->
@@ -117,21 +115,64 @@ _________________________________________________________ -->
 			<!-- *** question ***
 	_________________________________________________________ -->
 
-			<section class="section contact" id="question" data-animate="bounceIn">
+			<section class="section full-content" data-animate="bounceIn">
 				<div class="container">
 					<div class="col-md-12">
 
 
-						<h1 class="title">Müller-Lyer Illusion</h1>
+						<h1 class="title">Interaction Design Foundation Certificates</h1>
 
 						<div class="row">
-							<div class="col-sm-6 col-sm-offset-3 col-xs-12">
-								<h2>Which line is longer?</h2>
-								<img src="images/lines1.png" class="img-responsive" align="Lines Question Illusion" />
-								<p>a)  line 1</p>
-								<p>b)  line 2</p>
-								<p>c)  they’re the same length</p>
-								<p> Find the answer below</p>
+							<div class="col-sm-6 col-xs-12">
+								<p>Source: <a href="https://www.interaction-design.org/" target="_blank" title="view accrediting organization">interaction-design.org</a></p>
+								<ul>
+									<li>
+										<a href="idf-certificates/course-certificate-2.jpg" target="_blank" title="view certificate">Information Visualization: Getting Dashboards Right</a>
+									</li>
+									<li>
+										<a href="idf-certificates/course-certificate-5.jpg" target="_blank" title="view certificate">Human-Computer Interaction - HCI</a>
+									</li>
+									<li>
+										<a href="idf-certificates/course-certificate-33.jpg" target="_blank" title="view certificate">Mobile User Experience (UX) Design</a>
+									</li>
+									<li>
+										<a href="idf-certificates/course-certificate-34.jpg" target="_blank" title="view certificate">Information Visualization</a>
+									</li>
+									<li>
+										<a href="idf-certificates/course-certificate-36.jpg" target="_blank" title="view certificate">How to Become a Freelance Designer</a>
+									</li>
+									<li>
+										<a href="idf-certificates/course-certificate-37.jpg" target="_blank" title="view certificate">Design Thinking: The Beginner's Guide</a>
+									</li>
+									<li>
+										<a href="idf-certificates/course-certificate-38.jpg" target="_blank" title="view certificate">Gamification – Creating Addictive User Experiences</a>
+									</li>
+									<li>
+										<a href="idf-certificates/course-certificate-41.jpg" target="_blank" title="view certificate">Emotional Design — How to Make Products People Will Love</a>
+									</li>
+									<li>
+										<a href="idf-certificates/course-certificate-42.jpg" target="_blank" title="view certificate">UI Design Patterns for Successful Software</a>
+									</li>
+									<li>
+										<a href="idf-certificates/course-certificate-46.jpg" target="_blank" title="view certificate">User Experience: The Beginner’s Guide</a>
+									</li>
+									<li>
+										<a href="idf-certificates/course-certificate-48.jpg" target="_blank" title="view certificate">User Research – Methods and Best Practices</a>
+									</li>
+									<li>
+										<a href="idf-certificates/course-certificate-49.jpg" target="_blank" title="view certificate">UX Management: Strategy and Tactics</a>
+									</li>
+									<li>
+										<a href="idf-certificates/course-certificate-50.jpg" target="_blank" title="view certificate">Become a UX Designer from Scratch</a>
+									</li>
+									<li>
+										<a href="idf-certificates/course-certificate-51.jpg" target="_blank" title="view certificate">Accessibility: How to Design for All</a>
+									</li>
+
+
+
+								</ul>
+								<a href="/" title="home" class="btn btn-primary btn-lg">Go Home</a>
 							</div>
 						</div>
 					</div>
@@ -142,44 +183,6 @@ _________________________________________________________ -->
 			<!-- /.section -->
 
 
-
-		<!-- *** question END *** -->
-
-
-				<!-- *** parrallax divider ***
-	_________________________________________________________ -->
-			<div class="section text-parallax parallax-bg">
-			</div>
-			<!-- *** parrallax divider END *** -->
-			<section class="section contact" id="answer" data-animate="bounceIn">
-				<div class="container">
-					<div class="col-md-12">
-						<div class="row">
-							<div class="col-sm-6 col-sm-offset-3 col-xs-12">
-								<h2>Answer</h2>
-								<img src="images/lines2.png" class="img-responsive" alt="Lines Answer Illusion" />
-								<p>a)  line 1</p>
-								<p>b)  line 2</p>
-								<p class="answer">Answer: c)  they’re the same length</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-6 col-sm-offset-3 col-xs-12">
-								<p><a href="https://en.wikipedia.org/wiki/M%C3%BCller-Lyer_illusion" target="_blank" title="Wikipedia knows all">Learn more</a> about the Müller-Lyer Illusion</p>
-								<a href="/" title="view michaelgeise.com" class="btn btn-primary btn-lg">About Michael</a>
-							</div>
-						</div>
-
-					</div>
-					<!-- /.12 -->
-				</div>
-				<!-- /.container -->
-			</section>
-			<!-- /.section -->
-
-		</main>
-
-		<!-- *** answer END *** -->
 
 		<!-- *** FOOTER ***
 _________________________________________________________ -->

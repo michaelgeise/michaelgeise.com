@@ -168,7 +168,7 @@ _________________________________________________________ -->
 							<p>Product design requires an understanding of (1) business goals, (2) user empathy, and (3) technical feasibility. I have:</p>
 							<ol>
 								<li>A business degree &amp; years of marketing experience</li>
-								<li>Dozens of UX certificates &amp; years of leading design</li>
+								<li><a href="/certificates" title="view certificates">Dozens of UX certificates</a> &amp; years of leading design</li>
 								<li>Years of front-end development experience working closely with developers</li>
 							</ol>
 						</div>
