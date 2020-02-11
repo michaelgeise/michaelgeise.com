@@ -128,7 +128,7 @@ _________________________________________________________ -->
 							<div class="col-sm-6 col-md-5">
 								<h1 data-animate="fadeInDown">Michael Geise</h1>
 								<h2 data-animate="slideInUp">Product Designer</h2>
-								<h4 data-animate="slideInUp">I am a Philadelphia-based technology enthusiast with a passion for design. I have the vision to manage a project and the technical skills to deliver it, from wireframes to code.</h4>
+								<h4 data-animate="slideInUp">I am a Philadelphia-based technology enthusiast with a passion for design. I have the vision to manage a project and the technical skills to deliver it, from concept to code.</h4>
 							</div>
 						</div>
 					</div>
