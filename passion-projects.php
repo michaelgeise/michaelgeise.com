@@ -26,7 +26,7 @@
             <p class="card-text">Showcasing fine art I made</p>
         </div>
         <div class="card-footer">
-          <a href="https://michaelgeise.com/woodlands/" target="_blank" class="btn btn-outline-primary btn-sm btn-block"> <i class="fas fa-external-link-alt"></i> Check it out</a>
+          <a href="https://michaelgeise.com/art/" target="_blank" class="btn btn-outline-primary btn-sm btn-block"> <i class="fas fa-external-link-alt"></i> Check it out</a>
         </div>
 
     </div>
