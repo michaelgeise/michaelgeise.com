@@ -1,2 +1,0 @@
-# michaelgeise.com
-portfolio site

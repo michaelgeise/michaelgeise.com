@@ -1,37 +1,41 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Michael Geise | Philadelphia-based Digital Product Designer </title>
+        <meta name="description" content="I am a Philadelphia-based technology enthusiast with a passion for design and a decade of experience in design, front-end development, and digital marketing.">
+        <meta name="author" content="Michael Geise">
+        <!-- Favicon-->
+        <link rel="icon" type="image/png" href="images/mg-favicon.png">
+        <link rel="mask-icon" href="images/mg-logo.svg" color="blue">
+        <link rel="icon" type="image/svg+xml" href="images/mg-logo.svg">
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+        
+        <!-- Bootstrap CSS-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <!-- Custom CSS -->
+        <link href="css/style.css" rel="stylesheet" />
+        <!-- CSS Animations -->
+        <link href="css/animate.min.css" rel="stylesheet">
+        <!-- Google Analytics -->
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-<head>
-	<!-- Google Tag Manager -->
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-N2PWQKT');</script>
-	<!-- End Google Tag Manager -->
-	<meta charset="utf-8">
-	<meta name="robots" content="all,follow">
-	<meta name="googlebot" content="index,follow,snippet,archive">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+        ga('create', 'UA-12293005-1', 'auto');
+        ga('send', 'pageview');
 
-	<title>404 Page Not Found</title>
-
-	<meta name="description" content="These aren't the droids you're looking for.">
-	<meta name="author" content="Michael Geise">
-
-	<meta name="keywords" content="">
-
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
-
-
-	<!-- Bootstrap and Font Awesome css -->
-	<link href="css/font-awesome.css" rel="stylesheet">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+      </script>
+      <!-- end Google Analytics -->
 	<style type="text/css">
 		main {
 			background: url(images/404-hero.jpg);
@@ -42,43 +46,10 @@
 			color: #ffffff;
 		}
 	</style>
-	<!-- Theme stylesheet -->
-	<link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
-
-	<!-- Custom stylesheet - for your changes -->
-	<link href="css/custom.css" rel="stylesheet">
-
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="images/mg-favicon.png">
-
-	<!-- Mordernizr -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-
-	<!-- Responsivity for older IE -->
-	<!--[if lt IE 9]>
-		<script src="js/respond.min.js"></script>
-	<![endif]-->
-	<!-- Google Analytics -->
-	  <script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		ga('create', 'UA-12293005-1', 'auto');
-		ga('send', 'pageview');
-
-	  </script>
-	  <!-- end Google Analytics -->
 
 </head>
 
 <body>
-
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N2PWQKT"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
 	
 <main class="text-center">
 	<h1>404 Page Not Found</h1>
@@ -86,10 +57,25 @@
 	<a href="/" class="btn btn-primary btn-lg">Go Home</a>
 </main>
 
-	<!-- js base -->
-	<script src="js/jquery-1.11.0.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-
+        <!-- Footer / Copyright Section-->
+        <footer class="copyright py-4 text-center">
+            <div class="container"><small>&copy; Michael Geise <?php echo date("Y"); ?>  all rights reserved.</small></div>
+        </footer>
+        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+        <div class="scroll-to-top d-lg-none position-fixed">
+            <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+        
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        
+        <script src="js/jquery.waypoints.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
 
 
 </body>

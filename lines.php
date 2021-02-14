@@ -1,115 +1,67 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Michael Geise | Philadelphia-based Digital Product Designer </title>
+        <meta name="description" content="I am a Philadelphia-based technology enthusiast with a passion for design and a decade of experience in design, front-end development, and digital marketing.">
+        <meta name="author" content="Michael Geise">
+        <!-- Favicon-->
+        <link rel="icon" type="image/png" href="images/mg-favicon.png">
+        <link rel="mask-icon" href="images/mg-logo.svg" color="blue">
+        <link rel="icon" type="image/svg+xml" href="images/mg-logo.svg">
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+        
+        <!-- Bootstrap CSS-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <!-- Custom CSS -->
+        <link href="css/style.css" rel="stylesheet" />
+        <!-- CSS Animations -->
+        <link href="css/animate.min.css" rel="stylesheet">
+        <!-- Google Analytics -->
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-<head>
-	<!-- Google Tag Manager -->
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-N2PWQKT');</script>
-	<!-- End Google Tag Manager -->
-	<meta charset="utf-8">
-	<meta name="robots" content="all,follow">
-	<meta name="googlebot" content="index,follow,snippet,archive">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+        ga('create', 'UA-12293005-1', 'auto');
+        ga('send', 'pageview');
 
-	<title>Michael Geise | Lines </title>
-
-	<meta name="description" content="Find out which line is longer">
-	<meta name="author" content="Michael Geise">
-
-	<meta name="keywords" content="">
-
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
-
-
-	<!-- Bootstrap and Font Awesome css -->
-	<script src="https://kit.fontawesome.com/caed5590da.js"></script>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-
-	<!-- Theme stylesheet -->
-	<link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
-
-	<!-- Custom stylesheet - for your changes -->
-	<link href="css/custom.css" rel="stylesheet">
+      </script>
+      <!-- end Google Analytics -->
 	<style type="text/css">
+		#question {
+			margin-top: 3rem;
+		}
 		.answer {
 			font-weight: bold;
-			color: #2a4672;
 			margin-bottom: 30px;
 		}
 	</style>
-	<!-- owl carousel css -->
-
-	<link href="css/owl.carousel.css" rel="stylesheet">
-	<link href="css/owl.theme.css" rel="stylesheet">
-
-	<!-- CSS Animations -->
-	<link href="css/animate.css" rel="stylesheet">
-
-	<!-- Sweet Alerts -->
-	<link rel="stylesheet" type="text/css" href="css/sweetalert2.min.css">
-
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="images/mg-favicon.png">
-
-	<!-- Mordernizr -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-
-	<!-- Responsivity for older IE -->
-	<!--[if lt IE 9]>
-		<script src="js/respond.min.js"></script>
-	<![endif]-->
-	<!-- Google Analytics -->
-	  <script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		ga('create', 'UA-12293005-1', 'auto');
-		ga('send', 'pageview');
-
-	  </script>
-	  <!-- end Google Analytics -->
 
 </head>
 
-<body data-spy="scroll" data-target="#navigation" data-offset="120">
+<body>
 
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N2PWQKT"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
-	
-	<div id="cover">
-		<i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
-		<span class="sr-only">Loading...</span>
-	</div>
+	<!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-white text-uppercase fixed-top" id="mainNav" data-animate="fadeInDown">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="images/mg-logo.svg" class="img-responsive" alt="MG logo" title="Go to intro top"></a>
 
-	<!-- *** NAVBAR ***
-_________________________________________________________ -->
-	<header>
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
-			<div class="container">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="/" title="View michaelgeise.com"><img src="images/mg-logo.png" class="img-responsive" alt="MG logo"></a>
-				</div>
-			</div>
-		</nav>
-	</header>
-	<!-- /#navbar -->
-
-	<!-- *** NAVBAR END *** -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1 mx-3"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="/">Home</a></li>
+                </ul>
+            </div>
+        </nav>
 
 
-	<div id="all">
 			<main>
 			
 			
@@ -117,7 +69,7 @@ _________________________________________________________ -->
 			<!-- *** question ***
 	_________________________________________________________ -->
 
-			<section class="section contact" id="question" data-animate="bounceIn">
+			<section class="page-section" id="question" data-animate="fadeIn">
 				<div class="container">
 					<div class="col-md-12">
 
@@ -146,12 +98,7 @@ _________________________________________________________ -->
 		<!-- *** question END *** -->
 
 
-				<!-- *** parrallax divider ***
-	_________________________________________________________ -->
-			<div class="section text-parallax parallax-bg">
-			</div>
-			<!-- *** parrallax divider END *** -->
-			<section class="section contact" id="answer" data-animate="bounceIn">
+			<section class="page-section" id="answer" data-animate="fadeIn">
 				<div class="container">
 					<div class="col-md-12">
 						<div class="row">
@@ -180,67 +127,25 @@ _________________________________________________________ -->
 		</main>
 
 		<!-- *** answer END *** -->
+        <!-- Footer / Copyright Section-->
+        <footer class="copyright py-4 text-center">
+            <div class="container"><small>&copy; Michael Geise <?php echo date("Y"); ?>  all rights reserved.</small></div>
+        </footer>
+        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+        <div class="scroll-to-top d-lg-none position-fixed">
+            <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+        
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        
+        <script src="js/jquery.waypoints.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
 
-		<!-- *** FOOTER ***
-_________________________________________________________ -->
-
-		<footer class="section" id="footer">
-			<div class="container">
-				<div class="row" data-animate="fadeInDown">
-					<div class="col-sm-6">
-						<p class="social"><a href="https://www.linkedin.com/in/michael-geise-20875623/" target="_blank" rel="noopener noreferrer" class="external linkedin"><i class="fab fa-linkedin"></i></a></p>
-					</div>
-					<div class="col-sm-6 text-right">
-						<p>&copy; Michael Geise <?php echo date("Y"); ?>  all rights reserved.</p>
-					</div>
-				</div>
-
-			</div>
-			<!-- /.container -->
-		</footer>
-		<!-- /.section -->
-
-		<!-- *** FOOTER END *** -->
-
-
-
-	</div>
-	<!-- /#all -->
-
-	<!-- #### JAVASCRIPT FILES ### -->
-
-	<!-- js base -->
-	<script src="js/jquery-1.11.0.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-
-	<!-- waypoints for scroll spy -->
-	<script src="js/waypoints.min.js"></script>
-
-	<!-- masonry layout -->
-	<script src="js/masonry.pkgd.min.js"></script>
-
-	<!-- owl carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-
-
-	<!-- jQuery scroll to -->
-	<script src="js/jquery.scrollTo.min.js"></script>
-
-	<!-- jQuery video background -->
-	<script src="js/jquery.vide.js"></script>
-
-
-	<!-- jQuery parallax -->
-	<script src="js/jquery.parallax-1.1.3.js"></script>
-
-	<!-- Sweet Alerts -->
-	<script src="js/sweetalert2.min.js"></script>
-
-	<!-- main js file -->
-
-	<script src="js/front.js"></script>
-
-
-</body>
-
+    </body>
 </html>

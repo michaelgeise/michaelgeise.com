@@ -25,13 +25,13 @@ $(function () {
     // ------------------------------------------------------ //
     // Main slider
     // ------------------------------------------------------ //
-    $('#main-slider').owlCarousel({
-        items: 1,
-        nav: false,
-        dots: true,
-        autoplay: true,
-        autoplayHoverPause: true
-    });
+    // $('#main-slider').owlCarousel({
+    //     items: 1,
+    //     nav: false,
+    //     dots: true,
+    //     autoplay: true,
+    //     autoplayHoverPause: true
+    // });
 
 });
 
