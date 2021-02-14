@@ -97,7 +97,7 @@
                                         <li>I started with a discovery workshop to understand the business goals and user needs</li>
                                         <li>I used personas and wireflows to demonstrate the site structure and user flows</li>
                                         <li>We created hi-fi mockups and broke them into components in Figma</li>
-                                        <li>I then documented the components and guidelines in Storybook</li>
+                                        <li>We then documented the components and guidelines in Storybook</li>
                                     </ul>
                                     <h3>Complexities</h3>
                                     <ul class="mb-5">
