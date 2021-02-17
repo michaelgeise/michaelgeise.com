@@ -47,7 +47,7 @@
                                     <ul class="mb-5">
                                         <li>A fully functioning responsive web app patient portal to supplement their EMR product</li>
                                     </ul>
-                                    <button class="btn btn-block btn-outline-primary d-block d-sm-none" type="button" data-dismiss="modal" aria-label="Close">Close</button>
+                                    <button class="btn btn-block btn-secondary d-block d-sm-none" type="button" data-dismiss="modal" aria-label="Close">Close</button>
                                 </div>
                             </div>
                         </div>
@@ -107,7 +107,7 @@
                                     	<li>Information architecture</li>
                                         <li>The foundation of a design system</li>
                                     </ul>
-                                    <button class="btn btn-block btn-outline-primary d-block d-sm-none" type="button" data-dismiss="modal" aria-label="Close">Close</button>
+                                    <button class="btn btn-block btn-secondary d-block d-sm-none" type="button" data-dismiss="modal" aria-label="Close">Close</button>
                                 </div>
                             </div>
                         </div>
@@ -166,7 +166,7 @@
                                     <ul class="mb-5">
                                         <li>The clickable prototype was confirmed to be usable and desirable</li>
                                     </ul>
-                                    <button class="btn btn-block btn-outline-primary d-block d-sm-none" type="button" data-dismiss="modal" aria-label="Close">Close</button>
+                                    <button class="btn btn-block btn-secondary d-block d-sm-none" type="button" data-dismiss="modal" aria-label="Close">Close</button>
                                 </div>
                             </div>
                         </div>
@@ -226,7 +226,7 @@
                                         <li>Two native mobile apps that interact with the landmark beacons in the park</li>
                                         <li>The apps includes trail tours to guide users around park paths</li>
                                     </ul>
-                                    <button class="btn btn-block btn-outline-primary d-block d-sm-none" type="button" data-dismiss="modal" aria-label="Close">Close</button>
+                                    <button class="btn btn-block btn-secondary d-block d-sm-none" type="button" data-dismiss="modal" aria-label="Close">Close</button>
                                 </div>
                             </div>
                         </div>
@@ -285,7 +285,7 @@
                                         <li>A responsive web app with 11 policy types and templates to easily onboard new products</li>
                                         <li>It included employee admin sections for policy adjudication and management</li>
                                     </ul>
-                                    <button class="btn btn-block btn-outline-primary d-block d-sm-none" type="button" data-dismiss="modal" aria-label="Close">Close</button>
+                                    <button class="btn btn-block btn-secondary d-block d-sm-none" type="button" data-dismiss="modal" aria-label="Close">Close</button>
                                 </div>
                             </div>
                         </div>
@@ -344,7 +344,7 @@
                                         <li>A responsive web app to replace their MVP</li>
                                         <li>The research proved that their MVP had many unnecessary features and lacked more desired features</li>
                                     </ul>
-                                    <button class="btn btn-block btn-outline-primary d-block d-sm-none" type="button" data-dismiss="modal" aria-label="Close">Close</button>
+                                    <button class="btn btn-block btn-secondary d-block d-sm-none" type="button" data-dismiss="modal" aria-label="Close">Close</button>
                                 </div>
                             </div>
                         </div>
@@ -400,7 +400,7 @@
                                     <ul class="mb-5">
                                         <li>A summary of top insights, and validated or disproved assumptions</li>
                                     </ul>
-                                    <button class="btn btn-block btn-outline-primary d-block d-sm-none" type="button" data-dismiss="modal" aria-label="Close">Close</button>
+                                    <button class="btn btn-block btn-secondary d-block d-sm-none" type="button" data-dismiss="modal" aria-label="Close">Close</button>
                                 </div>
                             </div>
                         </div>
@@ -463,7 +463,7 @@
                                         <li>Two native mobile apps and a web app administration tool with three different admin types and permissions</li>
                                         <li>In 2019 the largest health insurer in the Philadelphia area became a client and offered this product to its population</li>
                                     </ul>
-                                    <button class="btn btn-block btn-outline-primary d-block d-sm-none" type="button" data-dismiss="modal" aria-label="Close">Close</button>
+                                    <button class="btn btn-block btn-secondary d-block d-sm-none" type="button" data-dismiss="modal" aria-label="Close">Close</button>
                                 </div>
                             </div>
                         </div>
