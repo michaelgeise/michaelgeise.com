@@ -24,6 +24,8 @@
         <link href="css/style.css" rel="stylesheet" />
         <!-- CSS Animations -->
         <link href="css/animate.min.css" rel="stylesheet">
+        <!-- Mordernizr -->
+        <script src="js/modernizr-2.8.3.js"></script>
         <!-- Google Analytics -->
       <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -89,18 +91,18 @@
                 <h2 class="page-section-heading text-uppercase mb-3">About</h2>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-md-8 mb-5">
+                    <div class="col-lg-8 mb-5">
                         <p class="masthead-subheading font-weight-light mb-0 mt-3">In college, I majored in business and got a minor in art. From Adobe Cloud and coding to analytics and business processes, I have always had a wide range of interests, which I believe is crucial to understanding the combination of art and science needed in product design.</p>
                         <p class="masthead-subheading font-weight-light mb-0 mt-3">I love keeping up with the newest product trends and will talk to you about the <a href="https://www.interaction-design.org/literature/topics/design-thinking" target="_blank" title="learn about Design Thinking">Design Thinking</a> process anytime.</p>
                         <p class="masthead-subheading font-weight-light mb-0 mt-3">I live in the suburbs of Philadelphia, and when I'm not making digital products, I create children's stories, follow local sports, and enjoy nature.</p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4">
                         <div class="card text-center">
                             <div class="card-body">
                                 <div class="linkedin-logo mt-5 mb-5">
                                     <i class="fab fa-linkedin-in"></i>
                                 </div>
-                                <h3 class="card-title mt-3 mb-3 h4">Contact me or check out my resume on LinkedIn.</h3>
+                                <h3 class="card-title mt-3 mb-3 h4">Contact me or check out my profile on LinkedIn.</h3>
                                 <a class="btn btn-xl btn-block btn-primary mt-3" href="https://www.linkedin.com/in/michael-geise-20875623/">
                                     <i class="fas fa-external-link-alt"></i>
                                     View profile
@@ -119,26 +121,26 @@
                 <h2 class="page-section-heading text-uppercase mb-3">Bonus</h2>
                 <!-- Bonus Section Content-->
                 <div class="row">
-                    <div class="col-md-12 mb-3">
+                    <div class="col-md-12 mb-5">
                         <p class="masthead-subheading font-weight-light mb-0 mt-3">Wow, you're still here?! Thanks for the interest, I'm happy to have you.</p>
                         <p class="masthead-subheading font-weight-light">Here are some of my side projects as well as some tools and resources I like.</p>
                     </div>
                 </div>
-                <h3 class="text-uppercase mt-3 mb-3">Passion Projects</h3>
+                <h3 class="text-uppercase mt-5 mb-3">Passion Projects</h3>
                 <?php include 'passion-projects.php';?>
                 
                     
-                <h3 class="text-uppercase mt-3 mb-3">Favorite Resources</h3>
+                <h3 class="text-uppercase mt-5 mb-3">Favorite Resources</h3>
                 <div class="row fav-links">
                     <div class="col-md-6">
-                        <p><a href="https://figma.com/" target="_blank" title="UI & Prototyping Tool" data-toggle="tooltip" data-placement="top"><i class="fas fa-external-link-alt"></i> Figma</a></p>
-                        <p><a href="https://miro.com/" target="_blank" title="Digital Whiteboard Tool" data-toggle="tooltip" data-placement="top"><i class="fas fa-external-link-alt"></i> Miro</a></p>
-                        <p><a href="https://accessible-colors.com/" target="_blank" title="Accessibility Tool" data-toggle="tooltip" data-placement="top"><i class="fas fa-external-link-alt"></i> Accessibe Colors</a></p>
+                        <p><a href="https://figma.com/" target="_blank" title="UI & prototyping tool" data-toggle="tooltip" data-placement="top"><i class="fas fa-external-link-alt"></i> Figma</a></p>
+                        <p><a href="https://miro.com/" target="_blank" title="Digital whiteboard tool" data-toggle="tooltip" data-placement="top"><i class="fas fa-external-link-alt"></i> Miro</a></p>
+                        <p><a href="https://accessible-colors.com/" target="_blank" title="Accessibility tool" data-toggle="tooltip" data-placement="top"><i class="fas fa-external-link-alt"></i> Accessibe Colors</a></p>
                     </div>
                     <div class="col-md-6">
-                        <p><a href="https://www.nngroup.com/" target="_blank" title="Nielsen Norman Group" data-toggle="tooltip" data-placement="top"><i class="fas fa-external-link-alt"></i> Nielsen Norman Group</a></p>
-                        <p><a href="https://www.interaction-design.org/" target="_blank" title="Interaction Design Foundation" data-toggle="tooltip" data-placement="top"><i class="fas fa-external-link-alt"></i> Interaction Design Foundation</a></p>
-                        <p><a href="https://www.producttalk.org/" target="_blank" title="Product Talk" data-toggle="tooltip" data-placement="top"><i class="fas fa-external-link-alt"></i> Product Talk</a></p>
+                        <p><a href="https://www.nngroup.com/" target="_blank" title="Research-based UX guidance" data-toggle="tooltip" data-placement="top"><i class="fas fa-external-link-alt"></i> Nielsen Norman Group</a></p>
+                        <p><a href="https://www.interaction-design.org/" target="_blank" title="Online UX design courses" data-toggle="tooltip" data-placement="top"><i class="fas fa-external-link-alt"></i> Interaction Design Foundation</a></p>
+                        <p><a href="https://www.producttalk.org/" target="_blank" title="Product blog and resource" data-toggle="tooltip" data-placement="top"><i class="fas fa-external-link-alt"></i> Product Talk</a></p>
                     </div>
 
                 </div>

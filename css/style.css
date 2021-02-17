@@ -66,6 +66,11 @@ body {
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
 }
+
+#mainNav.navbar-shrink {
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 10%);
+}
+
 a {
     color: #004EC7;
 }
@@ -84,6 +89,11 @@ a {
   font-size: 1.25rem;
 }
 
+.card {
+  box-shadow: 0 0 1rem 0 rgb(0 0 0 / 10%);
+  border: 0;
+}
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
@@ -97,20 +107,19 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .work-item {
-  border-bottom: 1px solid #bdbdbd;
   padding: 1.5rem 1rem 1rem;
   cursor: pointer;
   position: relative;
   top: 0;
-  transition: top ease 0.5s;
+  box-shadow: 0 0 1rem 0 rgb(0 0 0 / 10%);
+  border-radius: .25rem;
+  margin: 1rem 0;
+  transition: box-shadow ease .5s;
 }
 .work-item:hover {
-  top: -4px;
+  box-shadow: 0 0 2rem 0 rgb(0 0 0 / 20%);
 }
 
-.work-item:hover .work-item-title {
-  color: #004EC7;
-}
 .work-item-img-wrapper {
   width: 100px;
   height: 70px;
@@ -124,14 +133,14 @@ h1, h2, h3, h4, h5, h6,
   margin: 0 auto;
   display: block;
 }
-.work-item-time {
-  line-height: 2rem;
-}
 
 .work-item-title {
   font-size: 1.5rem;
-  line-height: 1.5rem;
-  transition: color ease 0.5s;
+  line-height: 2.5rem;
+  transition: color ease .5s;
+}
+.work-item:hover .work-item-title {
+  color: #004EC7;
 }
 
 @media (min-width: 992px) {
@@ -278,23 +287,15 @@ h1, h2, h3, h4, h5, h6,
   line-height: 2;
   margin: 0 auto;
 }
-@media (max-width: 767px) and (min-width: 576px) {
-  #bonus .card-group {
-      flex-flow: column wrap;
+
+@media (max-width: 992px) {
+  #bonus .card-deck>.card {
+    min-width: 323px; 
+    margin-bottom: 1rem;
   }
- #bonus .card-group>.card {
-      border-radius: .25rem;
-      margin-bottom: 15px;
-      border: 1px solid rgba(0,0,0,.125);
-  }
-  #bonus .card-img, #bonus .card-img-top, .card-group>.card:not(:last-child) {
-      border-top-left-radius: calc(.25rem - 1px);
-      border-top-right-radius: calc(.25rem - 1px);
-  }
-  #bonus .card-group>.card:not(:first-child) .card-footer, #bonus .card-group>.card:not(:first-child) .card-img-bottom, #bonus .card-group>.card:not(:last-child) .card-footer, #bonus .card-group>.card:not(:last-child) .card-img-bottom {
-      border-bottom-left-radius: calc(.25rem - 1px);
-      border-bottom-right-radius: calc(.25rem - 1px);
-  }
+}
+#bonus .h4 {
+  font-weight: normal;
 }
 #bonus .card-footer {
   background-color: #fff;

@@ -14,7 +14,6 @@
                                     <h2>EMR Patient Portal Web App</h2>
                                    
                                     <!-- Portfolio Modal - Text-->
-                                    <p>3 months in 2020</p>
                                     <div class="mb-5">
                                         <span class="badge badge-pill badge-secondary">Discovery Workshop</span>
                                         <span class="badge badge-pill badge-info">Wireflows</span>
@@ -72,7 +71,6 @@
                                     <h2>Design System for Geospatial Website</h2>
                                    
                                     <!-- Portfolio Modal - Text-->
-                                    <p>3 months in 2020</p>
                                     <div class="mb-5">
                                         <span class="badge badge-pill badge-secondary">Discovery Workshop</span>
                                         <span class="badge badge-pill badge-primary">Wireframes</span>
@@ -106,6 +104,7 @@
                                     </ul>
                                     <h3>Results</h3>
                                     <ul class="mb-5">
+                                    	<li>Information architecture</li>
                                         <li>The foundation of a design system</li>
                                     </ul>
                                     <button class="btn btn-block btn-outline-primary d-block d-sm-none" type="button" data-dismiss="modal" aria-label="Close">Close</button>
@@ -132,7 +131,6 @@
                                     <h2>Medical Dictation Mobile App</h2>
                                    
                                     <!-- Portfolio Modal - Text-->
-                                    <p>6 months in 2020</p>
                                     <div class="mb-5">
                                         <span class="badge badge-pill badge-success">User Interviews</span>
                                         <span class="badge badge-pill badge-success">Usability Testing</span>
@@ -192,7 +190,6 @@
                                     <h2>Park Mobile App</h2>
                                    
                                     <!-- Portfolio Modal - Text-->
-                                    <p>3 months in 2020</p>
                                     <div class="mb-5">
                                         <span class="badge badge-pill badge-success">Contextual Inquiry</span>
                                         <span class="badge badge-pill badge-info">Wireflows</span>
@@ -253,7 +250,6 @@
                                     <h2>Large Insurance Company E-Commerce Web App</h2>
                                    
                                     <!-- Portfolio Modal - Text-->
-                                    <p>6 months in 2019</p>
                                     <div class="mb-5">
                                         <span class="badge badge-pill badge-info">Wireflows</span>
                                         <span class="badge badge-pill badge-primary">Hi-Fi Mockups</span>
@@ -313,7 +309,6 @@
                                     <h2>Hardware-as-a-Service Startup Web App</h2>
                                    
                                     <!-- Portfolio Modal - Text-->
-                                    <p>3 months in 2019</p>
                                     <div class="mb-5">
                                         <span class="badge badge-pill badge-success">Research Analysis</span>
                                         <span class="badge badge-pill badge-info">Wireflows</span>
@@ -373,7 +368,6 @@
                                     <h2>Tech Non-Profit User Research</h2>
                                    
                                     <!-- Portfolio Modal - Text-->
-                                    <p>1 month in 2019</p>
                                     <div class="mb-5">
                                         <span class="badge badge-pill badge-secondary">Discovery Workshop</span>
                                         <span class="badge badge-pill badge-success">Research Interviews</span>
@@ -430,7 +424,6 @@
                                     <h2>Exercise Booking App</h2>
                                    
                                     <!-- Portfolio Modal - Text-->
-                                    <p>1+ year around 2018</p>
                                     <div class="mb-5">
                                         <span class="badge badge-pill badge-success">User Research</span>
                                         <span class="badge badge-pill badge-info">Paper Prototyping</span>

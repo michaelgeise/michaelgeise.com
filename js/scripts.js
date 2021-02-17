@@ -65,15 +65,13 @@
       });
     });
 
-    /* =========================================
-     *  animations
-     *  =======================================*/
-
-
   
   })(jQuery); // End of use strict
 
-  
+    /* =========================================
+     *  animations
+     *  =======================================*/
+$(function () {
     delayTime = 0;
 
     $('[data-animate]').waypoint(function (direction) {
@@ -105,6 +103,7 @@
         $(this).removeClass('animated');
         $(this).removeClass($(this).data('animate-hover'));
     });
+});
 
 $(document).ready(function() {
 
