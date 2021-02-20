@@ -65,7 +65,7 @@
                         <h1 class="masthead-heading text-uppercase mt-5" data-animate="fadeInDown">Michael Geise</h1>
                         <h2 class="mt-3 text-uppercase" data-animate="fadeInDown">Product Designer</h2>
                         <!-- Masthead Subheading-->
-                        <p class="masthead-subheading font-weight-light mb-0 mt-3" data-animate="fadeInUp">I'm a professional problem-solver with the vision and experience to lead a project and the skills to deliver it. I take a user-centered approach to achieve business goals while striving for an optimized development effort.</p>
+                        <p class="masthead-subheading font-weight-light mb-0 mt-3" data-animate="fadeInUp">I'm a professional problem-solver and well-rounded designer defined by my wide range of skills and experience.</p>
                     </div>
                 </div>
             </div>

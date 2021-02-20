@@ -6,9 +6,10 @@
                             <div class="">
                                 <div class="work-item-title">EMR Patient Portal Web App</div>
                                 <div class="work-item-tags">
-                                    <span class="badge badge-pill badge-secondary">Discovery Workshop</span> <span class="badge badge-pill badge-light d-inline d-sm-none">+2</span>
-                                    <span class="badge badge-pill badge-info d-none d-sm-inline">Wireflows</span>
-                                    <span class="badge badge-pill badge-primary d-none d-sm-inline">Hi-Fi Mockups</span>
+                                    <span class="badge badge-pill badge-secondary">Discovery Workshop</span> <span class="badge badge-pill badge-light d-inline d-sm-none">+3</span>
+                                    <span class="badge badge-pill badge-info d-none d-sm-inline-block">Personas</span>
+                                    <span class="badge badge-pill badge-info d-none d-sm-inline-block">Wireflows</span>
+                                    <span class="badge badge-pill badge-primary d-none d-sm-inline-block">Hi-Fi Mockups</span>
                                 </div>
                             </div>
                         </div>
@@ -20,11 +21,12 @@
                             <div class="">
                                 <div class="work-item-title">Design System for Geospatial Website</div>
                                 <div class="work-item-tags">
-                                    <span class="badge badge-pill badge-secondary">Discovery Workshop</span> <span class="badge badge-pill badge-light d-inline d-sm-none">+4</span>
-                                    <span class="badge badge-pill badge-primary badge-primary d-none d-sm-inline">Wireframes</span>
-                                    <span class="badge badge-pill badge-info badge-primary d-none d-sm-inline">Sitemap / IA</span>
-                                    <span class="badge badge-pill badge-primary badge-primary d-none d-sm-inline">Hi-Fi Mockups</span>
-                                    <span class="badge badge-pill badge-info badge-primary d-none d-sm-inline">Design System Foundation</span>
+                                    <span class="badge badge-pill badge-secondary">Discovery Workshop</span> <span class="badge badge-pill badge-light d-inline d-sm-none">+5</span>
+                                    <span class="badge badge-pill badge-info d-none d-sm-inline-block">Personas</span>
+                                    <span class="badge badge-pill badge-info d-none d-sm-inline-block">Wireframes</span>
+                                    <span class="badge badge-pill badge-info d-none d-sm-inline-block">Site Map</span>
+                                    <span class="badge badge-pill badge-primary d-none d-sm-inline-block">Hi-Fi Mockups</span>
+                                    <span class="badge badge-pill badge-info d-none d-sm-inline-block">Design System Foundation</span>
                                     
                                 </div>
                             </div>
@@ -39,11 +41,12 @@
                                 <div class="work-item-title">Medical Dictation Mobile App</div>
                                 <div class="work-item-tags">
                                     <span class="badge badge-pill badge-success">User Interviews</span>
-                                    <span class="badge badge-pill badge-success badge-primary d-none d-sm-inline">Usability Testing</span><span class="badge badge-pill badge-light d-inline d-sm-none">+4</span>
-                                    <span class="badge badge-pill badge-success badge-primary d-none d-sm-inline">Thematic Analysis</span>
-                                    <span class="badge badge-pill badge-info badge-primary d-none d-sm-inline">Wireflows</span>
-                                    <span class="badge badge-pill badge-primary badge-primary d-none d-sm-inline">Hi-Fi Mockups</span>
-                                    <span class="badge badge-pill badge-primary badge-primary d-none d-sm-inline">Prototypes</span>
+                                    <span class="badge badge-pill badge-light d-inline d-sm-none">+5</span>
+                                    <span class="badge badge-pill badge-success badge-primary d-none d-sm-inline-block">Usability Testing</span>
+                                    <span class="badge badge-pill badge-success d-none d-sm-inline-block">Thematic Analysis</span>
+                                    <span class="badge badge-pill badge-info d-none d-sm-inline-block">Wireflows</span>
+                                    <span class="badge badge-pill badge-primary d-none d-sm-inline-block">Hi-Fi Mockups</span>
+                                    <span class="badge badge-pill badge-primary d-none d-sm-inline-block">Prototypes</span>
                                 </div>
                             </div>
                         </div>
@@ -57,10 +60,10 @@
                                 <div class="work-item-title">Park Mobile App</div>
                                 <div class="work-item-tags">
                                     <span class="badge badge-pill badge-success">Contextual Inquiry</span><span class="badge badge-pill badge-light d-inline d-sm-none">+4</span>
-                                    <span class="badge badge-pill badge-info badge-primary d-none d-sm-inline">Wireflows</span>
-                                    <span class="badge badge-pill badge-primary badge-primary d-none d-sm-inline">Hi-Fi Mockups</span>
-                                    <span class="badge badge-pill badge-primary badge-primary d-none d-sm-inline">Prototypes</span>
-                                    <span class="badge badge-pill badge-success badge-primary d-none d-sm-inline">Usability Testing</span>
+                                    <span class="badge badge-pill badge-info badge-primary d-none d-sm-inline-block">Wireflows</span>
+                                    <span class="badge badge-pill badge-primary d-none d-sm-inline-block">Hi-Fi Mockups</span>
+                                    <span class="badge badge-pill badge-primary d-none d-sm-inline-block">Prototypes</span>
+                                    <span class="badge badge-pill badge-success d-none d-sm-inline-block">Usability Testing</span>
                                 </div>
                             </div>
                         </div>
@@ -74,8 +77,8 @@
                                 <div class="work-item-title">Large Insurance Company E-Commerce Web App</div>
                                 <div class="work-item-tags">
                                     <span class="badge badge-pill badge-info">Wireflows</span><span class="badge badge-pill badge-light d-inline d-sm-none">+2</span>
-                                    <span class="badge badge-pill badge-primary badge-primary d-none d-sm-inline">Hi-Fi Mockups</span>
-                                    <span class="badge badge-pill badge-primary badge-primary d-none d-sm-inline">Prototypes</span>
+                                    <span class="badge badge-pill badge-primary d-none d-sm-inline-block">Hi-Fi Mockups</span>
+                                    <span class="badge badge-pill badge-primary d-none d-sm-inline-block">Prototypes</span>
                                 </div>
                             </div>
                         </div>
@@ -88,9 +91,9 @@
                                 <div class="work-item-title">Hardware-as-a-Service Startup Web App</div>
                                 <div class="work-item-tags">
                                     <span class="badge badge-pill badge-success">Research Analysis</span><span class="badge badge-pill badge-light d-inline d-sm-none">+3</span>
-                                    <span class="badge badge-pill badge-info badge-primary d-none d-sm-inline">Wireflows</span>
-                                    <span class="badge badge-pill badge-primary badge-primary d-none d-sm-inline">Hi-Fi Mockups</span>
-                                    <span class="badge badge-pill badge-primary badge-primary d-none d-sm-inline">Prototypes</span>
+                                    <span class="badge badge-pill badge-info d-none d-sm-inline-block">Wireflows</span>
+                                    <span class="badge badge-pill badge-primary d-none d-sm-inline-block">Hi-Fi Mockups</span>
+                                    <span class="badge badge-pill badge-primary d-none d-sm-inline-block">Prototypes</span>
                                 </div>
                             </div>
                         </div>
@@ -104,9 +107,9 @@
                                 <div class="work-item-title">Tech Non-Profit User Research</div>
                                 <div class="work-item-tags">
                                     <span class="badge badge-pill badge-secondary">Discovery Workshop</span><span class="badge badge-pill badge-light d-inline d-sm-none">+3</span>
-                                    <span class="badge badge-pill badge-success badge-primary d-none d-sm-inline">Research Interviews</span>
-                                    <span class="badge badge-pill badge-success badge-primary d-none d-sm-inline">Research Analysis</span>
-                                    <span class="badge badge-pill badge-success badge-primary d-none d-sm-inline">Synthesis Workshop</span>
+                                    <span class="badge badge-pill badge-success d-none d-sm-inline-block">Research Interviews</span>
+                                    <span class="badge badge-pill badge-success d-none d-sm-inline-block">Research Analysis</span>
+                                    <span class="badge badge-pill badge-success d-none d-sm-inline-block">Synthesis Workshop</span>
                                 </div>
                             </div>
                         </div>
@@ -119,11 +122,11 @@
                                 <div class="work-item-title">Exercise Booking App</div>
                                 <div class="work-item-tags">
                                     <span class="badge badge-pill badge-success">User Research</span><span class="badge badge-pill badge-light d-inline d-sm-none">+5</span>
-                                    <span class="badge badge-pill badge-info badge-primary d-none d-sm-inline">Paper Prototyping</span>
-                                    <span class="badge badge-pill badge-info badge-primary d-none d-sm-inline">Wireflows</span>
-                                    <span class="badge badge-pill badge-secondary badge-primary d-none d-sm-inline">Pricing Model</span>
-                                    <span class="badge badge-pill badge-primary badge-primary d-none d-sm-inline">UI Patterns / Style Guides</span>
-                                    <span class="badge badge-pill badge-secondary badge-primary d-none d-sm-inline">Product Requirements</span>
+                                    <span class="badge badge-pill badge-info d-none d-sm-inline-block">Paper Prototyping</span>
+                                    <span class="badge badge-pill badge-info d-none d-sm-inline-block">Wireflows</span>
+                                    <span class="badge badge-pill badge-secondary d-none d-sm-inline-block">Pricing Model</span>
+                                    <span class="badge badge-pill badge-primary d-none d-sm-inline-block">UI Patterns / Style Guides</span>
+                                    <span class="badge badge-pill badge-secondary d-none d-sm-inline-block">Product Requirements</span>
                                 </div>
                             </div>
                         </div>

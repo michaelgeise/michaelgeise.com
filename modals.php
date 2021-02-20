@@ -16,6 +16,7 @@
                                     <!-- Portfolio Modal - Text-->
                                     <div class="mb-5">
                                         <span class="badge badge-pill badge-secondary">Discovery Workshop</span>
+                                        <span class="badge badge-pill badge-info">Personas</span>
                                         <span class="badge badge-pill badge-info">Wireflows</span>
                                         <span class="badge badge-pill badge-primary">Hi-Fi Mockups</span>
                                     </div>
@@ -46,6 +47,7 @@
                                     <h3>Results</h3>
                                     <ul class="mb-5">
                                         <li>A fully functioning responsive web app patient portal to supplement their EMR product</li>
+                                        <li>Web app eliminated the need for in-person document signatures during the pandemic</li>
                                     </ul>
                                     <button class="btn btn-block btn-secondary d-block d-sm-none" type="button" data-dismiss="modal" aria-label="Close">Close</button>
                                 </div>
@@ -73,8 +75,9 @@
                                     <!-- Portfolio Modal - Text-->
                                     <div class="mb-5">
                                         <span class="badge badge-pill badge-secondary">Discovery Workshop</span>
-                                        <span class="badge badge-pill badge-primary">Wireframes</span>
-                                        <span class="badge badge-pill badge-info">Sitemap / IA</span>
+                                        <span class="badge badge-pill badge-info">Personas</span>
+                                        <span class="badge badge-pill badge-info">Wireframes</span>
+                                        <span class="badge badge-pill badge-info">Site Map</span>
                                         <span class="badge badge-pill badge-primary">Hi-Fi Mockups</span>
                                         <span class="badge badge-pill badge-info">Design System Foundation</span>
                                     </div>
@@ -104,7 +107,7 @@
                                     </ul>
                                     <h3>Results</h3>
                                     <ul class="mb-5">
-                                    	<li>Information architecture</li>
+                                    	<li>Information architecture and site map</li>
                                         <li>The foundation of a design system</li>
                                     </ul>
                                     <button class="btn btn-block btn-secondary d-block d-sm-none" type="button" data-dismiss="modal" aria-label="Close">Close</button>
@@ -322,7 +325,7 @@
                                     <h3>Objective</h3>
                                     <ul class="mb-5">
                                         <li>Create an enterprise application to add, manage, and analyse thousands of smart plugs at a building basis</li>
-                                        <li>The system also needed to create rules for controlling sockets to save</li>
+                                        <li>The system also needed to create rules for controlling sockets to save energy</li>
                                     </ul>
                                     <h3>Role</h3>
                                     <ul class="mb-5">
@@ -390,7 +393,7 @@
                                     <ul class="mb-5">
                                         <li>The Head of Design led a kickoff workshop to establish goals and assumptions, while analyzing the environment with a Rich Picture exercise</li>
                                         <li>We conducted nine contextual and remote interviews</li>
-                                        <li>We then analyzed the findings with an affinity map of around 600 comments and synthesized it with insight statements</li>
+                                        <li>We then analyzed the findings with an affinity map of over 600 comments and synthesized it with insight statements</li>
                                     </ul>
                                     <h3>Complexities</h3>
                                     <ul class="mb-5">
@@ -399,6 +402,7 @@
                                     <h3>Results</h3>
                                     <ul class="mb-5">
                                         <li>A summary of top insights, and validated or disproved assumptions</li>
+                                        <li>Recommendations for next steps</li>
                                     </ul>
                                     <button class="btn btn-block btn-secondary d-block d-sm-none" type="button" data-dismiss="modal" aria-label="Close">Close</button>
                                 </div>
