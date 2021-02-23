@@ -76,6 +76,7 @@
                                     <div class="mb-5">
                                         <span class="badge badge-pill badge-secondary">Discovery Workshop</span>
                                         <span class="badge badge-pill badge-info">Personas</span>
+                                        <span class="badge badge-pill badge-info">Journey Maps</span>
                                         <span class="badge badge-pill badge-info">Wireframes</span>
                                         <span class="badge badge-pill badge-info">Site Map</span>
                                         <span class="badge badge-pill badge-primary">Hi-Fi Mockups</span>

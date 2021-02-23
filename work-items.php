@@ -21,8 +21,9 @@
                             <div class="">
                                 <div class="work-item-title">Design System for Geospatial Website</div>
                                 <div class="work-item-tags">
-                                    <span class="badge badge-pill badge-secondary">Discovery Workshop</span> <span class="badge badge-pill badge-light d-inline d-sm-none">+5</span>
+                                    <span class="badge badge-pill badge-secondary">Discovery Workshop</span> <span class="badge badge-pill badge-light d-inline d-sm-none">+6</span>
                                     <span class="badge badge-pill badge-info d-none d-sm-inline-block">Personas</span>
+                                    <span class="badge badge-pill badge-info d-none d-sm-inline-block">Journey Maps</span>
                                     <span class="badge badge-pill badge-info d-none d-sm-inline-block">Wireframes</span>
                                     <span class="badge badge-pill badge-info d-none d-sm-inline-block">Site Map</span>
                                     <span class="badge badge-pill badge-primary d-none d-sm-inline-block">Hi-Fi Mockups</span>
