@@ -207,7 +207,7 @@
                                     <h3>Objective</h3>
                                     <ul class="mb-5">
                                         <li>Create a mobile app to enhance a neighborhood park experience</li>
-                                        <li>Focus on accessibility utilizing bluetooth beacons to highlight landmarks</li>
+                                        <li>Focus on accessibility utilizing Bluetooth beacons to highlight landmarks</li>
                                     </ul>
                                     <h3>Role</h3>
                                     <ul class="mb-5">
@@ -221,9 +221,9 @@
                                     </ul>
                                     <h3>Complexities</h3>
                                     <ul class="mb-5">
-                                        <li>Designing for visually impared users</li>
+                                        <li>Designing for visually impaired users</li>
                                         <li>Designing an experience to be used in a physical park</li>
-                                        <li>Designing with the restrictions of bluetooth beacons</li>
+                                        <li>Designing with the restrictions of Bluetooth beacons</li>
                                     </ul>
                                     <h3>Results</h3>
                                     <ul class="mb-5">
@@ -325,7 +325,7 @@
                                 <div class="col-md-12 col-lg-6">
                                     <h3>Objective</h3>
                                     <ul class="mb-5">
-                                        <li>Create an enterprise application to add, manage, and analyse thousands of smart plugs at a building basis</li>
+                                        <li>Create an enterprise application to add, manage, and analyze thousands of smart plugs on a building basis</li>
                                         <li>The system also needed to create rules for controlling sockets to save energy</li>
                                     </ul>
                                     <h3>Role</h3>
@@ -392,7 +392,7 @@
                                     </ul>
                                     <h3>Process</h3>
                                     <ul class="mb-5">
-                                        <li>The Head of Design led a kickoff workshop to establish goals and assumptions, while analyzing the environment with a Rich Picture exercise</li>
+                                        <li>The Head of Design led a kickoff workshop to establish goals and assumptions while analyzing the environment with a Rich Picture exercise</li>
                                         <li>We conducted nine contextual and remote interviews</li>
                                         <li>We then analyzed the findings with an affinity map of over 600 comments and synthesized it with insight statements</li>
                                     </ul>
