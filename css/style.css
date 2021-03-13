@@ -134,27 +134,29 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .portfolio-modal ul li::before {
-    font-family: 'FontAwesome';   
-    margin-left: -1.5rem;
-    color: #5C8BD3;
-    float: left;
+  font-family: "Font Awesome 5 Free";
+  margin-left: -1.5rem;
+  color: #5C8BD3;
+  float: left;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
 }
 
 .portfolio-modal ul.list-objective li::before {
-    content: "\f06a";
+    content: '\f06a';
 }
 
 .portfolio-modal ul.list-role li::before {
-    content: "\f007";
+    content: '\f007';
 }
 .portfolio-modal ul.list-process li::before {
-    content: "\f058";
+    content: '\f058';
 }
 .portfolio-modal ul.list-complexities li::before {
-    content: "\f0d0";
+    content: '\f0d0';
 }
 .portfolio-modal ul.list-results li::before {
-    content: "\f135";
+    content: '\f135';
 }
 
 .work-item {
@@ -300,7 +302,7 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 .masthead, #scene {
-  padding-top: calc(30ch + 74px);
+  padding-top: calc(30vh + 74px);
   padding-bottom: 6rem;
   min-height: 100vh;
 }
@@ -326,7 +328,7 @@ h1, h2, h3, h4, h5, h6,
 
 @media (min-width: 992px) {
   .masthead {
-    padding-top: calc(6rem + 104px);
+    padding-top: calc(20vh + 104px);
     padding-bottom: 6rem;
   }
   .masthead .masthead-heading {
