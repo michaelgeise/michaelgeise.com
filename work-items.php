@@ -9,7 +9,7 @@
                                     <span class="badge badge-pill badge-secondary">Discovery Workshop</span> <span class="badge badge-pill badge-light d-inline d-sm-none">+3</span>
                                     <span class="badge badge-pill badge-info d-none d-sm-inline-block">Personas</span>
                                     <span class="badge badge-pill badge-info d-none d-sm-inline-block">Wireflows</span>
-                                    <span class="badge badge-pill badge-primary d-none d-sm-inline-block">Hi-Fi Mockups</span>
+                                    <span class="badge badge-pill badge-primary d-none d-sm-inline-block">UI Design</span>
                                 </div>
                             </div>
                         </div>
@@ -26,7 +26,7 @@
                                     <span class="badge badge-pill badge-info d-none d-sm-inline-block">Journey Maps</span>
                                     <span class="badge badge-pill badge-info d-none d-sm-inline-block">Wireframes</span>
                                     <span class="badge badge-pill badge-info d-none d-sm-inline-block">Site Map</span>
-                                    <span class="badge badge-pill badge-primary d-none d-sm-inline-block">Hi-Fi Mockups</span>
+                                    <span class="badge badge-pill badge-primary d-none d-sm-inline-block">UI Design</span>
                                     <span class="badge badge-pill badge-info d-none d-sm-inline-block">Design System Foundation</span>
                                     
                                 </div>
@@ -46,7 +46,7 @@
                                     <span class="badge badge-pill badge-success badge-primary d-none d-sm-inline-block">Usability Testing</span>
                                     <span class="badge badge-pill badge-success d-none d-sm-inline-block">Thematic Analysis</span>
                                     <span class="badge badge-pill badge-info d-none d-sm-inline-block">Wireflows</span>
-                                    <span class="badge badge-pill badge-primary d-none d-sm-inline-block">Hi-Fi Mockups</span>
+                                    <span class="badge badge-pill badge-primary d-none d-sm-inline-block">UI Design</span>
                                     <span class="badge badge-pill badge-primary d-none d-sm-inline-block">Prototypes</span>
                                 </div>
                             </div>
@@ -62,7 +62,7 @@
                                 <div class="work-item-tags">
                                     <span class="badge badge-pill badge-success">Contextual Inquiry</span><span class="badge badge-pill badge-light d-inline d-sm-none">+4</span>
                                     <span class="badge badge-pill badge-info badge-primary d-none d-sm-inline-block">Wireflows</span>
-                                    <span class="badge badge-pill badge-primary d-none d-sm-inline-block">Hi-Fi Mockups</span>
+                                    <span class="badge badge-pill badge-primary d-none d-sm-inline-block">UI Design</span>
                                     <span class="badge badge-pill badge-primary d-none d-sm-inline-block">Prototypes</span>
                                     <span class="badge badge-pill badge-success d-none d-sm-inline-block">Usability Testing</span>
                                 </div>
@@ -78,7 +78,7 @@
                                 <div class="work-item-title">Large Insurance Company E-Commerce Web App</div>
                                 <div class="work-item-tags">
                                     <span class="badge badge-pill badge-info">Wireflows</span><span class="badge badge-pill badge-light d-inline d-sm-none">+2</span>
-                                    <span class="badge badge-pill badge-primary d-none d-sm-inline-block">Hi-Fi Mockups</span>
+                                    <span class="badge badge-pill badge-primary d-none d-sm-inline-block">UI Design</span>
                                     <span class="badge badge-pill badge-primary d-none d-sm-inline-block">Prototypes</span>
                                 </div>
                             </div>
@@ -93,7 +93,7 @@
                                 <div class="work-item-tags">
                                     <span class="badge badge-pill badge-success">Research Analysis</span><span class="badge badge-pill badge-light d-inline d-sm-none">+3</span>
                                     <span class="badge badge-pill badge-info d-none d-sm-inline-block">Wireflows</span>
-                                    <span class="badge badge-pill badge-primary d-none d-sm-inline-block">Hi-Fi Mockups</span>
+                                    <span class="badge badge-pill badge-primary d-none d-sm-inline-block">UI Design</span>
                                     <span class="badge badge-pill badge-primary d-none d-sm-inline-block">Prototypes</span>
                                 </div>
                             </div>

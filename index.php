@@ -3,10 +3,10 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
+        <meta name="description" content="Personal site for digital product designer Michael Geise." />
+        <meta name="image" property="og:image" content="images/mg-logo.svg" />
         <title>Michael Geise | Philadelphia-based Digital Product Designer </title>
-        <meta name="description" content="I am a Philadelphia-based technology enthusiast with a passion for design and a decade of experience in design, front-end development, and digital marketing.">
+        <meta name="description" content="I am a professional problem-solver and well-rounded designer defined by my wide range of skills and experience.">
         <meta name="author" content="Michael Geise">
         <!-- Favicon-->
         <link rel="icon" type="image/png" href="images/mg-favicon.png">
@@ -21,7 +21,7 @@
         <!-- Bootstrap CSS-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <!-- Custom CSS -->
-        <link href="css/style.css" rel="stylesheet" />
+        <link href="css/style.css?v=2" rel="stylesheet" />
         <!-- CSS Animations -->
         <link href="css/animate.min.css" rel="stylesheet">
         <!-- Mordernizr -->
@@ -41,7 +41,7 @@
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-white text-uppercase fixed-top" id="mainNav" data-animate="fadeInDown">
+        <nav class="navbar navbar-expand-lg text-uppercase fixed-top" id="mainNav" data-animate="fadeInDown">
             <div class="container">
                 <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="images/mg-logo.svg" class="img-responsive" alt="MG logo" title="Go to intro section"></a>
 
@@ -58,7 +58,7 @@
                     <div class="col-md-4 ml-auto">
 
                         <!-- Masthead Avatar Image-->
-                        <img class="masthead-avatar mb-5 img-fluid" src="images/profile-pic.jpg" alt="photo of Michael smiling at the camera." data-animate="fadeInLeft" />
+                        <img class="masthead-avatar mb-3 img-fluid" src="images/profile-pic.jpg" alt="photo of Michael smiling at the camera." data-animate="fadeIn" />
                     </div>
                     <div class="col-md-7 align-end ml-auto">
                         <!-- Masthead Heading-->
@@ -72,12 +72,12 @@
         </header>
         <!-- Work Section-->
         <section class="page-section" id="work">
-            <div class="container" data-animate="fadeInLeft">
+            <div class="container" data-animate="fadeIn">
                 <!-- Portfolio Section Heading-->
                 <h2 class="page-section-heading text-uppercase mb-3">Work</h2>
                 <div class="row justify-content-center">
                         <!-- Portfolio Item 1-->
-                    <div class="col-md-12 mb-5">
+                    <div class="col-md-12">
                         <!-- Work items -->
                         <?php include 'work-items.php';?>
                     </div>
@@ -91,10 +91,10 @@
                 <h2 class="page-section-heading text-uppercase mb-3">About</h2>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-8 mb-5">
+                    <div class="col-lg-8 mb-3">
                         <p class="masthead-subheading font-weight-light mb-0 mt-3">In college, I majored in business and got a minor in art. From Adobe Cloud and coding to analytics and business processes, I have always had a wide range of interests, which I believe is crucial to understanding the combination of art and science needed in product design.</p>
                         <p class="masthead-subheading font-weight-light mb-0 mt-3">I love keeping up with the newest product trends and will talk to you about the <a href="https://www.interaction-design.org/literature/topics/design-thinking" target="_blank" title="learn about Design Thinking">Design Thinking</a> process anytime.</p>
-                        <p class="masthead-subheading font-weight-light mb-0 mt-3">I live in the suburbs of Philadelphia, and when I'm not making digital products, I create children's stories, follow local sports, and enjoy nature.</p>
+                        <p class="masthead-subheading font-weight-light mb-3 mt-3">I live in the suburbs of Philadelphia, and when I'm not making digital products, I create children's stories, follow local sports, and enjoy nature.</p>
                     </div>
                     <div class="col-lg-4">
                         <div class="card text-center">
@@ -113,6 +113,11 @@
                 </div>
             </div>
         </section>
+        <section class="page-section" id="scene">
+            <div class="container">
+                <?php include 'scene.php';?>
+            </div>
+        </section>
 
         <!-- Bonus Section-->
         <section class="page-section" id="bonus" data-animate="fadeIn">
@@ -121,7 +126,7 @@
                 <h2 class="page-section-heading text-uppercase mb-3">Bonus</h2>
                 <!-- Bonus Section Content-->
                 <div class="row">
-                    <div class="col-md-12 mb-5">
+                    <div class="col-md-12 mb-5 ">
                         <p class="masthead-subheading font-weight-light mb-0 mt-3">Wow, you're still here?! Thanks for the interest, I'm happy to have you.</p>
                         <p class="masthead-subheading font-weight-light">Here are some of my side projects as well as some tools and resources I like.</p>
                     </div>

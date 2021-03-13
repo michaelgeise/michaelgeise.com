@@ -1,6 +1,6 @@
-<div class="row">
+<div class="row passion-pro">
     <div class="col-md-12">
-        <div class="card-deck mb-5">
+        <div class="card-deck mb-5 text-center">
             <div class="card">
                 <img class="card-img-top" src="images/personal-projects/goosemonger-stories.jpg" alt="Goosemonger Stories Mascot">
                 <div class="card-body">
