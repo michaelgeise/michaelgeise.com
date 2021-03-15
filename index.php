@@ -21,7 +21,7 @@
         <!-- Bootstrap CSS-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <!-- Custom CSS -->
-        <link href="css/style.css?v=2.4" rel="stylesheet" />
+        <link href="css/style.css?v=2.6" rel="stylesheet" />
         <!-- CSS Animations -->
         <link href="css/animate.min.css" rel="stylesheet">
         <!-- Mordernizr -->
