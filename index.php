@@ -4,14 +4,18 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="Personal site for digital product designer Michael Geise." />
-        <meta name="image" property="og:image" content="images/mg-logo.svg" />
         <title>Michael Geise | Philadelphia-based Digital Product Designer </title>
         <meta name="description" content="I am a professional problem-solver and well-rounded designer defined by my wide range of skills and experience.">
         <meta name="author" content="Michael Geise">
+        <!-- Featured image -->
+        <meta name="image" property="og:image" href="images/site-poster.png" />
+
         <!-- Favicon-->
         <link rel="icon" type="image/png" href="images/mg-favicon.png">
         <link rel="mask-icon" href="images/mg-logo.svg" color="blue">
-        <link rel="icon" type="image/svg+xml" href="images/site-poster.png">
+        <link rel="icon" type="image/svg+xml" href="images/mg-logo.svg">
+
+
         <!-- Font Awesome icons (free version)-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
         <!-- Google fonts-->
