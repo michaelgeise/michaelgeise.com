@@ -99,8 +99,9 @@
                                     <h3>Process</h3>
                                     <ul class="mb-5 list-process">
                                         <li>I started with a discovery workshop to understand the business goals and user needs</li>
-                                        <li>I used personas and wireflows to demonstrate the site structure and user flows</li>
-                                        <li>We created hi-fi mockups and broke them into components in Figma</li>
+                                        <li>I created proto personas to better understand user needs and use cases</li>
+                                        <li>I executed card sorting to determine the information architecture and site map</li>
+                                        <li>We created wireframes and then hi-fi mockups and broke them into components in Figma</li>
                                         <li>We then documented the components and guidelines in Storybook</li>
                                     </ul>
                                     <h3>Complexities</h3>
@@ -110,8 +111,8 @@
                                     </ul>
                                     <h3>Results</h3>
                                     <ul class="mb-5 list-results">
-                                    	<li>Information architecture and site map</li>
-                                        <li>The foundation of a design system</li>
+                                    	<li>A design system along with instructions on how to use and maintain it</li>
+                                        <li>The site map and plan for development</li>
                                     </ul>
                                     <button class="btn btn-block btn-secondary d-block d-sm-none" type="button" data-dismiss="modal" aria-label="Close">Close</button>
                                 </div>
@@ -171,7 +172,8 @@
                                     </ul>
                                     <h3>Results</h3>
                                     <ul class="mb-5 list-results">
-                                        <li>The clickable prototype confirmed the idea to be usable and desirable and was integral for pitching the idea to investors</li>
+                                        <li>The research confirmed that the concept was  desirable and the clickable prototype was intuitive and usable</li>
+                                        <li>The clickable prototype was integral for pitching the idea to potential investors</li>
                                     </ul>
                                     <button class="btn btn-block btn-secondary d-block d-sm-none" type="button" data-dismiss="modal" aria-label="Close">Close</button>
                                 </div>
@@ -293,7 +295,7 @@
                                     <h3>Results</h3>
                                     <ul class="mb-5 list-results">
                                         <li>A responsive web app with 11 policy types and templates to easily onboard new products</li>
-                                        <li>It included employee admin sections for policy adjudication and management</li>
+                                        <li>A more complex employee admin section for policy adjudication and management</li>
                                     </ul>
                                     <button class="btn btn-block btn-secondary d-block d-sm-none" type="button" data-dismiss="modal" aria-label="Close">Close</button>
                                 </div>
@@ -352,7 +354,7 @@
                                     </ul>
                                     <h3>Results</h3>
                                     <ul class="mb-5 list-results">
-                                        <li>A responsive web app to replace their MVP</li>
+                                        <li>A responsive web app to replace their MVP including all user validated useful features</li>
                                         <li>The research proved that their MVP had many unnecessary features and lacked more desired features</li>
                                     </ul>
                                     <button class="btn btn-block btn-secondary d-block d-sm-none" type="button" data-dismiss="modal" aria-label="Close">Close</button>
@@ -410,7 +412,7 @@
                                     </ul>
                                     <h3>Results</h3>
                                     <ul class="mb-5 list-results">
-                                        <li>A summary of top insights, and validated or disproved assumptions</li>
+                                        <li>Validated or disproved assumptions, along with other insights delivered in a summary</li>
                                         <li>Recommendations for next steps</li>
                                     </ul>
                                     <button class="btn btn-block btn-secondary d-block d-sm-none" type="button" data-dismiss="modal" aria-label="Close">Close</button>
