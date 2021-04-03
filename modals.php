@@ -157,7 +157,7 @@
                                     </ul>
                                     <h3>Role</h3>
                                     <ul class="mb-5 list-role">
-                                        <li>As the lead designer and researcher, I worked with the subject matter expert client to drive the UX strategy</li>
+                                        <li>As the lead designer and researcher, I worked with the subject matter expert client to drive the UX strategy and implementation</li>
                                     </ul>
                                     <h3>Process</h3>
                                     <ul class="mb-5 list-process">
