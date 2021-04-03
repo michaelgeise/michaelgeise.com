@@ -32,11 +32,11 @@
                                     </ul>
                                     <h3>Role</h3>
                                     <ul class="mb-5 list-role">
-                                        <li>As the lead designer, I worked closely with the client stakeholder and 6 developers</li>
+                                        <li>As the lead designer, I owned the complete UX, working closely with the client stakeholder and 6 developers</li>
                                     </ul>
                                     <h3>Process</h3>
                                     <ul class="mb-5 list-process">
-                                        <li>I started with a discovery workshop to understand the business goals and user needs</li>
+                                        <li>I facilitated a discovery workshop to understand the business goals and user needs</li>
                                         <li>I then made wireflows to demonstrate the site structure and flows</li>
                                         <li>I polished the visuals with hi-fidelity mockups and worked with development until release</li>
                                     </ul>
@@ -94,7 +94,7 @@
                                     </ul>
                                     <h3>Role</h3>
                                     <ul class="mb-5 list-role">
-                                        <li>As the lead designer and project manager, I worked with the client stakeholders, a developer, and a visual designer</li>
+                                        <li>As the lead designer and project owner, I managed a visual designer while working closely with the client stakeholders and a developer</li>
                                     </ul>
                                     <h3>Process</h3>
                                     <ul class="mb-5 list-process">
@@ -157,7 +157,7 @@
                                     </ul>
                                     <h3>Role</h3>
                                     <ul class="mb-5 list-role">
-                                        <li>As the lead designer and researcher, I worked with the subject matter expert client</li>
+                                        <li>As the lead designer and researcher, I worked with the subject matter expert client to drive the UX strategy</li>
                                     </ul>
                                     <h3>Process</h3>
                                     <ul class="mb-5 list-process">
@@ -218,7 +218,7 @@
                                     </ul>
                                     <h3>Role</h3>
                                     <ul class="mb-5 list-role">
-                                        <li>As the lead designer, I worked with the client stakeholders and our developers</li>
+                                        <li>As the lead designer, I uncovered the client needs and aided our team through development</li>
                                     </ul>
                                     <h3>Process</h3>
                                     <ul class="mb-5 list-process">
@@ -277,7 +277,7 @@
                                     </ul>
                                     <h3>Role</h3>
                                     <ul class="mb-5 list-role">
-                                        <li>I was the sole designer on a team with nine developers and one QA resource</li>
+                                        <li>As the lead designer, I uncovered business and user needs while facilitating our team of team nine developers and one QA resource</li>
                                     </ul>
                                     <h3>Process</h3>
                                     <ul class="mb-5 list-process">
