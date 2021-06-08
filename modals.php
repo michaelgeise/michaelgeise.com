@@ -388,8 +388,8 @@
                                         <span class="badge badge-pill badge-success">Synthesis Workshop</span>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded" src="images/work/tech-non-profit-user-research.jpg" alt="affinity map from research" />
-                                    <figcaption class="figure-caption text-center mb-5">Affinity diagram from Synthesis Workshop</figcaption>
+                                    <img class="img-fluid rounded" src="images/work/tech-non-profit-user-research.jpg" alt="Research findings summary" />
+                                    <figcaption class="figure-caption text-center mb-5">Research findings</figcaption>
                                 </div>
                                 <div class="col-md-12 col-lg-6">
                                     <h3>Objective</h3>
