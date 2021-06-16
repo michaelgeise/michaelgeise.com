@@ -322,8 +322,6 @@ h1, h2, h3, h4, h5, h6,
     background-size: cover;
     background-attachment: fixed;
     color: white;
-    background: rgb(69,58,125);
-    background: linear-gradient(151deg, rgba(69,58,125,1) 12%, rgba(0,0,0,1) 43%, rgba(70,80,130,1) 89%);
     background-image: url(../images/hero.jpg);
 }
 @media (max-width: 767px) {
