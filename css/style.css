@@ -425,6 +425,11 @@ h1, h2, h3, h4, h5, h6,
   line-height: 2;
 }
 
+footer li {
+  padding: 1rem 0;
+  margin:; 1rem 0;
+}
+
 .copyright {
   background: #ffffff;
   box-shadow: 0 0 1rem 0 rgb(0 0 0 / 10%);
