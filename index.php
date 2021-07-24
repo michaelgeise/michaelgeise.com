@@ -131,7 +131,7 @@
                         <h3 class="text-uppercase mt-5 mb-3 h5">Favorite Resources</h3>
                         <div class="row">
                             <div class="col-lg-6">
-                                <ul class="list-unstyled">
+                                <ul class="list-unstyled mb-0">
                                     <li>
                                         <a href="https://figma.com/" target="_blank" title="UI & prototyping tool" data-toggle="tooltip" data-placement="top"><i class="fas fa-external-link-alt"></i> Figma</a>
                                     </li>

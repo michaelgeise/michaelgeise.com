@@ -725,6 +725,7 @@ ABOUT
   overflow: hidden;
   text-overflow: ellipsis;
   margin-bottom: 2rem;
+  cursor: pointer;
 }
 
 .box-masonry h4 {
@@ -795,6 +796,7 @@ ABOUT
   margin-top: -5px;
   -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: calc(2rem + 5px);
 }
 
 .box-masonry:hover .box-masonry-hover-text-header {
