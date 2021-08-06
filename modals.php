@@ -89,7 +89,7 @@
                                     </div>
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded" src="images/work/wearable-mobile-app.jpg" alt="Screen from wearable app prototype" />
-                                    <figcaption class="figure-caption text-center mb-5">Exercise Summary Screen of prototype</figcaption>
+                                    <figcaption class="figure-caption text-center mb-5">Exercise Summary screen of prototype</figcaption>
                                 </div>
                                 <div class="col-md-12 col-lg-6">
                                     <h3>Objective</h3>
