@@ -1,5 +1,194 @@
-		<!-- Portfolio Modal 1-->
-		<div class="portfolio-modal modal fade" id="emr-modal" tabindex="-1" role="dialog" aria-labelledby="emr-modalLabel" aria-hidden="true">
+		<!-- Health Journaling Mobile App Modal-->
+        <div class="portfolio-modal modal fade" id="jmh-modal" tabindex="-1" role="dialog" aria-labelledby="jmh-modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 col-lg-6">
+                                    
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2>Health Journaling Mobile App</h2>
+                                   
+                                    <!-- Portfolio Modal - Text-->
+                                    <div class="mb-5">
+                                        <span class="badge badge-pill badge-secondary">Competitive Analysis</span>
+                                    <span class="badge badge-pill badge-info">Personas</span>
+                                    <span class="badge badge-pill badge-success">User Interviews</span>
+                                    <span class="badge badge-pill badge-success">Usability Testing</span>
+                                    <span class="badge badge-pill badge-info">Wireflows</span>
+                                    <span class="badge badge-pill badge-primary">UI Design</span>
+                                    <span class="badge badge-pill badge-primary">Prototypes</span>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded" src="images/work/health-journaling-mobile-app.jpg" alt="Android home screen" />
+                                    <figcaption class="figure-caption text-center mb-5">Developed Android Home screen</figcaption>
+                                </div>
+                                <div class="col-md-12 col-lg-6">
+                                    <h3>Objective</h3>
+                                    <ul class="mb-5 list-objective">
+                                        <li>Test a hypothesis that a health journaling app would empower people to record and analyze their symptoms, treatments, and passive data to better understand their health</li>
+                                        <li>Use Lean UX processes to gather early feedback and iterate for a more complete and polished product</li>
+                                    </ul>
+                                    <h3>Role</h3>
+                                    <ul class="mb-5 list-role">
+                                        <li>I lead UX Strategy, research and design working with the product owner and two native developers</li>
+                                    </ul>
+                                    <h3>Process</h3>
+                                    <ul class="mb-5 list-process">
+                                        <li>We conducted market research to find a gap in the market for this need</li>
+                                        <li>I conducted discovery research through interviews with physicians and chronic condition sufferers</li>
+                                        <li>I created a clickable prototype to continue research</li>
+                                        <li>We developed MVPs and continued to gather feedback and iterate</li>
+                                    </ul>
+                                    <h3>Complexities</h3>
+                                    <ul class="mb-5 list-complexities">
+                                        <li>Designing for users with sensitive health data</li>
+                                        <li>Creating a flow to capture daily entries of everything they need to record with as little effort as possible</li>
+                                        <li>Creating reports and visualizations that users and physicians can find valuable</li>
+                                    </ul>
+                                    <h3>Results</h3>
+                                    <ul class="mb-5 list-results">
+                                        <li>Two native apps with five star rating and thousands of users</li>
+                                        <li>The flexibility to record whatever symptoms, treatments, and notes a user would like as well as general health, passive wearable data, and weather data</li>
+                                    </ul>
+                                    <button class="btn btn-block btn-secondary d-block d-sm-none" type="button" data-dismiss="modal" aria-label="Close">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Wearable Mobile App Modal-->
+        <div class="portfolio-modal modal fade" id="wearable-modal" tabindex="-1" role="dialog" aria-labelledby="wearable-modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 col-lg-6">
+                                    
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2>Wearable Mobile App</h2>
+                                   
+                                    <!-- Portfolio Modal - Text-->
+                                    <div class="mb-5">
+                                        <span class="badge badge-pill badge-success">User Interviews</span>
+                                        <span class="badge badge-pill badge-success">Usability Testing</span>
+                                        <span class="badge badge-pill badge-success">Thematic Analysis</span>
+                                        <span class="badge badge-pill badge-info">Wireflows</span>
+                                        <span class="badge badge-pill badge-primary">UI Design</span>
+                                        <span class="badge badge-pill badge-primary">Prototypes</span>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded" src="images/work/wearable-mobile-app.jpg" alt="Screen from wearable app prototype" />
+                                    <figcaption class="figure-caption text-center mb-5">Exercise Summary Screen of prototype</figcaption>
+                                </div>
+                                <div class="col-md-12 col-lg-6">
+                                    <h3>Objective</h3>
+                                    <ul class="mb-5 list-objective">
+                                        <li>Conduct research for interest in a unique fitness wearable and design the mobile app UX</li>
+                                    </ul>
+                                    <h3>Role</h3>
+                                    <ul class="mb-5 list-role">
+                                        <li>I took over as the lead designer and researcher after initial discovery</li>
+                                    </ul>
+                                    <h3>Process</h3>
+                                    <ul class="mb-5 list-process">
+                                        <li>I created wireflows followed by a clickable prototype of the app UX</li>
+                                        <li>I created fake marketing materials to better explain the physical product and experience</li>
+                                        <li>I conducted user interviews to gauge interest, test ideas, and perform usability tests on the prototype</li>
+                                    </ul>
+                                    <h3>Complexities</h3>
+                                    <ul class="mb-5 list-complexities">
+                                        <li>Designing for a new hardware with complex medical terms</li>
+                                        <li>Appropriating a medical tool to the general audience</li>
+                                    </ul>
+                                    <h3>Results</h3>
+                                    <ul class="mb-5 list-results">
+                                        <li>The research confirmed that the concept was desirable and the clickable prototype was intuitive and usable, but the users needed to test with the physical device to confirm desirability</li>
+                                        <li>The clickable prototype was integral for pitching the idea to potential investors</li>
+                                    </ul>
+                                    <button class="btn btn-block btn-secondary d-block d-sm-none" type="button" data-dismiss="modal" aria-label="Close">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pharmaceutical Data Portal Modal-->
+        <div class="portfolio-modal modal fade" id="pharma-data-modal" tabindex="-1" role="dialog" aria-labelledby="pharma-data-modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 col-lg-6">
+                                    
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2>Pharmaceutical Data Portal</h2>
+                                   
+                                    <!-- Portfolio Modal - Text-->
+                                    <div class="mb-5">
+                                        <span class="badge badge-pill badge-secondary">Discovery Workshop</span>
+                                    <span class="badge badge-pill badge-info">Personas</span>
+                                    <span class="badge badge-pill badge-success">User Interviews</span>
+                                    <span class="badge badge-pill badge-success">Usability Testing</span>
+                                    <span class="badge badge-pill badge-success">Thematic Analysis</span>
+                                    <span class="badge badge-pill badge-info">Wireflows</span>
+                                    <span class="badge badge-pill badge-primary">UI Design</span>
+                                    <span class="badge badge-pill badge-primary">Prototypes</span>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded" src="images/work/pharmaceutical-data-portal.jpg" alt="Mockup of home page of the web portal" />
+                                    <figcaption class="figure-caption text-center mb-5">Final Home page</figcaption>
+                                </div>
+                                <div class="col-md-12 col-lg-6">
+                                    <h3>Objective</h3>
+                                    <ul class="mb-5 list-objective">
+                                        <li>Unify a pharmaceutical data company's products through one portal for professionals to query and visualize data</li>
+                                    </ul>
+                                    <h3>Role</h3>
+                                    <ul class="mb-5 list-role">
+                                        <li>As the lead designer and researcher, I owned the complete UX, working closely with the client stakeholder</li>
+                                    </ul>
+                                    <h3>Process</h3>
+                                    <ul class="mb-5 list-process">
+                                        <li>I facilitated a discovery workshop to understand the business goals and user needs</li>
+                                        <li>I then made a site map and wireflows to demonstrate the site structure and flows</li>
+                                        <li>I made a clickable prototype to test with users</li>
+                                        <li>After user interviews I updated the designs based on feedback</li>
+                                    </ul>
+                                    <h3>Complexities</h3>
+                                    <ul class="mb-5 list-complexities">
+                                        <li>Designing for power users with different objectives</li>
+                                        <li>Understanding the different data types and uses</li>
+                                    </ul>
+                                    <h3>Results</h3>
+                                    <ul class="mb-5 list-results">
+                                        <li>Blueprint wireframes and prototypes for the client's development team to create</li>
+                                    </ul>
+                                    <button class="btn btn-block btn-secondary d-block d-sm-none" type="button" data-dismiss="modal" aria-label="Close">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 1-->
+        <div class="portfolio-modal modal fade" id="emr-modal" tabindex="-1" role="dialog" aria-labelledby="emr-modalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl" role="document">
                 <div class="modal-content">
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
@@ -214,7 +403,7 @@
                                     <h3>Objective</h3>
                                     <ul class="mb-5 list-objective">
                                         <li>Create a mobile app to enhance a neighborhood park experience</li>
-                                        <li>Focus on accessibility utilizing Bluetooth beacons to highlight landmarks</li>
+                                        <li>Focus on accessibility using Bluetooth beacons to highlight landmarks</li>
                                     </ul>
                                     <h3>Role</h3>
                                     <ul class="mb-5 list-role">

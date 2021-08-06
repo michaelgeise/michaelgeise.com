@@ -1,7 +1,62 @@
-<!-- EMR Patient Portal Web App -->
+                        <!-- Health Journaling Mobile App -->
+                        <div class="work-item d-flex justify-content-start" data-toggle="modal" data-target="#jmh-modal">
+                            <div class="work-item-img-wrapper">
+                                <img class="img-fluid work-item-img rounded" src="images/work/health-journaling-mobile-app.jpg" alt="Android home screen" />
+                            </div>
+                            <div class="">
+                                <div class="work-item-title">Health Journaling Mobile App</div>
+                                <div class="work-item-tags">
+                                    <span class="badge badge-pill badge-secondary">Competitive Analysis</span> <span class="badge badge-pill badge-light d-inline d-sm-none">+6</span>
+                                    <span class="badge badge-pill badge-info d-none d-sm-inline-block">Personas</span>
+                                    <span class="badge badge-pill badge-success d-none d-sm-inline-block">User Interviews</span>
+                                    <span class="badge badge-pill badge-success d-none d-sm-inline-block">Usability Testing</span>
+                                    <span class="badge badge-pill badge-info d-none d-sm-inline-block">Wireflows</span>
+                                    <span class="badge badge-pill badge-primary d-none d-sm-inline-block">UI Design</span>
+                                    <span class="badge badge-pill badge-primary d-none d-sm-inline-block">Prototypes</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Wearable Mobile App -->
+                        <div class="work-item d-flex justify-content-start" data-toggle="modal" data-target="#wearable-modal">
+                            <div class="work-item-img-wrapper">
+                                <img class="img-fluid work-item-img rounded" src="images/work/wearable-mobile-app.jpg" alt="Screen from wearable app prototype" />
+                            </div>
+                            <div class="">
+                                <div class="work-item-title">Wearable Mobile App</div>
+                                <div class="work-item-tags">
+                                    <span class="badge badge-pill badge-success">User Interviews</span> <span class="badge badge-pill badge-light d-inline d-sm-none">+5</span>
+                                    
+                                    <span class="badge badge-pill badge-success d-none d-sm-inline-block">Usability Testing</span>
+                                    <span class="badge badge-pill badge-success d-none d-sm-inline-block">Thematic Analysis</span>
+                                    <span class="badge badge-pill badge-info d-none d-sm-inline-block">Wireflows</span>
+                                    <span class="badge badge-pill badge-primary d-none d-sm-inline-block">UI Design</span>
+                                    <span class="badge badge-pill badge-primary d-none d-sm-inline-block">Prototypes</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pharmaceutical Data Portal -->
+                        <div class="work-item d-flex justify-content-start" data-toggle="modal" data-target="#pharma-data-modal">
+                            <div class="work-item-img-wrapper">
+                                <img class="img-fluid work-item-img rounded" src="images/work/pharmaceutical-data-portal.jpg" alt="Mockup of home page of the web portal" />
+                            </div>
+                            <div class="">
+                                <div class="work-item-title">Pharmaceutical Data Portal</div>
+                                <div class="work-item-tags">
+                                    <span class="badge badge-pill badge-secondary">Discovery Workshop</span> <span class="badge badge-pill badge-light d-inline d-sm-none">+7</span>
+                                    <span class="badge badge-pill badge-info d-none d-sm-inline-block">Personas</span>
+                                    <span class="badge badge-pill badge-success d-none d-sm-inline-block">User Interviews</span>
+                                    <span class="badge badge-pill badge-success d-none d-sm-inline-block">Usability Testing</span>
+                                    <span class="badge badge-pill badge-success d-none d-sm-inline-block">Thematic Analysis</span>
+                                    <span class="badge badge-pill badge-info d-none d-sm-inline-block">Wireflows</span>
+                                    <span class="badge badge-pill badge-primary d-none d-sm-inline-block">UI Design</span>
+                                    <span class="badge badge-pill badge-primary d-none d-sm-inline-block">Prototypes</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- EMR Patient Portal Web App -->
                         <div class="work-item d-flex justify-content-start" data-toggle="modal" data-target="#emr-modal">
                             <div class="work-item-img-wrapper">
-                                <img class="img-fluid work-item-img rounded" src="images/work/emr-patient-portal-web-app.jpg" alt="wireframe of the web portal" />
+                                <img class="img-fluid work-item-img rounded" src="images/work/emr-patient-portal-web-app.jpg" alt="Developed page of the web portal" />
                             </div>
                             <div class="">
                                 <div class="work-item-title">EMR Patient Portal Web App</div>
@@ -43,7 +98,7 @@
                                 <div class="work-item-tags">
                                     <span class="badge badge-pill badge-success">User Interviews</span>
                                     <span class="badge badge-pill badge-light d-inline d-sm-none">+5</span>
-                                    <span class="badge badge-pill badge-success badge-primary d-none d-sm-inline-block">Usability Testing</span>
+                                    <span class="badge badge-pill badge-success d-none d-sm-inline-block">Usability Testing</span>
                                     <span class="badge badge-pill badge-success d-none d-sm-inline-block">Thematic Analysis</span>
                                     <span class="badge badge-pill badge-info d-none d-sm-inline-block">Wireflows</span>
                                     <span class="badge badge-pill badge-primary d-none d-sm-inline-block">UI Design</span>
