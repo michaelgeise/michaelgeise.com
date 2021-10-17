@@ -35,7 +35,7 @@
                                     </ul>
                                     <h3>Role</h3>
                                     <ul class="mb-5 list-role">
-                                        <li>I led UX Strategy, research and design working with the product owner and two native developers</li>
+                                        <li>I led UX Strategy, research, and design working with the product owner and two native developers</li>
                                     </ul>
                                     <h3>Process</h3>
                                     <ul class="mb-5 list-process">

@@ -96,7 +96,7 @@
                 <!-- About Section Content-->
                 <div class="row">
                     <div class="col-lg-8 mb-3">
-                        <p class="masthead-subheading font-weight-light mb-0 mt-3">In college, I majored in business and got a minor in art. From Adobe Cloud and coding to analytics and business processes, I have always had a wide range of interests, which I believe is crucial to understanding the combination of art and science needed in product design.</p>
+                        <p class="masthead-subheading font-weight-light mb-0 mt-3">In college, I majored in business and got a minor in art. From Adobe Creative Cloud and coding to analytics and business processes, I have always had a wide range of interests, which I believe is crucial to understanding the combination of art and science needed in product design.</p>
                         <p class="masthead-subheading font-weight-light mb-0 mt-3">I love keeping up with the newest product trends and will talk to you about the <a href="https://www.interaction-design.org/literature/topics/design-thinking" target="_blank" title="learn about Design Thinking" data-toggle="tooltip" data-placement="top">Design Thinking</a> process anytime.</p>
                         <p class="masthead-subheading font-weight-light mb-3 mt-3">I live in the suburbs of Philadelphia, and when I'm not making digital products, I create <a href="https://www.goosemonger.com/" target="_blank" title="View Goosemonger Stories" data-toggle="tooltip" data-placement="top"> children's stories</a>, follow local sports, and enjoy nature.</p>
                     </div>
