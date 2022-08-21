@@ -1,0 +1,443 @@
+<template>
+
+<div class="col-lg-8 mx-auto p-3 py-md-5" id="wrap">
+    <div id="main"></div>
+  <main>
+	<div class="card">
+        <div class="card-body">
+            <h1 class="h5">Dice Baseball!</h1>
+			<div v-if="currentMsg" :class="`alert alert-${currentMsg.alert}`" role="alert">
+			  {{ currentMsg.msg }}
+			</div>
+			<div>
+				<div class="dice-placeholder" id="first-pick">
+                    <img v-if="state.x == null" src="@/assets/img/blank.svg" alt="blank">
+                    <img v-if="state.x == 1" src="@/assets/img/1.svg" alt="1">
+                    <img v-if="state.x == 2" src="@/assets/img/2.svg" alt="2">
+                    <img v-if="state.x == 3" src="@/assets/img/3.svg" alt="3">
+                    <img v-if="state.x == 4" src="@/assets/img/4.svg" alt="4">
+                    <img v-if="state.x == 5" src="@/assets/img/5.svg" alt="5">
+                    <img v-if="state.x == 6" src="@/assets/img/6.svg" alt="6">
+                </div>
+				<div v-if="!state.steal" class="dice-placeholder" id="second-pick">
+                    <img v-if="state.y == null" src="@/assets/img/blank.svg" alt="blank">
+                    <img v-if="state.y == 1" src="@/assets/img/1.svg" alt="1">
+                    <img v-if="state.y == 2" src="@/assets/img/2.svg" alt="2">
+                    <img v-if="state.y == 3" src="@/assets/img/3.svg" alt="3">
+                    <img v-if="state.y == 4" src="@/assets/img/4.svg" alt="4">
+                    <img v-if="state.y == 5" src="@/assets/img/5.svg" alt="5">
+                    <img v-if="state.y == 6" src="@/assets/img/6.svg" alt="6">
+                </div>
+				<span v-if="state.steal == 2" class="badge rounded-pill text-bg-primary steal-badge">2nd</span>
+				<span v-if="state.steal == 3" class="badge rounded-pill text-bg-primary steal-badge">3rd</span>
+				<span v-if="state.steal == 4" class="badge rounded-pill text-bg-primary steal-badge">Home</span>
+				<div class="dropdown float-end">
+				  <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+				    Steal
+				  </button>
+				  <ul class="dropdown-menu">
+				    <li><a class="dropdown-item" @click="setSteal(2)" href="#">Second</a></li>
+				    <li><a class="dropdown-item" @click="setSteal(3)" href="#">Third</a></li>
+				    <li><a class="dropdown-item" @click="setSteal(4)" href="#">Home</a></li>
+				  </ul>
+				</div>
+			</div>
+
+			<div class="d-flex justify-content-between dice-row">
+				<button @click="setDie(1)" type="button" class="btn btn-light btn-dice"><img src="@/assets/img/1.svg" alt="1"></button>
+				<button @click="setDie(2)" type="button" class="btn btn-light btn-dice"><img src="@/assets/img/2.svg" alt="2"></button>
+				<button @click="setDie(3)" type="button" class="btn btn-light btn-dice"><img src="@/assets/img/3.svg" alt="3"></button>
+			</div>
+	 		<div class="d-flex justify-content-between dice-row">
+				<button @click="setDie(4)" type="button" class="btn btn-light btn-dice"><img src="@/assets/img/4.svg" alt="4"></button>
+				<button @click="setDie(5)" type="button" class="btn btn-light btn-dice"><img src="@/assets/img/5.svg" alt="5"></button>
+				<button @click="setDie(6)" type="button" class="btn btn-light btn-dice"><img src="@/assets/img/6.svg" alt="6"></button>
+			</div>
+		</div>
+	</div>
+  </main>
+  </div>
+  <footer class="pt-5 my-5 text-muted border-top" id="footer">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#rulesModal">
+      Rules
+    </button>
+    <span>Dice Baseball &middot; &copy; {{new Date().getFullYear()}}</span>
+  </footer>
+
+
+<!-- Modal -->
+<div class="modal modal-xl fade" id="rulesModal" tabindex="-1" aria-labelledby="rulesModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Dice Baseball Rules</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <ul>
+            <li>Runners advance an extra base when there is a hit with 2 outs</li>
+            <li>Outcomes ending in "plus" allow the runners to advance an extra base</li>
+        </ul>
+        <table class="table">
+        <thead>
+            <tr>
+            <th scope="col">Roll</th>
+            <th scope="col">Outcome</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" colspan="2">Batting</th>
+            </tr>
+            <tr class="table-success">
+                <td scope="row">1-1, 2-6</td>
+                <td>Single!</td>
+            </tr>
+            <tr class="table-danger">
+                <td scope="row">1-2</td>
+                <td>Double play!</td>
+            </tr>
+            <tr class="table-warning">
+                <td scope="row">1-3</td>
+                <td colspan="2">Groundout plus!</td>
+            </tr>
+            <tr class="table-danger">
+                <td scope="row">1-4</td>
+                <td>Groundout!</td>
+            </tr>
+            <tr class="table-warning">
+                <td scope="row">1-5</td>
+                <td colspan="2">Fly out plus!</td>
+            </tr>
+            <tr class="table-danger">
+                <td scope="row">1-6, 2-5</td>
+                <td>Pop out!</td>
+            </tr>
+            <tr class="table-success">
+                <td scope="row">2-2, 5-5</td>
+                <td>Double!</td>
+            </tr>
+            <tr class="table-danger">
+                <td scope="row">2-3, 3-4, 4-5</td>
+                <td>Strikeout!</td>
+            </tr>
+            <tr class="table-success">
+                <td scope="row">2-4, 3-5</td>
+                <td>Walk</td>
+            </tr>
+            <tr class="table-success">
+                <td scope="row">3-3</td>
+                <td>Triple!</td>
+            </tr>
+            <tr class="table-danger">
+                <td scope="row">3-6, 5-6</td>
+                <td>Fly out!</td>
+            </tr>
+            <tr class="table-success">
+                <td scope="row">4-4, 6-6</td>
+                <td>Home run!</td>
+            </tr>
+            <tr class="table-success">
+                <td scope="row">4-6</td>
+                <td>Single plus!</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="2">Stealing Second</th>
+            </tr>
+            <tr class="table-success">
+                <td scope="row">1, 2, 3, 4</td>
+                <td>Stolen base!</td>
+            </tr>
+            <tr class="table-danger">
+                <td scope="row">5, 6</td>
+                <td>Caught stealing!</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="2">Stealing Third</th>
+            </tr>
+            <tr class="table-success">
+                <td scope="row">1, 2, 3</td>
+                <td>Stolen base!</td>
+            </tr>
+            <tr class="table-danger">
+                <td scope="row">4, 5, 6</td>
+                <td>Caught stealing!</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="2">Stealing Home</th>
+            </tr>
+            <tr class="table-success">
+                <td scope="row">1</td>
+                <td>Stolen base!</td>
+            </tr>
+            <tr class="table-danger">
+                <td scope="row">2, 3, 4, 5, 6</td>
+                <td>Caught stealing!</td>
+            </tr>
+        </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</template>
+
+<script setup>
+import { reactive, computed } from 'vue'
+const state = reactive({
+    x: null,
+    y: null,
+    steal: null,
+    msg: 'Batter up'
+});
+
+const messages = [
+    { dice: [[1,1],[2,6]], msg: "Single!", alert:	"success" },
+    { dice: [[1,2]], msg: 'Double play!', alert:	'danger' },
+    { dice: [[1,3]], msg: 'Ground out plus!', alert: 'warning'},
+    { dice: [[1,4]], msg: 'Ground out!', alert: 'danger'},
+    { dice: [[1,5]], msg: 'Fly out plus!', alert: 'warning'},
+    { dice: [[1,6],[2,5]], msg: 'Pop out!', alert: 'danger'},
+    { dice: [[2,2], [5,5]], msg: 'Double!', alert: 'success'},
+    { dice: [[2,3],[3,4],[4,5]], msg: 'Strikeout!', alert: 'danger'},
+    { dice: [[2,4],[3,5]], msg: 'Walk', alert: 'success'},
+    { dice: [[3,3]], msg: 'Triple!', alert: 'success'},
+    { dice: [[3,6],[5,6]], msg: 'Flyout!', alert: 'danger'},
+    { dice: [[4,4],[6,6]], msg: 'Home run!', alert: 'success'},
+    { dice: [[4,6]], msg: 'Single plus!', alert: 'success'},
+    { dice: [[5,6]], msg: 'Fly out plus!', alert: 'warning'},
+    ]
+
+const stealMessages = [
+    {   base: 2,
+        dice: [1,2,3,4],
+        msg: 'Stolen base!',
+        alert: 'success'
+    },
+    {   
+        base: 2,
+        dice: [5,6],
+        msg: 'Caught stealing!',
+        alert: 'danger'
+    },
+    {   
+        base: 3,
+        dice: [1,2,3],
+        msg: 'Stolen base!',
+        alert: 'success'
+    },
+    {   
+        base: 3,
+        dice: [4,5,6],
+        msg: 'Caught stealing!',
+        alert: 'danger'
+    },
+    {   
+        base: 4,
+        dice: [1],
+        msg: 'Stolen base!',
+        alert: 'success'
+    },
+    {   
+        base: 4,
+        dice: [2,3,4,5,6],
+        msg: 'Caught stealing!',
+        alert: 'danger'
+    }
+]
+
+
+const setSteal = base => {
+    if (base !== null) {
+        state.steal = base;
+        state.x = null;
+        state.y = null;
+    }
+};
+
+const currentMsg = computed(() => {
+    if (state.steal !== null) {
+        if (state.x == null) {
+            return {
+                msg: 'Steal Attempt!', alert: 'primary'
+            }   
+        } else {
+            return stealMessages.find(m => m.base == state.steal && m.dice.includes(state.x));
+        }
+    } else if (state.x && state.y) {
+        console.log('complete bat', [state.x,state.y]);
+        const msg = messages.find(m => {
+            const roll = [Math.min(state.x, state.y), Math.max(state.x, state.y)];
+            const index = JSON.stringify(m.dice).indexOf(JSON.stringify(roll));
+            return index != -1;
+        })
+        console.log(msg, [state.x, state.y], messages)
+        return msg;
+    } else {
+        return {
+            msg: 'Batter up', alert: 'primary'
+        }
+    }
+
+})
+
+const setDie = num => {
+    if (state.steal !== null && state.x !== null) {
+        state.steal = null;
+        state.x = null;
+    }
+    if (state.x == null) {
+        state.x = num;
+    } else if(state.y == null) {
+        console.log('set y', num)
+        state.y = num;
+    } else {
+        state.x = num;
+        state.y = null;
+    }
+}
+
+</script>
+
+<style>
+        * {
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+          }
+        .btn img {
+            height: 2.5rem;
+          }
+        .alert {
+            background-size: contain;
+            font-size: 20px;
+            }
+        body {
+            background: rgb(92,165,218);
+            background-size: cover;
+            min-height: 100vh;
+            background-image: url('/dice-baseball/assets/img/bg.jpg');
+            background-position: center center;
+        }
+
+        html,
+        body {
+          height: 100%;
+        }
+
+        #wrap {
+          min-height: 100%;
+        }
+
+        #main {
+          overflow: auto;
+          padding-bottom: calc(50vh - 12rem);
+          /* must be same height as the footer */
+        }
+        h1.h5 {
+            text-align: center;
+            margin-bottom: 1rem;
+            font-family: 'Varela Round', sans-serif;
+            font-weight: 500;
+        }
+
+        #footer {
+            position: relative;
+            margin-top: -3.5rem !important;
+            height: 3.5rem;
+            clear: both;
+            text-align: center;
+            padding-top: 1rem !important;
+            background-color: white;
+        }
+        #footer a, #footer span {
+            font-size: 20px;
+            margin:0 1rem;
+        }
+
+
+        /* Opera Fix thanks to Maleika (Kohoutec) */
+
+        body:before {
+          content: "";
+          height: 100%;
+          float: left;
+          width: 0;
+          margin-top: -32767px;
+          /* thank you Erik J - negate effect of float*/
+        }
+        .card {
+            width: 12rem;
+            margin: auto;
+        }
+        h1.card-title.h5 {
+            font-size: 1REM;
+            text-align: center;
+            font-weight: 400;
+            color: #101010;
+            margin-bottom: 1rem;
+        }
+        .dice-placeholder {
+            height: 2rem;
+            width: 2rem;
+            border-radius: 0.375rem;
+            background-color: #e9e9e9;
+            display: inline-block;
+            padding: .25rem;
+            margin-right: 0.25rem;
+        }
+        .dice-placeholder img {
+            height: 1.5rem;
+            display: block;
+        }
+        .steal-badge.badge {
+            vertical-align: top;
+        }
+        .dice-row {
+            margin-top: 1rem;
+        }
+        .dice-row .btn-dice {
+            padding: 0;
+            box-shadow: 0 .125rem .25rem #757575
+        }
+        .alert {
+            background-position: right center;
+            background-repeat: no-repeat;
+        }
+        .alert-success {
+            background-image: url('/dice-baseball/assets/img/success.svg');
+        }
+        .alert-warning {
+            background-image: url('/dice-baseball/assets/img/warning.svg');
+        }
+        .alert-danger {
+            background-image: url('/dice-baseball/assets/img/danger.svg');
+        }
+        .alert-primary {
+            background-image: url('/dice-baseball/assets/img/primary.svg');
+        }
+        .modal * {
+            font-size: 16px;
+        }
+        /* If screen size is more than 600px wide, set the font-size of <div> to 80px */
+        @media screen and (min-width: 800px) {
+            * {
+              font-size: 32px;
+            }
+             .btn img {
+              height: 2.5rem;
+             }
+            .alert {
+                background-size: contain;
+                font-size: 28px;
+            }
+            .modal * {
+                font-size: 24px;
+            }
+        }
+</style>
