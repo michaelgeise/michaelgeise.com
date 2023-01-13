@@ -48,11 +48,11 @@
         <nav class="navbar navbar-expand-lg text-uppercase fixed-top" id="mainNav" data-animate="fadeInDown">
             <div class="container">
                 <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="images/mg-logo.svg" class="img-responsive" alt="MG logo" title="Go to intro section"></a>
-
-                <ul class="navbar-nav ml-auto">
+                <!-- hide nave for now -->
+                <!--ul class="navbar-nav ml-auto">
                     <li class="nav-item mx-0 mx-lg-1 mx-3"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#work">Work</a></li>
                     <li class="nav-item mx-0 mx-lg-1 mx-3"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
-                </ul>
+                </ul-->
             </div>
         </nav>
         <!-- Masthead-->
