@@ -6,6 +6,43 @@
 	<div class="card">
         <div class="card-body">
             <h1 class="h5">Dice Baseball!</h1>
+            <div class="d-flex justify-content-between inning-score">
+                <div id="outsGroup">
+                    <label class="form-check-label" for="outs">Outs</label>
+                    <div id="outs">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="bases">
+                    <div class="base-border">
+                        <!-- <div class="base" id="secondBase"></div> -->
+                        <input class="form-check-input base" type="checkbox" id="second" value="secondBase">
+                    </div>
+                    <div class="base-border">
+                        <!-- <div class="base hasRunner" id="firstBase"></div> -->
+                        <input class="form-check-input base" type="checkbox" id="first" value="firstBase">
+                    </div>
+                    <div class="base-border">
+                        <!-- <div class="base" id="thirdBase"></div> -->
+                        <input class="form-check-input base" type="checkbox" id="third" value="thirdBase">
+                    </div>
+                </div>
+
+                <div id="runsGroup">
+                    <div class="mb-3">
+                    <label for="runs" class="form-label">Runs</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control" id="runs" aria-describedby="basic-addon3" value="0">
+                    </div>
+                    </div>
+                </div>
+            </div>
 			<div v-if="currentMsg" :class="`alert alert-${currentMsg.alert}`" role="alert">
 			  {{ currentMsg.msg }}
 			</div>
@@ -336,14 +373,91 @@ const setDie = num => {
 
         #main {
           overflow: auto;
-          padding-bottom: calc(50vh - 12rem);
+          /* padding-bottom: calc(50vh - 12rem); */
           /* must be same height as the footer */
         }
         h1.h5 {
             text-align: center;
             margin-bottom: 1rem;
-            font-family: 'Varela Round', sans-serif;
             font-weight: 500;
+        }
+        .inning-score * {
+            font-size: 24px;
+        }
+        #outsGroup .form-check-inline {
+            display: inline-block;
+            margin-right: 0;
+        }
+        #outsGroup .form-check-input[type=checkbox] {
+            border-radius: 50%;
+        }
+        #outsGroup .form-check-input:checked {
+            background-color: #EB5757;
+            border-color: #EB5757;
+        }
+        #outsGroup .form-check-input:checked[type=checkbox] {
+            background-image: none;
+        }
+        #outsGroup .form-check-input:focus {
+            border-color: #EB5757;
+            outline: 0;
+            box-shadow: 0 0 0 0.25rem rgba(235,87,87,.25);
+        }
+        #bases {
+            --s: 1.5rem; /* control the size */
+            display: grid;
+            grid: auto-flow var(--s) / repeat(2,var(--s));
+            place-items: center;
+            transform: rotate(45deg);
+            left: -0.5rem;
+            position: relative;
+        }
+        #bases > .base-border {
+            width: 2rem; 
+            aspect-ratio: 1;
+            transform: scale(var(--_t,1)) rotate(-45deg);
+            clip-path: polygon(50% 0,100% 50%,50% 100%,0 50%);
+            cursor: pointer;
+            transition: .2s linear;
+            background-color: #757575;
+            position: relative
+        }
+        #bases > .base-border > .base {
+            width: 1.833rem;
+            height: 1.833rem;
+            aspect-ratio: 1;
+            clip-path: polygon(50% 0,100% 50%,50% 100%,0 50%);
+            cursor: pointer;
+            transition: .2s linear;
+            background-color: #fff;
+            position: absolute;
+            top: 0.0833rem;
+            left: 0.0833rem;
+            margin: 0;
+            border: none;
+        }
+        #bases > .base-border > .base.form-check-input:checked {
+            background-color: #F2C94C;
+            background-image: none;
+        }
+        #bases > .base-border > .base:hover {
+            filter: grayscale(0);
+            --_t: 1.15;
+            background: #F8E4A5;
+        }
+        #bases .base.hasRunner {
+            background-color: #F2C94C;
+        }         
+        #runsGroup input, #runsGroup .input-group, #runsGroup .input-group>.form-control {
+            width: 2rem;
+            height: 1.5rem;
+        }
+        #runsGroup .form-label {
+            margin-bottom: 0;
+        }
+        #runsGroup .form-control {
+            padding: 0.25rem 0.125rem 0.25rem 0.25rem;
+            font-size: 24px;
         }
 
         #footer {
