@@ -22,15 +22,15 @@
                 <div id="bases">
                     <div class="base-border">
                         <!-- <div class="base" id="secondBase"></div> -->
-                        <input class="form-check-input base" type="checkbox" id="second" value="secondBase">
+                        <input class="form-check-input base" type="checkbox" id="second" :value="state.second">
                     </div>
                     <div class="base-border">
                         <!-- <div class="base hasRunner" id="firstBase"></div> -->
-                        <input class="form-check-input base" type="checkbox" id="first" value="firstBase">
+                        <input class="form-check-input base" type="checkbox" id="first" :value="state.first">
                     </div>
                     <div class="base-border">
                         <!-- <div class="base" id="thirdBase"></div> -->
-                        <input class="form-check-input base" type="checkbox" id="third" value="thirdBase">
+                        <input class="form-check-input base" type="checkbox" id="third" :value="state.third">
                     </div>
                 </div>
 
@@ -230,7 +230,12 @@ const state = reactive({
     x: null,
     y: null,
     steal: null,
-    msg: 'Batter up'
+    msg: 'Batter up',
+    runs: 0,
+    outs: 0,
+    first: false,
+    second: false,
+    third: false
 });
 
 const messages = [
@@ -325,18 +330,99 @@ const currentMsg = computed(() => {
 
 const setDie = num => {
     if (state.steal !== null && state.x !== null) {
+        //  we finished a steal roll, so clear the numbers
         state.steal = null;
         state.x = null;
     }
+
     if (state.x == null) {
+        //  fist roll, make X the result;
         state.x = num;
+
+        //  Handle if Stealing
+        if (state.steal) {
+            updateStats();
+        }
     } else if(state.y == null) {
+        //  second roll, make Y the result
         console.log('set y', num)
         state.y = num;
+        
+        //  This was a hit, now we need to handle the result
+        updateStats();
     } else {
+        //  otherwise, it's a new roll, clear the old Y and set x to number
         state.x = num;
         state.y = null;
     }
+}
+
+const updateStats = () => {
+    //  what might we do?
+
+    //  add x to outs
+    //  ADVANCE BASES BY X (1,2,3,4)
+    //  Remove from base
+    //  Add X to runs
+    //  clear all
+
+    const addToRun = num => {
+        state.runs = state.runs + num;
+    }
+
+    const advanceBases = (num = 1) => {
+        state.first, state.second, state.third
+        if (state.third) {
+            addToRun(1);
+            state.third = false;
+        }
+        if (state.second) {
+            if (num == 1) {
+                state.third = true;
+            } else {
+                addToRun(1);
+            }
+            state.second = false;
+        }
+        if (state.first) {
+            state.first = false;
+            if (num == 1) {
+                state.second = true;
+            } else if (num == 2) {
+                state.third = true;
+            } else {
+                addToRun(1);
+            }
+        }
+        //  handle batter
+        if (num == 4) {
+            addToRun(1);
+        } else {
+            const b = [first, second, third];
+            state[b] = true;
+        }
+    }
+
+    const roll = [state.x, state.y];
+
+    if (roll == [[1,1],[2,6]]) {    //  single
+        advanceBases(1);
+    };
+
+    // { dice: [[1,1],[2,6]], msg: "Single!", alert:	"success" },
+    // { dice: [[1,2]], msg: 'Double play!', alert:	'danger' },
+    // { dice: [[1,3]], msg: 'Ground out plus!', alert: 'warning'},
+    // { dice: [[1,4]], msg: 'Ground out!', alert: 'danger'},
+    // { dice: [[1,5]], msg: 'Fly out plus!', alert: 'warning'},
+    // { dice: [[1,6],[2,5]], msg: 'Pop out!', alert: 'danger'},
+    // { dice: [[2,2], [5,5]], msg: 'Double!', alert: 'success'},
+    // { dice: [[2,3],[3,4],[4,5]], msg: 'Strikeout!', alert: 'danger'},
+    // { dice: [[2,4],[3,5]], msg: 'Walk', alert: 'success'},
+    // { dice: [[3,3]], msg: 'Triple!', alert: 'success'},
+    // { dice: [[3,6],[5,6]], msg: 'Flyout!', alert: 'danger'},
+    // { dice: [[4,4],[6,6]], msg: 'Home run!', alert: 'success'},
+    // { dice: [[4,6]], msg: 'Single plus!', alert: 'success'},
+    // { dice: [[5,6]], msg: 'Fly out plus!', alert: 'warning'},
 }
 
 </script>
@@ -390,6 +476,7 @@ const setDie = num => {
         }
         #outsGroup .form-check-input[type=checkbox] {
             border-radius: 50%;
+            cursor: pointer;
         }
         #outsGroup .form-check-input:checked {
             background-color: #EB5757;
