@@ -9,12 +9,12 @@
             <div class="d-flex justify-content-between inning-score">
                 <div id="outsGroup">
                     <label class="form-check-label" for="outs">Outs</label>
-                    <div id="outs">
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <div id="outs" @click.stop.prevent="state.outs >= 2 ? state.outs = 0 : state.outs++" style="cursor: pointer;">
+                        <div class="form-check form-check-inline" style="pointer-events: none;">
+                            <input class="form-check-input" type="checkbox" :checked="state.outs > 0">
                         </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <div class="form-check form-check-inline" style="pointer-events: none;">
+                            <input class="form-check-input" type="checkbox" :checked="state.outs > 1">
                         </div>
                     </div>
                 </div>
@@ -22,15 +22,15 @@
                 <div id="bases">
                     <div class="base-border">
                         <!-- <div class="base" id="secondBase"></div> -->
-                        <input class="form-check-input base" type="checkbox" id="second" :value="state.second">
+                        <input class="form-check-input base" type="checkbox" id="second" v-model="state.second">
                     </div>
                     <div class="base-border">
                         <!-- <div class="base hasRunner" id="firstBase"></div> -->
-                        <input class="form-check-input base" type="checkbox" id="first" :value="state.first">
+                        <input class="form-check-input base" type="checkbox" id="first" v-model="state.first">
                     </div>
                     <div class="base-border">
                         <!-- <div class="base" id="thirdBase"></div> -->
-                        <input class="form-check-input base" type="checkbox" id="third" :value="state.third">
+                        <input class="form-check-input base" type="checkbox" id="third" v-model="state.third">
                     </div>
                 </div>
 
@@ -38,7 +38,7 @@
                     <div class="mb-3">
                     <label for="runs" class="form-label">Runs</label>
                     <div class="input-group">
-                        <input type="number" class="form-control" id="runs" aria-describedby="basic-addon3" value="0">
+                        <input type="number" class="form-control" id="runs" aria-describedby="basic-addon3" v-model="state.runs">
                     </div>
                     </div>
                 </div>
@@ -238,22 +238,6 @@ const state = reactive({
     third: false
 });
 
-const messages = [
-    { dice: [[1,1],[2,6]], msg: "Single!", alert:	"success" },
-    { dice: [[1,2]], msg: 'Double play!', alert:	'danger' },
-    { dice: [[1,3]], msg: 'Ground out plus!', alert: 'warning'},
-    { dice: [[1,4]], msg: 'Ground out!', alert: 'danger'},
-    { dice: [[1,5]], msg: 'Fly out plus!', alert: 'warning'},
-    { dice: [[1,6],[2,5]], msg: 'Pop out!', alert: 'danger'},
-    { dice: [[2,2], [5,5]], msg: 'Double!', alert: 'success'},
-    { dice: [[2,3],[3,4],[4,5]], msg: 'Strikeout!', alert: 'danger'},
-    { dice: [[2,4],[3,5]], msg: 'Walk', alert: 'success'},
-    { dice: [[3,3]], msg: 'Triple!', alert: 'success'},
-    { dice: [[3,6],[5,6]], msg: 'Flyout!', alert: 'danger'},
-    { dice: [[4,4],[6,6]], msg: 'Home run!', alert: 'success'},
-    { dice: [[4,6]], msg: 'Single plus!', alert: 'success'},
-    { dice: [[5,6]], msg: 'Fly out plus!', alert: 'warning'},
-    ]
 
 const stealMessages = [
     {   base: 2,
@@ -357,6 +341,59 @@ const setDie = num => {
     }
 }
 
+const addToRun = num => {
+        state.runs = state.runs + num;
+    }
+
+const advanceBases = (num = 1, runnerOut, forceBatterTo) => {
+    //  handle runner out on third out
+    if (runnerOut && state.outs == 2) {
+        state.outs == 3;
+        return;
+    }
+
+    console.log('advance bases ' + num);
+    // otherwise advance bases
+    if (state.third) {
+        addToRun(1);
+        state.third = false;
+    }
+    if (state.second) {
+        if (num == 1) {
+            state.third = true;
+        } else {
+            addToRun(1);
+        }
+        state.second = false;
+    }
+    if (state.first) {
+        state.first = false;
+        if (num == 1) {
+            state.second = true;
+        } else if (num == 2) {
+            state.third = true;
+        } else {
+            addToRun(1);
+        }
+    }
+    //  handle batter
+    if (runnerOut) {
+        state.outs ++;
+    } else {
+        if (forceBatterTo) {
+            state[forceBatterTo] = true;
+        } else if (num == 4) {
+            //  home run
+            addToRun(1);
+        } else {
+            //handle a normal advance to base
+            const b = ['first', 'second', 'third'];
+            state[b[num-1]] = true;
+        }
+    }
+    
+}
+
 const updateStats = () => {
     //  what might we do?
 
@@ -366,64 +403,30 @@ const updateStats = () => {
     //  Add X to runs
     //  clear all
 
-    const addToRun = num => {
-        state.runs = state.runs + num;
-    }
-
-    const advanceBases = (num = 1) => {
-        state.first, state.second, state.third
-        if (state.third) {
-            addToRun(1);
-            state.third = false;
-        }
-        if (state.second) {
-            if (num == 1) {
-                state.third = true;
-            } else {
-                addToRun(1);
-            }
-            state.second = false;
-        }
-        if (state.first) {
-            state.first = false;
-            if (num == 1) {
-                state.second = true;
-            } else if (num == 2) {
-                state.third = true;
-            } else {
-                addToRun(1);
-            }
-        }
-        //  handle batter
-        if (num == 4) {
-            addToRun(1);
-        } else {
-            const b = [first, second, third];
-            state[b] = true;
-        }
-    }
-
-    const roll = [state.x, state.y];
-
-    if (roll == [[1,1],[2,6]]) {    //  single
-        advanceBases(1);
-    };
-
-    // { dice: [[1,1],[2,6]], msg: "Single!", alert:	"success" },
-    // { dice: [[1,2]], msg: 'Double play!', alert:	'danger' },
-    // { dice: [[1,3]], msg: 'Ground out plus!', alert: 'warning'},
-    // { dice: [[1,4]], msg: 'Ground out!', alert: 'danger'},
-    // { dice: [[1,5]], msg: 'Fly out plus!', alert: 'warning'},
-    // { dice: [[1,6],[2,5]], msg: 'Pop out!', alert: 'danger'},
-    // { dice: [[2,2], [5,5]], msg: 'Double!', alert: 'success'},
-    // { dice: [[2,3],[3,4],[4,5]], msg: 'Strikeout!', alert: 'danger'},
-    // { dice: [[2,4],[3,5]], msg: 'Walk', alert: 'success'},
-    // { dice: [[3,3]], msg: 'Triple!', alert: 'success'},
-    // { dice: [[3,6],[5,6]], msg: 'Flyout!', alert: 'danger'},
-    // { dice: [[4,4],[6,6]], msg: 'Home run!', alert: 'success'},
-    // { dice: [[4,6]], msg: 'Single plus!', alert: 'success'},
-    // { dice: [[5,6]], msg: 'Fly out plus!', alert: 'warning'},
+    const result = messages.find(m => {
+            const roll = [Math.min(state.x, state.y), Math.max(state.x, state.y)];
+            const index = JSON.stringify(m.dice).indexOf(JSON.stringify(roll));
+            return index != -1;
+        })
+    console.log(result);
+    result.action();
 }
+
+const messages = [
+    { dice: [[1,1],[2,6]], msg: "Single!", alert:	"success", action: () => advanceBases(1) },
+    { dice: [[1,2]], msg: 'Double play!', alert:	'danger', action: () => state.outs = state.outs + 2 },
+    { dice: [[1,3]], msg: 'Ground out plus!', alert: 'warning', action: () => advanceBases(1, true)},
+    { dice: [[1,4]], msg: 'Ground out!', alert: 'danger', action: () => state.outs ++ },
+    { dice: [[1,5]], msg: 'Fly out plus!', alert: 'warning', action: () => advanceBases(1, true)},
+    { dice: [[1,6],[2,5]], msg: 'Pop out!', alert: 'danger', action: () => state.outs ++ },
+    { dice: [[2,2], [5,5]], msg: 'Double!', alert: 'success', action: () => advanceBases(2)},
+    { dice: [[2,3],[3,4],[4,5]], msg: 'Strikeout!', alert: 'danger', action: () => state.outs ++ },
+    { dice: [[2,4],[3,5]], msg: 'Walk', alert: 'success', action: () => advanceBases(1)},
+    { dice: [[3,3]], msg: 'Triple!', alert: 'success', action: () => advanceBases(3)},
+    { dice: [[3,6],[5,6]], msg: 'Flyout!', alert: 'danger', action: () => state.outs ++ },
+    { dice: [[4,4],[6,6]], msg: 'Home run!', alert: 'success', action: () => advanceBases(4)},
+    { dice: [[4,6]], msg: 'Single plus!', alert: 'success', action: () => advanceBases(1, false, 'first')},
+    ]
 
 </script>
 
