@@ -1,11 +1,17 @@
 <template>
 
-<div class="col-lg-8 mx-auto p-3 py-md-5" id="wrap">
+<div class="col-lg-8 mx-auto p-sm-3 py-md-5" id="wrap">
     <div id="main"></div>
   <main>
 	<div class="card">
+        <div class="card-head">
+            <h1 class="d-none">Dice Baseball!</h1>
+            <div class="input-group">
+                <input type="text" class="form-control" id="titleInput" aria-describedby="basic-addon3" value="Dice Baseball!">
+            </div>
+        </div>
         <div class="card-body">
-            <h1 class="h5">Dice Baseball!</h1>
+
             <div class="d-flex justify-content-between inning-score">
                 <div id="outsGroup">
                     <label class="form-check-label" for="outs">Outs</label>
@@ -94,7 +100,7 @@
 	</div>
   </main>
   </div>
-  <footer class="pt-5 my-5 text-muted border-top" id="footer">
+  <footer class="pt-5 text-muted border-top" id="footer">
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#rulesModal">
       Rules
@@ -456,19 +462,37 @@ const messages = [
           height: 100%;
         }
 
-        #wrap {
-          min-height: 100%;
-        }
-
         #main {
           overflow: auto;
           /* padding-bottom: calc(50vh - 12rem); */
           /* must be same height as the footer */
         }
-        h1.h5 {
+        @media (max-width: 576px) { 
+            body {
+                background: none;
+            }
+            main .card, main .card-head {
+                border: 0;
+                border-radius: 0;
+            }
+            footer#footer {
+                margin-top: 1rem;
+            }
+        }
+        .card-head {
+            background: #084298;
+            padding: .5rem 0 0;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.5rem;
+            border-radius: .33rem .33rem 0 0;
+        }
+        #titleInput {
             text-align: center;
-            margin-bottom: 1rem;
-            font-weight: 500;
+            color: white;
+            background: #084298;
+            border: 0;
+            font-weight: bold;
         }
         .inning-score * {
             font-size: 24px;
@@ -550,9 +574,9 @@ const messages = [
             font-size: 24px;
         }
 
-        #footer {
+        footer#footer {
             position: relative;
-            margin-top: -3.5rem !important;
+            margin-top: 1rem;
             height: 3.5rem;
             clear: both;
             text-align: center;
@@ -564,20 +588,12 @@ const messages = [
             margin:0 1rem;
         }
 
-
-        /* Opera Fix thanks to Maleika (Kohoutec) */
-
         body:before {
           content: "";
           height: 100%;
           float: left;
           width: 0;
           margin-top: -32767px;
-          /* thank you Erik J - negate effect of float*/
-        }
-        .card {
-            width: 12rem;
-            margin: auto;
         }
         h1.card-title.h5 {
             font-size: 1REM;
@@ -607,7 +623,8 @@ const messages = [
         }
         .dice-row .btn-dice {
             padding: 0;
-            box-shadow: 0 .125rem .25rem #757575
+            box-shadow: 0 .125rem .25rem #757575;
+            touch-action: manipulation;
         }
         .alert {
             background-position: right center;
@@ -642,6 +659,18 @@ const messages = [
             }
             .modal * {
                 font-size: 24px;
+            }
+        }
+        @media (min-width: 576px) { 
+            #wrap {
+                min-height: 100%;
+            }  
+            .card {
+                width: 12rem;
+                margin: auto;
+            }
+            footer#footer {
+                margin-top: -3.5rem;
             }
         }
 </style>
