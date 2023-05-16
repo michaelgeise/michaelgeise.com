@@ -74,15 +74,29 @@
 				<span v-if="state.steal == 2" class="badge rounded-pill text-bg-primary steal-badge">2nd</span>
 				<span v-if="state.steal == 3" class="badge rounded-pill text-bg-primary steal-badge">3rd</span>
 				<span v-if="state.steal == 4" class="badge rounded-pill text-bg-primary steal-badge">Home</span>
-				<div class="dropdown float-end">
-				  <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="dropdown float-end" v-if="state.first && state.third && !state.second">
+				  <button 
+                    class="btn btn-secondary btn-sm dropdown-toggle" 
+                    type="button" 
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
 				    Steal
 				  </button>
 				  <ul class="dropdown-menu">
 				    <li><a class="dropdown-item" @click="setSteal(2)" href="#">Second</a></li>
-				    <li><a class="dropdown-item" @click="setSteal(3)" href="#">Third</a></li>
 				    <li><a class="dropdown-item" @click="setSteal(4)" href="#">Home</a></li>
 				  </ul>
+				</div>
+                <div class="dropdown float-end" v-else>
+				  <button 
+                    @click="setSteal()"
+                    :disabled="!state.first && !state.second && !state.third" 
+                    style="font-size: 26px;"
+                    class="btn btn-secondary btn-sm" 
+                    type="button" 
+                    aria-expanded="false">
+				    Steal {{ state.third ? 'Home' : state.second ? '3rd' : state.first ? '2nd' : '' }}
+				  </button>
 				</div>
 			</div>
 
@@ -231,7 +245,7 @@
 </template>
 
 <script setup>
-import { reactive, computed } from 'vue'
+import { reactive, computed, watch } from 'vue'
 const state = reactive({
     x: null,
     y: null,
@@ -244,6 +258,20 @@ const state = reactive({
     third: false
 });
 
+
+//  reset everything after 3 outs
+watch(() => state.outs, outs => {
+    console.log(outs);
+    if (outs > 2) {
+        console.log('Inning over!');
+        alert('inning over!');
+        state.runs = 0;
+        state.outs = 0;
+        state.first = false;
+        state.second = false;
+        state.third = false;
+    }
+})
 
 const stealMessages = [
     {   base: 2,
@@ -284,7 +312,18 @@ const stealMessages = [
 ]
 
 
-const setSteal = base => {
+const setSteal = b => {
+    let base;
+    if (b) {
+        base = b;
+    } else if (state.third) {
+        base = 4;
+    } else if (state.second) {
+        base = 3;
+    } else {
+        base = 2;
+    }
+    console.log('steal ' + base);
     if (base !== null) {
         state.steal = base;
         state.x = null;
@@ -350,6 +389,16 @@ const setDie = num => {
 const addToRun = num => {
         state.runs = state.runs + num;
     }
+
+const walkBatter = () => {
+    //  check if someone is on first
+    if (state.first) {
+        advanceBases(1);
+    } else {
+        //  Just put them on first
+        state.first = true;
+    }
+}
 
 const advanceBases = (num = 1, runnerOut, forceBatterTo) => {
     //  handle runner out on third out
@@ -418,16 +467,46 @@ const updateStats = () => {
     result.action();
 }
 
+const handleDoublePlay = () => {
+    //  check if no one is on base
+    if (!state.first && !state.second && !state.third) {
+        //  just the batter is out
+        state.outs ++;
+    } else {
+        //  there is atleast one person on base, so 2 outs
+        state.outs = state.outs + 2;
+        //  no eliminate people starting with most advanced runners
+        let outs = 2;
+        if (state.third) { 
+            state.third = false;
+            outs--;
+        }
+        if (state.second) {
+            state.second = false;
+            outs--;
+        }
+        if (state.first && outs > 0) {
+            // there was not a runner on second or third, so eliminate first
+            state.first = false;
+            outs--;
+        }
+        if (outs <= 0) {
+            //  we eliminated enough runners, the hitter can advance
+            advanceBases(1);
+        }
+    }
+}
+
 const messages = [
     { dice: [[1,1],[2,6]], msg: "Single!", alert:	"success", action: () => advanceBases(1) },
-    { dice: [[1,2]], msg: 'Double play!', alert:	'danger', action: () => state.outs = state.outs + 2 },
+    { dice: [[1,2]], msg: 'Double play!', alert:	'danger', action: () => handleDoublePlay() },
     { dice: [[1,3]], msg: 'Ground out plus!', alert: 'warning', action: () => advanceBases(1, true)},
     { dice: [[1,4]], msg: 'Ground out!', alert: 'danger', action: () => state.outs ++ },
     { dice: [[1,5]], msg: 'Fly out plus!', alert: 'warning', action: () => advanceBases(1, true)},
     { dice: [[1,6],[2,5]], msg: 'Pop out!', alert: 'danger', action: () => state.outs ++ },
     { dice: [[2,2], [5,5]], msg: 'Double!', alert: 'success', action: () => advanceBases(2)},
     { dice: [[2,3],[3,4],[4,5]], msg: 'Strikeout!', alert: 'danger', action: () => state.outs ++ },
-    { dice: [[2,4],[3,5]], msg: 'Walk', alert: 'success', action: () => advanceBases(1)},
+    { dice: [[2,4],[3,5]], msg: 'Walk', alert: 'success', action: () => walkBatter()},
     { dice: [[3,3]], msg: 'Triple!', alert: 'success', action: () => advanceBases(3)},
     { dice: [[3,6],[5,6]], msg: 'Flyout!', alert: 'danger', action: () => state.outs ++ },
     { dice: [[4,4],[6,6]], msg: 'Home run!', alert: 'success', action: () => advanceBases(4)},
