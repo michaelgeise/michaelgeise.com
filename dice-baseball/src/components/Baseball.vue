@@ -1,251 +1,144 @@
 <template>
+<div>
+    <div class="col-lg-8 mx-auto p-sm-3 py-md-5" id="wrap">
+        <div id="main"></div>
+    <main>
+        <div class="card">
+            <div class="card-head">
+                <h1 class="d-none">Dice Baseball!</h1>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="titleInput" aria-describedby="basic-addon3" value="Dice Baseball!">
+                </div>
+            </div>
+            <div class="card-body">
 
-<div class="col-lg-8 mx-auto p-sm-3 py-md-5" id="wrap">
-    <div id="main"></div>
-  <main>
-	<div class="card">
-        <div class="card-head">
-            <h1 class="d-none">Dice Baseball!</h1>
-            <div class="input-group">
-                <input type="text" class="form-control" id="titleInput" aria-describedby="basic-addon3" value="Dice Baseball!">
+                <div class="d-flex justify-content-between inning-score">
+                    <div id="outsGroup">
+                        <label class="form-check-label" for="outs">Outs</label>
+                        <div id="outs" @click.stop.prevent="state.outs >= 2 ? state.outs = 0 : state.outs++" style="cursor: pointer;">
+                            <div class="form-check form-check-inline" style="pointer-events: none;">
+                                <input class="form-check-input" type="checkbox" :checked="state.outs > 0">
+                            </div>
+                            <div class="form-check form-check-inline" style="pointer-events: none;">
+                                <input class="form-check-input" type="checkbox" :checked="state.outs > 1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="bases">
+                        <div class="base-border">
+                            <!-- <div class="base" id="secondBase"></div> -->
+                            <input class="form-check-input base" type="checkbox" id="second" v-model="state.second">
+                        </div>
+                        <div class="base-border">
+                            <!-- <div class="base hasRunner" id="firstBase"></div> -->
+                            <input class="form-check-input base" type="checkbox" id="first" v-model="state.first">
+                        </div>
+                        <div class="base-border">
+                            <!-- <div class="base" id="thirdBase"></div> -->
+                            <input class="form-check-input base" type="checkbox" id="third" v-model="state.third">
+                        </div>
+                    </div>
+
+                    <div id="runsGroup">
+                        <div class="mb-3">
+                        <label for="runs" class="form-label">Runs</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="runs" aria-describedby="basic-addon3" v-model="state.runs">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div v-if="currentMsg" :class="`alert alert-${currentMsg.alert}`" role="alert">
+                {{ currentMsg.msg }}
+                </div>
+                <div>
+                    <div class="dice-placeholder" id="first-pick">
+                        <img v-if="state.x == null" src="@/assets/img/blank.svg" alt="blank">
+                        <img v-if="state.x == 1" src="@/assets/img/1.svg" alt="1">
+                        <img v-if="state.x == 2" src="@/assets/img/2.svg" alt="2">
+                        <img v-if="state.x == 3" src="@/assets/img/3.svg" alt="3">
+                        <img v-if="state.x == 4" src="@/assets/img/4.svg" alt="4">
+                        <img v-if="state.x == 5" src="@/assets/img/5.svg" alt="5">
+                        <img v-if="state.x == 6" src="@/assets/img/6.svg" alt="6">
+                    </div>
+                    <div v-if="!state.steal" class="dice-placeholder" id="second-pick">
+                        <img v-if="state.y == null" src="@/assets/img/blank.svg" alt="blank">
+                        <img v-if="state.y == 1" src="@/assets/img/1.svg" alt="1">
+                        <img v-if="state.y == 2" src="@/assets/img/2.svg" alt="2">
+                        <img v-if="state.y == 3" src="@/assets/img/3.svg" alt="3">
+                        <img v-if="state.y == 4" src="@/assets/img/4.svg" alt="4">
+                        <img v-if="state.y == 5" src="@/assets/img/5.svg" alt="5">
+                        <img v-if="state.y == 6" src="@/assets/img/6.svg" alt="6">
+                    </div>
+                    <span v-if="state.steal == 2" class="badge rounded-pill text-bg-primary steal-badge">2nd</span>
+                    <span v-if="state.steal == 3" class="badge rounded-pill text-bg-primary steal-badge">3rd</span>
+                    <span v-if="state.steal == 4" class="badge rounded-pill text-bg-primary steal-badge">Home</span>
+                    <div class="dropdown float-end" v-if="state.first && state.third && !state.second">
+                    <button 
+                        class="btn btn-secondary btn-sm dropdown-toggle" 
+                        type="button" 
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Steal
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" @click="setSteal(2)" href="#">Second</a></li>
+                        <li><a class="dropdown-item" @click="setSteal(4)" href="#">Home</a></li>
+                    </ul>
+                    </div>
+                    <div class="dropdown float-end" v-else>
+                    <button 
+                        @click="setSteal()"
+                        :disabled="!state.first && !state.second && !state.third" 
+                        style="font-size: 21px;"
+                        class="btn btn-secondary btn-sm" 
+                        type="button" 
+                        aria-expanded="false">
+                        Steal {{ state.third ? 'Home' : state.second ? '3rd' : state.first ? '2nd' : '' }}
+                    </button>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between dice-row">
+                    <button @click="setDie(1)" type="button" class="btn btn-light btn-dice"><img src="@/assets/img/1.svg" alt="1"></button>
+                    <button @click="setDie(2)" type="button" class="btn btn-light btn-dice"><img src="@/assets/img/2.svg" alt="2"></button>
+                    <button @click="setDie(3)" type="button" class="btn btn-light btn-dice"><img src="@/assets/img/3.svg" alt="3"></button>
+                </div>
+                <div class="d-flex justify-content-between dice-row">
+                    <button @click="setDie(4)" type="button" class="btn btn-light btn-dice"><img src="@/assets/img/4.svg" alt="4"></button>
+                    <button @click="setDie(5)" type="button" class="btn btn-light btn-dice"><img src="@/assets/img/5.svg" alt="5"></button>
+                    <button @click="setDie(6)" type="button" class="btn btn-light btn-dice"><img src="@/assets/img/6.svg" alt="6"></button>
+                </div>
             </div>
         </div>
-        <div class="card-body">
-
-            <div class="d-flex justify-content-between inning-score">
-                <div id="outsGroup">
-                    <label class="form-check-label" for="outs">Outs</label>
-                    <div id="outs" @click.stop.prevent="state.outs >= 2 ? state.outs = 0 : state.outs++" style="cursor: pointer;">
-                        <div class="form-check form-check-inline" style="pointer-events: none;">
-                            <input class="form-check-input" type="checkbox" :checked="state.outs > 0">
-                        </div>
-                        <div class="form-check form-check-inline" style="pointer-events: none;">
-                            <input class="form-check-input" type="checkbox" :checked="state.outs > 1">
-                        </div>
-                    </div>
-                </div>
-
-                <div id="bases">
-                    <div class="base-border">
-                        <!-- <div class="base" id="secondBase"></div> -->
-                        <input class="form-check-input base" type="checkbox" id="second" v-model="state.second">
-                    </div>
-                    <div class="base-border">
-                        <!-- <div class="base hasRunner" id="firstBase"></div> -->
-                        <input class="form-check-input base" type="checkbox" id="first" v-model="state.first">
-                    </div>
-                    <div class="base-border">
-                        <!-- <div class="base" id="thirdBase"></div> -->
-                        <input class="form-check-input base" type="checkbox" id="third" v-model="state.third">
-                    </div>
-                </div>
-
-                <div id="runsGroup">
-                    <div class="mb-3">
-                    <label for="runs" class="form-label">Runs</label>
-                    <div class="input-group">
-                        <input type="number" class="form-control" id="runs" aria-describedby="basic-addon3" v-model="state.runs">
-                    </div>
-                    </div>
-                </div>
-            </div>
-			<div v-if="currentMsg" :class="`alert alert-${currentMsg.alert}`" role="alert">
-			  {{ currentMsg.msg }}
-			</div>
-			<div>
-				<div class="dice-placeholder" id="first-pick">
-                    <img v-if="state.x == null" src="@/assets/img/blank.svg" alt="blank">
-                    <img v-if="state.x == 1" src="@/assets/img/1.svg" alt="1">
-                    <img v-if="state.x == 2" src="@/assets/img/2.svg" alt="2">
-                    <img v-if="state.x == 3" src="@/assets/img/3.svg" alt="3">
-                    <img v-if="state.x == 4" src="@/assets/img/4.svg" alt="4">
-                    <img v-if="state.x == 5" src="@/assets/img/5.svg" alt="5">
-                    <img v-if="state.x == 6" src="@/assets/img/6.svg" alt="6">
-                </div>
-				<div v-if="!state.steal" class="dice-placeholder" id="second-pick">
-                    <img v-if="state.y == null" src="@/assets/img/blank.svg" alt="blank">
-                    <img v-if="state.y == 1" src="@/assets/img/1.svg" alt="1">
-                    <img v-if="state.y == 2" src="@/assets/img/2.svg" alt="2">
-                    <img v-if="state.y == 3" src="@/assets/img/3.svg" alt="3">
-                    <img v-if="state.y == 4" src="@/assets/img/4.svg" alt="4">
-                    <img v-if="state.y == 5" src="@/assets/img/5.svg" alt="5">
-                    <img v-if="state.y == 6" src="@/assets/img/6.svg" alt="6">
-                </div>
-				<span v-if="state.steal == 2" class="badge rounded-pill text-bg-primary steal-badge">2nd</span>
-				<span v-if="state.steal == 3" class="badge rounded-pill text-bg-primary steal-badge">3rd</span>
-				<span v-if="state.steal == 4" class="badge rounded-pill text-bg-primary steal-badge">Home</span>
-                <div class="dropdown float-end" v-if="state.first && state.third && !state.second">
-				  <button 
-                    class="btn btn-secondary btn-sm dropdown-toggle" 
-                    type="button" 
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false">
-				    Steal
-				  </button>
-				  <ul class="dropdown-menu">
-				    <li><a class="dropdown-item" @click="setSteal(2)" href="#">Second</a></li>
-				    <li><a class="dropdown-item" @click="setSteal(4)" href="#">Home</a></li>
-				  </ul>
-				</div>
-                <div class="dropdown float-end" v-else>
-				  <button 
-                    @click="setSteal()"
-                    :disabled="!state.first && !state.second && !state.third" 
-                    style="font-size: 26px;"
-                    class="btn btn-secondary btn-sm" 
-                    type="button" 
-                    aria-expanded="false">
-				    Steal {{ state.third ? 'Home' : state.second ? '3rd' : state.first ? '2nd' : '' }}
-				  </button>
-				</div>
-			</div>
-
-			<div class="d-flex justify-content-between dice-row">
-				<button @click="setDie(1)" type="button" class="btn btn-light btn-dice"><img src="@/assets/img/1.svg" alt="1"></button>
-				<button @click="setDie(2)" type="button" class="btn btn-light btn-dice"><img src="@/assets/img/2.svg" alt="2"></button>
-				<button @click="setDie(3)" type="button" class="btn btn-light btn-dice"><img src="@/assets/img/3.svg" alt="3"></button>
-			</div>
-	 		<div class="d-flex justify-content-between dice-row">
-				<button @click="setDie(4)" type="button" class="btn btn-light btn-dice"><img src="@/assets/img/4.svg" alt="4"></button>
-				<button @click="setDie(5)" type="button" class="btn btn-light btn-dice"><img src="@/assets/img/5.svg" alt="5"></button>
-				<button @click="setDie(6)" type="button" class="btn btn-light btn-dice"><img src="@/assets/img/6.svg" alt="6"></button>
-			</div>
-		</div>
-	</div>
-  </main>
-  </div>
-  <footer class="pt-5 text-muted border-top" id="footer">
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#rulesModal">
-      Rules
-    </button>
-    <span>Dice Baseball &middot; &copy; {{new Date().getFullYear()}}</span>
-  </footer>
-
-
-<!-- Modal -->
-<div class="modal modal-xl fade" id="rulesModal" tabindex="-1" aria-labelledby="rulesModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Dice Baseball Rules</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-          <ul>
-            <li>Runners advance an extra base when there is a hit with 2 outs</li>
-            <li>Outcomes ending in "plus" allow the runners to advance an extra base</li>
-        </ul>
-        <table class="table">
-        <thead>
-            <tr>
-            <th scope="col">Roll</th>
-            <th scope="col">Outcome</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row" colspan="2">Batting</th>
-            </tr>
-            <tr class="table-success">
-                <td scope="row">1-1, 2-6</td>
-                <td>Single!</td>
-            </tr>
-            <tr class="table-danger">
-                <td scope="row">1-2</td>
-                <td>Double play!</td>
-            </tr>
-            <tr class="table-warning">
-                <td scope="row">1-3</td>
-                <td colspan="2">Groundout plus!</td>
-            </tr>
-            <tr class="table-danger">
-                <td scope="row">1-4</td>
-                <td>Groundout!</td>
-            </tr>
-            <tr class="table-warning">
-                <td scope="row">1-5</td>
-                <td colspan="2">Fly out plus!</td>
-            </tr>
-            <tr class="table-danger">
-                <td scope="row">1-6, 2-5</td>
-                <td>Pop out!</td>
-            </tr>
-            <tr class="table-success">
-                <td scope="row">2-2, 5-5</td>
-                <td>Double!</td>
-            </tr>
-            <tr class="table-danger">
-                <td scope="row">2-3, 3-4, 4-5</td>
-                <td>Strikeout!</td>
-            </tr>
-            <tr class="table-success">
-                <td scope="row">2-4, 3-5</td>
-                <td>Walk</td>
-            </tr>
-            <tr class="table-success">
-                <td scope="row">3-3</td>
-                <td>Triple!</td>
-            </tr>
-            <tr class="table-danger">
-                <td scope="row">3-6, 5-6</td>
-                <td>Fly out!</td>
-            </tr>
-            <tr class="table-success">
-                <td scope="row">4-4, 6-6</td>
-                <td>Home run!</td>
-            </tr>
-            <tr class="table-success">
-                <td scope="row">4-6</td>
-                <td>Single plus!</td>
-            </tr>
-            <tr>
-                <th scope="row" colspan="2">Stealing Second</th>
-            </tr>
-            <tr class="table-success">
-                <td scope="row">1, 2, 3, 4</td>
-                <td>Stolen base!</td>
-            </tr>
-            <tr class="table-danger">
-                <td scope="row">5, 6</td>
-                <td>Caught stealing!</td>
-            </tr>
-            <tr>
-                <th scope="row" colspan="2">Stealing Third</th>
-            </tr>
-            <tr class="table-success">
-                <td scope="row">1, 2, 3</td>
-                <td>Stolen base!</td>
-            </tr>
-            <tr class="table-danger">
-                <td scope="row">4, 5, 6</td>
-                <td>Caught stealing!</td>
-            </tr>
-            <tr>
-                <th scope="row" colspan="2">Stealing Home</th>
-            </tr>
-            <tr class="table-success">
-                <td scope="row">1</td>
-                <td>Stolen base!</td>
-            </tr>
-            <tr class="table-danger">
-                <td scope="row">2, 3, 4, 5, 6</td>
-                <td>Caught stealing!</td>
-            </tr>
-        </tbody>
-        </table>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
+    </main>
     </div>
-  </div>
-</div>
+    <footer class="pt-5 text-muted border-top" id="footer">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#rulesModal">
+        Rules
+        </button>
+        <span>Dice Baseball &middot; &copy; {{new Date().getFullYear()}}</span>
+    </footer>
 
+
+    <rules></rules>
+    <transition name="fade">
+        <end-of-inning v-if="showEOI" @clear="clearStats(); showEOI = false;" @undo="state.outs--; showEOI = false;"></end-of-inning>
+    </transition>
+    <transition name="fade">
+        <div v-if="showEOI" class="modal-backdrop fade show"></div>
+    </transition>
+</div>
 </template>
 
 <script setup>
-import { reactive, computed, watch } from 'vue'
+import { reactive, computed, watch, ref } from 'vue'
+
+import Rules from './Rules.vue';
+import endOfInning from './endOfInning.vue';
+
 const state = reactive({
     x: null,
     y: null,
@@ -258,25 +151,32 @@ const state = reactive({
     third: false
 });
 
+const showEOI = ref(true);
 
 //  reset everything after 3 outs
 watch(() => state.outs, outs => {
     console.log(outs);
     if (outs > 2) {
         console.log('Inning over!');
-        alert('inning over!');
-        state.runs = 0;
-        state.outs = 0;
-        state.first = false;
-        state.second = false;
-        state.third = false;
+        showEOI.value = true;
     }
 })
+
+const clearStats = () => {
+    state.runs = 0;
+    state.outs = 0;
+    state.first = false;
+    state.second = false;
+    state.third = false;
+    state.x = null;
+    state.y = null;
+}
 
 const stealMessages = [
     {   base: 2,
         dice: [1,2,3,4],
         msg: 'Stolen base!',
+        safe: true,
         alert: 'success'
     },
     {   
@@ -289,6 +189,7 @@ const stealMessages = [
         base: 3,
         dice: [1,2,3],
         msg: 'Stolen base!',
+        safe: true,
         alert: 'success'
     },
     {   
@@ -301,6 +202,7 @@ const stealMessages = [
         base: 4,
         dice: [1],
         msg: 'Stolen base!',
+        safe: true,
         alert: 'success'
     },
     {   
@@ -311,6 +213,24 @@ const stealMessages = [
     }
 ]
 
+const handleSteal = safe => {
+    if (safe) {
+        if (state.steal == 4) {
+            state.runs++;
+            state.third = false;
+        } else if (state.steal == 3) { 
+            state.third = true;
+            state.second = false;
+        } else {
+            state.second = true;
+            state.first = false;
+        }
+    } else {
+        state.outs++;
+        const startBase = ['first','second','third'][state.steal - 2];
+        state[startBase] = false;
+    }
+}
 
 const setSteal = b => {
     let base;
@@ -370,7 +290,8 @@ const setDie = num => {
 
         //  Handle if Stealing
         if (state.steal) {
-            updateStats();
+            const stealState = stealMessages.find(m => m.base == state.steal && m.dice.includes(state.x));
+            handleSteal(stealState.safe);
         }
     } else if(state.y == null) {
         //  second roll, make Y the result
@@ -752,4 +673,14 @@ const messages = [
                 margin-top: -3.5rem;
             }
         }
+
+        .fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
 </style>
