@@ -1,5 +1,4 @@
 <template>
-<div>
     <div class="col-lg-8 mx-auto p-sm-3 py-md-5" id="wrap">
         <div id="main"></div>
     <main>
@@ -122,7 +121,6 @@
         <span>Dice Baseball &middot; &copy; {{new Date().getFullYear()}}</span>
     </footer>
 
-
     <rules></rules>
     <transition name="fade">
         <end-of-inning v-if="showEOI" @clear="clearStats(); showEOI = false;" @undo="state.outs--; showEOI = false;"></end-of-inning>
@@ -130,7 +128,7 @@
     <transition name="fade">
         <div v-if="showEOI" class="modal-backdrop fade show"></div>
     </transition>
-</div>
+
 </template>
 
 <script setup>
@@ -644,6 +642,9 @@ const messages = [
         }
         .modal * {
             font-size: 16px;
+        }
+        .modal .btn-light {
+            color: #0e6dfd;
         }
         /* If screen size is more than 600px wide, set the font-size of <div> to 80px */
         @media screen and (min-width: 800px) {
