@@ -125,7 +125,7 @@
 
     <rules></rules>
     <transition name="fade">
-        <end-of-inning v-if="showEOI" @clear="clearStats(); showEOI = false;" @undo="state.outs--; showEOI = false;"></end-of-inning>
+        <end-of-inning v-if="showEOI" :state="state" @clear="clearStats(); showEOI = false;" @undo="state.outs--; showEOI = false;"></end-of-inning>
     </transition>
     <transition name="fade">
         <div v-if="showEOI" class="modal-backdrop fade show"></div>
@@ -142,18 +142,19 @@ import endOfInning from './endOfInning.vue';
 const state = reactive({
     x: null,
     y: null,
-    steal: null,
+    steal: null, // could be null, 2, 3 or 4 to designate base attempt
     msg: 'Batter up',
     runs: 0,
+    totalRuns: 0,
     outs: 0,
-    first: false,
+    first: false, //    is someone on first, boolean
     second: false,
     third: false
 });
 
-const showEOI = ref(true);
+const showEOI = ref(false);
 
-//  reset everything after 3 outs
+//  watches outs, and triggers the modal when we get to three
 watch(() => state.outs, outs => {
     console.log(outs);
     if (outs > 2) {
@@ -162,7 +163,7 @@ watch(() => state.outs, outs => {
     }
 })
 
-const clearStats = () => {
+const clearStats = (clearAll) => { // Pass in true like clearStats(true) and it will clear total runs, too.
     state.runs = 0;
     state.outs = 0;
     state.first = false;
@@ -170,6 +171,9 @@ const clearStats = () => {
     state.third = false;
     state.x = null;
     state.y = null;
+    if (clearAll) {
+        state.totalRuns = 0;
+    }
 }
 
 const stealMessages = [
@@ -214,21 +218,35 @@ const stealMessages = [
 ]
 
 const handleSteal = safe => {
-    if (safe) {
-        if (state.steal == 4) {
-            state.runs++;
-            state.third = false;
-        } else if (state.steal == 3) { 
-            state.third = true;
-            state.second = false;
-        } else {
-            state.second = true;
-            state.first = false;
-        }
+    //  if stealing third, everyone else advances.
+    //  if stealing home or second, no runner on second, no one else advances
+    //  if stealing home or second with runner on second, everyone else advances
+    //  handle all other runners
+    let trailRunnersMove = false;
+    if (state.steal == 3 || ((state.steal == 4 || state.steal == 2) && state.second)) { 
+        trailRunnersMove = true;
+    }
+
+    let runnerOut = !safe;
+    if (trailRunnersMove) {
+        advanceBases(1, runnerOut, false, true)
     } else {
-        state.outs++;
-        const startBase = ['first','second','third'][state.steal - 2];
-        state[startBase] = false;
+        if (safe) {
+            if (state.steal == 4) {
+                state.runs++;
+                state.third = false;
+            } else if (state.steal == 3) { 
+                state.third = true;
+                state.second = false;
+            } else {
+                state.second = true;
+                state.first = false;
+            }
+        } else {
+            state.outs++;
+            const startBase = ['first','second','third'][state.steal - 2];
+            state[startBase] = false;
+        }
     }
 }
 
@@ -321,21 +339,24 @@ const walkBatter = () => {
     }
 }
 
-const advanceBases = (num = 1, runnerOut, forceBatterTo) => {
+const advanceBases = (num = 1, runnerOut, forceBatterTo, noBatter) => {
     //  handle runner out on third out
     if (runnerOut && state.outs == 2) {
         state.outs == 3;
         return;
     }
 
+    const bonus = state.outs == 2 && !noBatter ? 1 : 0;
+
     console.log('advance bases ' + num);
+    const bonusNum = num + bonus;
     // otherwise advance bases
     if (state.third) {
         addToRun(1);
         state.third = false;
     }
     if (state.second) {
-        if (num == 1) {
+        if (bonusNum == 1) {
             state.third = true;
         } else {
             addToRun(1);
@@ -344,9 +365,9 @@ const advanceBases = (num = 1, runnerOut, forceBatterTo) => {
     }
     if (state.first) {
         state.first = false;
-        if (num == 1) {
+        if (bonusNum == 1) {
             state.second = true;
-        } else if (num == 2) {
+        } else if (bonusNum == 2) {
             state.third = true;
         } else {
             addToRun(1);
@@ -356,6 +377,9 @@ const advanceBases = (num = 1, runnerOut, forceBatterTo) => {
     if (runnerOut) {
         state.outs ++;
     } else {
+        if (noBatter) {
+            return
+        }
         if (forceBatterTo) {
             state[forceBatterTo] = true;
         } else if (num == 4) {

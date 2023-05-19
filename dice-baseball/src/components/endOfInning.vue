@@ -4,7 +4,7 @@
         <div class="modal-content">
         <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">End of Inning</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button @click="emit('undo')" type="button" class="btn-close" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <table class="table">
@@ -17,9 +17,9 @@
             </thead>
             <tbody>
                 <tr>
-                    <td scope="row" colspan="1">1</td>
-                    <td scope="row" colspan="1">3</td>
-                    <td scope="row" colspan="1">0</td>
+                    <td scope="row" colspan="1">{{ props.state.runs }}</td>
+                    <td scope="row" colspan="1">{{ props.state.runs + 3 + onBaseCount }}</td>
+                    <td scope="row" colspan="1">{{ onBaseCount }}</td>
                 </tr>
             </tbody>
             </table>
@@ -34,10 +34,15 @@
 </template>
 
 <script setup>
+  import { computed } from 'vue';
   const props = defineProps(['state'])
   const emit = defineEmits([
     'clear', 'undo'
   ])
+  const onBaseCount = computed(() => {
+    const bases = [props.state.first, props.state.second, props.state.third];
+    return bases.reduce((a,b) => { return !!b ? a + 1 : a}, 0)
+  })
 </script>
 
 <style>
