@@ -98,17 +98,22 @@
                     </button>
                     </div>
                 </div>
-
-                <div class="d-flex justify-content-between dice-row">
-                    <button @click="setDie(1)" type="button" class="btn btn-light btn-dice"><img src="@/assets/img/1.svg" alt="1"></button>
-                    <button @click="setDie(2)" type="button" class="btn btn-light btn-dice"><img src="@/assets/img/2.svg" alt="2"></button>
-                    <button @click="setDie(3)" type="button" class="btn btn-light btn-dice"><img src="@/assets/img/3.svg" alt="3"></button>
+                <div id="manual">
+                    <div class="d-flex justify-content-between dice-row">
+                        <button @click="setDie(1)" type="button" class="btn btn-light btn-dice"><img src="@/assets/img/1.svg" alt="1"></button>
+                        <button @click="setDie(2)" type="button" class="btn btn-light btn-dice"><img src="@/assets/img/2.svg" alt="2"></button>
+                        <button @click="setDie(3)" type="button" class="btn btn-light btn-dice"><img src="@/assets/img/3.svg" alt="3"></button>
+                    </div>
+                    <div class="d-flex justify-content-between dice-row">
+                        <button @click="setDie(4)" type="button" class="btn btn-light btn-dice"><img src="@/assets/img/4.svg" alt="4"></button>
+                        <button @click="setDie(5)" type="button" class="btn btn-light btn-dice"><img src="@/assets/img/5.svg" alt="5"></button>
+                        <button @click="setDie(6)" type="button" class="btn btn-light btn-dice"><img src="@/assets/img/6.svg" alt="6"></button>
+                    </div>
                 </div>
-                <div class="d-flex justify-content-between dice-row">
-                    <button @click="setDie(4)" type="button" class="btn btn-light btn-dice"><img src="@/assets/img/4.svg" alt="4"></button>
-                    <button @click="setDie(5)" type="button" class="btn btn-light btn-dice"><img src="@/assets/img/5.svg" alt="5"></button>
-                    <button @click="setDie(6)" type="button" class="btn btn-light btn-dice"><img src="@/assets/img/6.svg" alt="6"></button>
-                </div>
+                 <!-- Leave commented out until settings logic and auto-roll logic is added -->
+                <!-- <div id="automatic">
+                    <button type="button" class="btn btn-warning btn-lg w-100">Roll</button>
+                </div> -->
             </div>
         </div>
     </main>
@@ -118,6 +123,10 @@
         <button type="button" class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#rulesModal">
         Rules
         </button>
+        <!-- Leave commented out until settings logic is added -->
+        <!-- <button type="button" class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#settingsModal">
+        Settings
+        </button> -->
         <span>Dice Baseball &middot; &copy; {{new Date().getFullYear()}}</span>
     </footer>
 
@@ -129,12 +138,20 @@
         <div v-if="showEOI" class="modal-backdrop fade show"></div>
     </transition>
 
+    <Settings></Settings>
+    <transition name="fade">
+        <end-of-inning v-if="showEOI" @clear="clearStats(); showEOI = false;" @undo="state.outs--; showEOI = false;"></end-of-inning>
+    </transition>
+    <transition name="fade">
+        <div v-if="showEOI" class="modal-backdrop fade show"></div>
+    </transition>
 </template>
 
 <script setup>
 import { reactive, computed, watch, ref } from 'vue'
 
 import Rules from './Rules.vue';
+import Settings from './Settings.vue';
 import endOfInning from './endOfInning.vue';
 
 const state = reactive({
@@ -145,6 +162,7 @@ const state = reactive({
     runs: 0,
     totalRuns: 0,
     outs: 0,
+    hits: 0,
     first: false, //    is someone on first, boolean
     second: false,
     third: false
@@ -164,6 +182,7 @@ watch(() => state.outs, outs => {
 const clearStats = (clearAll) => { // Pass in true like clearStats(true) and it will clear total runs, too.
     state.runs = 0;
     state.outs = 0;
+    state.hits = 0;
     state.first = false;
     state.second = false;
     state.third = false;
@@ -325,6 +344,10 @@ const setDie = num => {
 
 const addToRun = num => {
         state.runs = state.runs + num;
+    }
+
+const addToHit = num => {
+        state.hits = state.hits + 1;
     }
 
 const walkBatter = () => {

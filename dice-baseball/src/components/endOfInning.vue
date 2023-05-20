@@ -23,12 +23,13 @@
                 </tr>
             </tbody>
             </table>
-            <div class="form-check">
+            <!-- leave commented out until logic to clear runs is added -->
+            <!-- <div class="form-check">
               <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
               <label class="form-check-label" for="flexCheckChecked">
                 Clear runs
               </label>
-            </div>
+            </div> -->
         </div>
         <div class="modal-footer">
             <button @click="emit('clear')" type="button" class="btn btn-primary w-100" data-bs-dismiss="modal">Next inning</button>
