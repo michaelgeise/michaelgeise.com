@@ -11,14 +11,16 @@
             <thead>
                 <tr>
                 <th scope="col">Runs</th>
-                <th scope="col">Hits</th>
+                <!-- leave commented out until record hits -->
+                <!-- <th scope="col">Hits</th> -->
                 <th scope="col">LOB</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td scope="row" colspan="1">{{ props.state.runs }}</td>
-                    <td scope="row" colspan="1">{{ props.state.runs + 3 + onBaseCount }}</td>
+                    <!-- leave commented out until record hits -->
+                    <!-- <td scope="row" colspan="1">{{ props.state.runs + 3 + onBaseCount }}</td> -->
                     <td scope="row" colspan="1">{{ onBaseCount }}</td>
                 </tr>
             </tbody>
