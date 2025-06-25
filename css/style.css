@@ -238,16 +238,16 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .page-section {
-  padding: 6rem 0;
+  margin: 4rem 0;
 }
 
 .page-section .page-section-heading {
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   line-height: 2rem;
 }
 @media (min-width: 992px) {
   .page-section .page-section-heading {
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 2.5rem;
   }
 }
@@ -327,9 +327,19 @@ h1, h2, h3, h4, h5, h6,
     color: white;
     background-image: url(../images/hero.jpg);
 }
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+  .masthead {
+    background-attachment: scroll;
+  } /* your css rules for ipad portrait */
+}
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
+  .masthead {
+    background-attachment: scroll;
+  } /* your css rules for ipad landscape */
+}
 @media (max-width: 767px) {
   .masthead {
-    background-attachment: initial;
+    background-attachment: scroll;
   }
 }
 .masthead, #scene {
@@ -342,22 +352,30 @@ h1, h2, h3, h4, h5, h6,
   font-size: 2.75rem;
   line-height: 2.75rem;
 }
-.masthead .masthead-subheading, p {
+.masthead .masthead-subheading, p, ul {
   font-size: 1.25rem;
 }
 .masthead .masthead-avatar {
   border-radius: 50%;
+  border: .5rem #fff solid;
+}
+@media (max-width: 991px) {
+  .story-img {
+    display: block;
+    max-width: 60%;
+    margin: 0 auto; 
+  }
 }
 @media (max-width: 767px) {
   .masthead .masthead-avatar {
     display: block;
     max-width: 60%;
-    margin: 0 auto;
+    margin: 0 auto; 
   }
 }
 @media (min-width: 1200px) {
   .masthead .masthead-heading {
-    margin-top: 7rem !important;
+    margin-top: 3rem !important;
   }
 }
 @media (min-width: 992px) {
@@ -368,17 +386,20 @@ h1, h2, h3, h4, h5, h6,
   .masthead .masthead-heading {
     font-size: 4rem;
     line-height: 3.5rem;
-    margin-top: 7rem;
+    margin-top: 2rem;
   }
-  .masthead .masthead-subheading, p {
+  .masthead .masthead-subheading, p, li {
     font-size: 1.5rem;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 767px) {
   .masthead {
     padding-top: 104px;
     padding-bottom: 6rem;
     min-height: 0;
+  }
+  .masthead .masthead-heading {
+    margin-top: 1rem;
   }
   .masthead .bg {
     padding-top: calc(2rem + 104px);
@@ -386,29 +407,52 @@ h1, h2, h3, h4, h5, h6,
   #scene {
     display: none;
   }
-/*  #mainNav {
+ #mainNav {
     background-color: rgba(255,255,255,0);
   }
   #mainNav.navbar-shrink{
     background-color: #fff;
-  }*/
-}
-.linkedin-logo {
-  color: #fff;
-  background: #0a66c2;
-  border-radius: 50%;
-  height: 96px;
-  width: 96px;
-  text-align: center;
-  font-size: 3em;
-  line-height: 2;
-  margin: 0 auto;
+  }
 }
 
+#mainNav.navbar-shrink .navbar-nav li.nav-item a.nav-link.linkedin {
+  color: #fff;
+  background: #0a66c2;
+  border-radius: .5rem;
+  height: 4rem;
+  width: 4rem;
+  text-align: center;
+}
+#mainNav .navbar-nav li.nav-item a.nav-link.linkedin {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: .5rem;
+  height: 4rem;
+  width: 4rem;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .mobile-hide {
+    display: none !important;
+  }
+  #mainNav .navbar-nav li.nav-item a.nav-link.linkedin, #mainNav.navbar-shrink .navbar-nav li.nav-item a.nav-link.linkedin {
+    height: 3rem;
+    width: 3rem;
+    padding-top: 1rem !important;
+    font-size: 1rem;
+    line-height: 1;
+  }
+  #mainNav .navbar-nav {
+    margin-top: 0;
+  }
+}
 @media (max-width: 992px) {
   #bonus .card-deck>.card {
     min-width: 323px; 
     margin-bottom: 1rem;
+  }
+  h3 {
+    font-size: 1.5rem;
   }
 }
 #bonus .h4 {
@@ -436,4 +480,19 @@ footer li {
 .copyright {
   background: #ffffff;
   box-shadow: 0 0 1rem 0 rgb(0 0 0 / 10%);
+}
+
+.testimonial {
+  border-left: .75rem #d9d9d9 solid;
+  padding-left: 1.25rem;
+}
+.testimonial .quote {
+  font-style: italic;
+}
+.testimonial .by-name {
+  font-weight: 600;
+}
+.testimonial .by-title {
+  font-size: 1rem;
+  color: #757575;
 }
