@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BirdList PA | List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="imgs/logo.svg" type="image/svg+xml" />
+</head>
+  <body data-page="list">
+    <header class="header">
+      <div class="header-inner">
+        <img src="imgs/logo.svg" alt="BirdList PA logo" class="logo" />
+        <h1 class="page-title">BirdList PA</h1>
+        <div class="found-counter">Found: <span data-found-count>0</span>/10</div>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="list.html" aria-current="page">List</a>
+        <a href="about.html">About</a>
+        <a href="assets.html">Assets</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero-card">
+        <div id="bird-list" class="list" aria-live="polite">
+          <p>Loading birds...</p>
+        </div>
+        <div class="season-row" data-season-row>
+          <div class="season-toggle">
+            <svg class="icon season-icon" aria-hidden="true" data-season-icon>
+              <use href="imgs/feather-sprite.svg#sun"></use>
+            </svg>
+            <span class="season-label" data-season-label>Season: Summer</span>
+          </div>
+          <button class="button secondary season-change" type="button" data-season-change>
+            Change
+          </button>
+        </div>
+        <div class="season-row location-row" data-location-row>
+          <div class="season-toggle">
+            <span class="season-label">Location:</span>
+            <span class="location-value" data-location-value>Not set</span>
+          </div>
+          <button class="button secondary season-change" type="button" data-location-action>
+            Add
+          </button>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="merlin-title">
+        <h2 id="merlin-title">Want help identifying birds?</h2>
+        <p>Try the free Merlin Bird ID app to identify birds by sight or sound.</p>
+        <a
+          class="button"
+          href="https://merlin.allaboutbirds.org/"
+          target="_blank"
+          rel="noopener"
+          data-merlin-cta
+          >Download Merlin Bird ID</a
+        >
+      </section>
+
+      <p class="footer-note">
+        BirdList PA - built for community discovery in local parks. All rights resereved
+        <span data-current-year></span>.
+      </p>
+    </main>
+
+    <div class="modal" id="welcome-modal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal-card">
+        <div class="modal-header">
+          <h2 class="modal-title">Welcome to BirdList PA</h2>
+          <button class="modal-close" type="button" data-modal-close aria-label="Close">
+            <svg class="icon" aria-hidden="true">
+              <use href="imgs/feather-sprite.svg#x"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-hero">
+            <img src="imgs/welcome.png" alt="Welcome to BirdList PA" />
+          </div>
+          <p>BirdList PA is a self-guided bird scavenger hunt designed for beginners.</p>
+          <p>This list includes some of the most common birds found in our area. Check off birds when you see them, there's no right order and no rush.</p>
+          <p>With a little time and attention, many people can spot most, or even all, of the birds on this list during a walk through a park or wooded area. Can you find them all?</p>
+          <p>A printable checklist is available on the Assets page.</p>
+        </div>
+        <div class="modal-footer">
+          <button class="button" type="button" data-modal-start>Start Exploring</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="bird-modal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal-card">
+        <div class="modal-header">
+          <h2 class="modal-title" id="bird-modal-name">Bird</h2>
+          <button class="modal-close" type="button" data-modal-close aria-label="Close">
+            <svg class="icon" aria-hidden="true">
+              <use href="imgs/feather-sprite.svg#x"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-hero">
+            <img id="bird-modal-image" src="" alt="" />
+          </div>
+          <p id="bird-modal-description"></p>
+          <ul class="habitat-list" id="bird-modal-habitat"></ul>
+          <p><strong>Fun fact:</strong> <span id="bird-modal-funfact"></span></p>
+        </div>
+        <div class="modal-footer">
+          <button class="button" type="button" id="bird-modal-action">Found it!</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="location-modal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal-card">
+        <div class="modal-header">
+          <h2 class="modal-title">Where are you birding?</h2>
+          <button class="modal-close" type="button" data-modal-close aria-label="Close">
+            <svg class="icon" aria-hidden="true">
+              <use href="imgs/feather-sprite.svg#x"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-hero">
+            <img src="imgs/location.png" alt="Map marker icon for choosing a birding location" />
+          </div>
+          <select class="select" id="location-select">
+            <option value="" selected disabled>Select an option</option>
+            <option>Berman Playground</option>
+            <option>Cherry Street Park</option>
+            <option>Lewis W. Scott Memorial Park</option>
+            <option>Thompson Park</option>
+            <option>Upper Providence Preserve</option>
+            <option>Weldon Street Tot Lot</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="modal-footer" style="display: flex; gap: 12px; justify-content: space-between;">
+          <button class="button" type="button" id="location-choose">Choose</button>
+          <button class="button text" type="button" id="location-skip">Skip</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="completion-modal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal-card">
+        <div class="modal-header">
+          <h2 class="modal-title">You Found All the Birds!</h2>
+          <button class="modal-close" type="button" data-modal-close aria-label="Close">
+            <svg class="icon" aria-hidden="true">
+              <use href="imgs/feather-sprite.svg#x"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-hero">
+            <img src="imgs/completion.png" alt="BirdList PA completion badge" />
+          </div>
+          <p>Great job! Celebrate with a printable certificate on the Assets page.</p>
+          <p>Ready for the next step? Try the free Merlin Bird ID app to identify even more birds by sight or sound.</p>
+          <p>Come back soon, and happy birding!</p>
+        </div>
+        <div class="modal-footer">
+          <button class="button" type="button" id="share-button">Share on Social Media</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="toast" id="share-toast" role="status" aria-live="polite">Copied!</div>
+
+    <script src="js/app.js" defer></script>
+  </body>
+</html>

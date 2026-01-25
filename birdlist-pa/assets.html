@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BirdList PA | Assets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="imgs/logo.svg" type="image/svg+xml" />
+</head>
+  <body data-page="assets">
+    <header class="header">
+      <div class="header-inner">
+        <img src="imgs/logo.svg" alt="BirdList PA logo" class="logo" />
+        <h1 class="page-title">Assets</h1>
+        <div class="found-counter">Found: <span data-found-count>0</span>/10</div>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="list.html">List</a>
+        <a href="about.html">About</a>
+        <a href="assets.html" aria-current="page">Assets</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>Assets</h2>
+
+        <div class="assets-grid">
+          <div class="asset-card">
+            <h3>Printable Bird Checklist</h3>
+                        <p>Prefer to explore without your phone?<br> Download a printable bird checklist to take with you into the park.</p>
+            <a class="button secondary" href="imgs/BirdList-PA-Printable-List.pdf" target="_blank" rel="noopener" data-track="asset_download" data-track-label="checklist">View PDF</a>
+          </div>
+          <div class="asset-card">
+            <h3>Certificate of Completion</h3>
+                        <p>Found all the birds?<br> Celebrate with a printable certificate of completion.</p>
+            <a class="button secondary" href="imgs/BirdList-PA-Certificate.pdf" target="_blank" rel="noopener" data-track="asset_download" data-track-label="certificate">View PDF</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal" id="welcome-modal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal-card">
+        <div class="modal-header">
+          <h2 class="modal-title">Welcome to BirdList PA</h2>
+          <button class="modal-close" type="button" data-modal-close aria-label="Close">
+            <svg class="icon" aria-hidden="true">
+              <use href="imgs/feather-sprite.svg#x"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-hero">
+            <img src="imgs/welcome.png" alt="Welcome to BirdList PA" />
+          </div>
+          <p>BirdList PA is a self-guided bird scavenger hunt designed for beginners.</p>
+          <p>This list includes some of the most common birds found in our area. Check off birds when you see them, there's no right order and no rush.</p>
+          <p>With a little time and attention, many people can spot most, or even all, of the birds on this list during a walk through a park or wooded area. Can you find them all?</p>
+          <p>A printable checklist is available on the Assets page.</p>
+        </div>
+        <div class="modal-footer">
+          <button class="button" type="button" data-modal-start>Start Exploring</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/app.js" defer></script>
+  </body>
+</html>

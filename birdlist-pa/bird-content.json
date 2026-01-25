@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0",
+  "units": {
+    "size": "inches"
+  },
+  "birds": [
+    {
+      "id": "american_robin",
+      "name": "American Robin",
+      "size_in": { "min": 9, "max": 11 },
+      "description": "9–11 inches. The American Robin is a familiar backyard bird with a gray back, warm orange-red chest, and a cheerful song often heard in early morning.",
+      "habitat": ["Lawns", "Parks", "Forests", "Suburban neighborhoods"],
+      "fun_fact": "Robins can tilt their heads to listen for earthworms moving underground before pulling them out.",
+      "image": {
+        "alt": "American Robin perched on a branch",
+        "src": ""
+      }
+    },
+    {
+      "id": "northern_cardinal",
+      "name": "Northern Cardinal",
+      "size_in": { "min": 8, "max": 9 },
+      "description": "8–9 inches. The Northern Cardinal is known for its bright red color in males and soft tan coloring with red accents in females, along with a pointed crest.",
+      "habitat": ["Woodlands", "Gardens", "Shrub-filled yards", "Suburban neighborhoods"],
+      "fun_fact": "Unlike many birds, cardinals do not migrate and stay in Pennsylvania year-round.",
+      "image": {
+        "alt": "Male Northern Cardinal perched on a branch",
+        "src": ""
+      }
+    },
+    {
+      "id": "blue_jay",
+      "name": "Blue Jay",
+      "size_in": { "min": 9, "max": 12 },
+      "description": "9–12 inches. The Blue Jay is a bold blue, white, and black bird known for its loud calls and confident behavior.",
+      "habitat": ["Forests", "Wooded neighborhoods", "Parks with oak trees"],
+      "fun_fact": "Blue Jays can imitate hawk calls to scare other birds away from food.",
+      "image": {
+        "alt": "Blue Jay perched on a branch",
+        "src": ""
+      }
+    },
+    {
+      "id": "mourning_dove",
+      "name": "Mourning Dove",
+      "size_in": { "min": 9, "max": 13 },
+      "description": "9–13 inches. The Mourning Dove is a soft gray-brown bird with a small head and long tail, often seen perched on wires.",
+      "habitat": ["Open woodlands", "Fields", "Farms", "Suburban areas"],
+      "fun_fact": "Its gentle, sad-sounding call is what gives the Mourning Dove its name.",
+      "image": {
+        "alt": "Mourning Dove perched on a branch",
+        "src": ""
+      }
+    },
+    {
+      "id": "american_crow",
+      "name": "American Crow",
+      "size_in": { "min": 16, "max": 21 },
+      "description": "16–21 inches. The American Crow is a large, all-black bird known for its intelligence and strong social groups.",
+      "habitat": ["Forests", "Farmland", "Towns", "Cities"],
+      "fun_fact": "Crows can recognize human faces and remember people who treat them well—or badly.",
+      "image": {
+        "alt": "American Crow perched on a branch",
+        "src": ""
+      }
+    },
+    {
+      "id": "downy_woodpecker",
+      "name": "Downy Woodpecker",
+      "size_in": { "min": 5, "max": 7 },
+      "description": "5–7 inches. The Downy Woodpecker is a small black-and-white woodpecker with a short beak and light tapping sound.",
+      "habitat": ["Woodlands", "Parks", "Backyards with trees or feeders"],
+      "fun_fact": "It is the smallest woodpecker in North America.",
+      "image": {
+        "alt": "Downy Woodpecker clinging to a tree trunk",
+        "src": ""
+      }
+    },
+    {
+      "id": "red_bellied_woodpecker",
+      "name": "Red-bellied Woodpecker",
+      "size_in": { "min": 9, "max": 10 },
+      "description": "9–10 inches. This medium-sized woodpecker has black-and-white striped wings and a bright red cap on its head.",
+      "habitat": ["Forests", "Wooded suburbs", "Parks with mature trees"],
+      "fun_fact": "Despite its name, the red on its belly is faint and often hard to see.",
+      "image": {
+        "alt": "Red-bellied Woodpecker on a tree trunk",
+        "src": ""
+      }
+    },
+    {
+      "id": "mallard",
+      "name": "Mallard",
+      "size_in": { "min": 20, "max": 26 },
+      "description": "20–26 inches. Mallards are large ducks; males have shiny green heads, while females are mottled brown.",
+      "habitat": ["Ponds", "Lakes", "Streams", "Wetlands", "Park waterways"],
+      "fun_fact": "Mallards are the ancestors of most domesticated ducks worldwide.",
+      "image": {
+        "alt": "Male Mallard standing near water",
+        "src": ""
+      }
+    },
+    {
+      "id": "gray_catbird",
+      "name": "Gray Catbird",
+      "size_in": { "min": 8, "max": 9 },
+      "description": "8–9 inches. The Gray Catbird is a sleek gray bird with a black cap and a rusty-colored patch under its tail.",
+      "habitat": ["Dense shrubs", "Thickets", "Forest edges"],
+      "fun_fact": "Its call sounds like a cat’s “meow,” which is how it got its name.",
+      "image": {
+        "alt": "Gray Catbird perched on a branch",
+        "src": ""
+      }
+    },
+    {
+      "id": "tree_swallow",
+      "name": "Tree Swallow",
+      "size_in": { "min": 5, "max": 6 },
+      "description": "5–6 inches. Tree Swallows have glossy blue-green backs and white bellies and are often seen flying gracefully.",
+      "habitat": ["Open fields", "Wetlands", "Areas near water"],
+      "fun_fact": "Tree Swallows catch insects while flying and skim water to drink.",
+      "image": {
+        "alt": "Tree Swallow perched on a twig",
+        "src": ""
+      }
+    },
+    {
+      "id": "dark_eyed_junco",
+      "name": "Dark-eyed Junco",
+      "size_in": { "min": 5, "max": 6 },
+      "description": "5–6 inches. The Dark-eyed Junco is a small gray bird with a white belly, often seen hopping on the ground in groups.",
+      "habitat": ["Forests", "Yards", "Parks", "Especially in winter"],
+      "fun_fact": "Juncos are nicknamed “snowbirds” because they often appear when winter arrives.",
+      "image": {
+        "alt": "Dark-eyed Junco perched on a twig",
+        "src": ""
+      }
+    },
+    {
+      "id": "white_throated_sparrow",
+      "name": "White-throated Sparrow",
+      "size_in": { "min": 6, "max": 7 },
+      "description": "6–7 inches. This sparrow has a bright white throat, striped head, and a clear, whistling song.",
+      "habitat": ["Forest edges", "Brushy areas", "Parks"],
+      "fun_fact": "Its song sounds like “Oh sweet Canada, Canada, Canada.”",
+      "image": {
+        "alt": "White-throated Sparrow perched on a twig",
+        "src": ""
+      }
+    }
+  ]
+}

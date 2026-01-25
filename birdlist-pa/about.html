@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BirdList PA | About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="imgs/logo.svg" type="image/svg+xml" />
+</head>
+  <body data-page="about">
+    <header class="header">
+      <div class="header-inner">
+        <img src="imgs/logo.svg" alt="BirdList PA logo" class="logo" />
+        <h1 class="page-title">About</h1>
+        <div class="found-counter">Found: <span data-found-count>0</span>/10</div>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="list.html">List</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="assets.html">Assets</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>About BirdList PA</h2>
+        <p>BirdList PA is a self-guided bird scavenger hunt designed to help people of all ages discover common birds found in local parks, neighborhoods, and green spaces.</p>
+
+        <p>This list is intentionally approachable. It highlights birds that are frequently seen and heard in our area — not a complete list of all birds you could see, but a great starting point. With a bit of patience and a good walk through a park or wooded area, many people can spot most of the birds on this list.</p>
+          
+        <p>You don’t need binoculars or prior experience. Just take your time, look around, and listen.</p>
+        <h3>How It Works</h3>
+        <p>Using a simple checklist, visitors can:</p>
+        <ul>
+          <li>Look for birds anywhere in the area</li>
+          <li>Learn basic information and fun facts</li>
+          <li>Check off birds when they spot them</li>
+          <li>Spend as much or as little time as they like</li>
+        </ul>
+        <p>Some people enjoy a casual walk and are happy spotting a few birds. Others get curious and start trying to find every bird on the list. Both approaches are welcome.</p>
+        <h3>BirdList PA is designed to be:</h3>
+        <ul>
+          <li>Free and accessible to all ages</li>
+          <li>Family-friendly and beginner-focused</li>
+          <li>Easy to use on a phone or on paper</li>
+          <li>Enjoyed independently, without guides or scheduled programs</li>
+        </ul>
+        <h3>A Community Volunteer Project</h3>
+        <p>BirdList PA is a volunteer-led project offered in partnership with Upper Providence Township as a community-based environmental education initiative.
+        The project was developed as part of the Pennsylvania Master Naturalist program, which supports conservation, education, and stewardship efforts across Pennsylvania.</p>
+        <h3>Learning Tools & Transparency</h3>
+        <p>BirdList PA recommends the Merlin Bird ID app as an optional tool for identifying birds by sight or sound. This project is not paid or sponsored to promote Merlin Bird ID. It is shared simply because it is a widely trusted, free educational and citizen science tool used by beginners and experienced birders alike.</p>
+        <h3>Why Birds Matter</h3>
+        <p>Birds are one of the easiest ways to start noticing nature. They’re active, visible, and found almost everywhere.</p>
+        <p>Many people who enjoy BirdList PA discover that they want to keep learning — noticing patterns, seasons, and even trying to spot as many species as possible. This kind of curiosity is at the heart of birding, and it often leads to a deeper interest in protecting the habitats birds depend on.</p>
+        <p>By helping people recognize birds and understand where they live, BirdList PA aims to encourage awareness, curiosity, and care for local natural spaces.</p>
+        <h3>Seasonal Bird Lists</h3>
+        <p>BirdList PA features two bird lists each year:</p>
+        <ul>
+          <li>One list for summer (April - September)</li>
+          <li>One list for winter (October - March)</li>
+        </ul>
+        <p>This allows visitors to return later in the year and discover a new set of birds as seasons change.</p>
+        <h3>Learn More, Your Way</h3>
+        <p>BirdList PA can be used on a phone or with a printable checklist and completion certificate, available on the Assets page. Whether you’re brand new to birding or already enjoy spotting wildlife, BirdList PA is designed to meet you where you are.</p>
+        <p>BirdList PA is about slowing down, looking up, and appreciating the nature that’s already around you.</p>
+        <p>Happy birding!</p>
+      </section>
+    </main>
+
+    <div class="modal" id="welcome-modal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal-card">
+        <div class="modal-header">
+          <h2 class="modal-title">Welcome to BirdList PA</h2>
+          <button class="modal-close" type="button" data-modal-close aria-label="Close">
+            <svg class="icon" aria-hidden="true">
+              <use href="imgs/feather-sprite.svg#x"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-hero">
+            <img src="imgs/welcome.png" alt="Welcome to BirdList PA" />
+          </div>
+          <p>BirdList PA is a self-guided bird scavenger hunt designed for beginners.</p>
+          <p>This list includes some of the most common birds found in our area. Check off birds when you see them, there's no right order and no rush.</p>
+          <p>With a little time and attention, many people can spot most, or even all, of the birds on this list during a walk through a park or wooded area. Can you find them all?</p>
+          <p>A printable checklist is available on the Assets page.</p>
+        </div>
+        <div class="modal-footer">
+          <button class="button" type="button" data-modal-start>Start Exploring</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/app.js" defer></script>
+  </body>
+</html>
