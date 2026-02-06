@@ -17,6 +17,20 @@
       summer: "birdlist_completion_shown_summer",
       winter: "birdlist_completion_shown_winter",
     },
+    milestones: {
+      3: {
+        summer: "birdlist_milestone_3_summer",
+        winter: "birdlist_milestone_3_winter",
+      },
+      5: {
+        summer: "birdlist_milestone_5_summer",
+        winter: "birdlist_milestone_5_winter",
+      },
+      10: {
+        summer: "birdlist_milestone_10_summer",
+        winter: "birdlist_milestone_10_winter",
+      },
+    },
   };
 
   const SESSION_KEYS = {
@@ -302,6 +316,8 @@
 
   const getCompletionKey = (season) => STORAGE_KEYS.completionShown[season];
 
+  const getMilestoneKey = (season, count) => STORAGE_KEYS.milestones[count][season];
+
   const setFoundCount = (count) => {
     selectors.foundCountEls.forEach((el) => {
       el.textContent = count;
@@ -454,7 +470,11 @@
   const toggleFound = (id) => {
     const isBase = BASE_IDS.includes(id);
     const seasonsToUpdate = isBase ? ["summer", "winter"] : [state.season];
+    const currentFound = new Set(getFound(state.season));
+    const nextState = currentFound.has(id) ? "unchecked" : "checked";
     let updatedCurrent = getFound(state.season);
+
+    trackEvent("bird_check", { bird_id: id, season: state.season, state: nextState });
 
     seasonsToUpdate.forEach((season) => {
       const found = new Set(getFound(season));
@@ -462,7 +482,6 @@
         found.delete(id);
       } else {
         found.add(id);
-        trackEvent("bird_checked", { bird_id: id });
       }
       const updated = Array.from(found);
       setFound(season, updated);
@@ -510,7 +529,7 @@
 
     state.activeBirdId = id;
     openModal(modal);
-    trackEvent("bird_modal_open", { bird_id: id });
+    trackEvent("bird_detail_open", { bird_id: id, season: state.season });
   };
 
   const checkMilestones = (count) => {
@@ -521,8 +540,18 @@
 
 
     if (count >= 3 && !locationDismissed && !locationSelected) {
-      openModal(selectors.locationModal);
+      openLocationModal("auto");
     }
+
+    [3, 5, 10].forEach((milestone) => {
+      if (count >= milestone) {
+        const key = getMilestoneKey(state.season, milestone);
+        if (storage.get(key, "false") !== "true") {
+          storage.set(key, "true");
+          trackEvent(`birds_found_${milestone}`, { season: state.season });
+        }
+      }
+    });
 
     const completionKey = getCompletionKey(state.season);
     if (count < 10) {
@@ -533,7 +562,7 @@
     if (count === 10 && !completionShown) {
       storage.set(completionKey, "true");
       openModal(selectors.completionModal);
-      trackEvent("completion_modal_shown");
+      trackEvent("completion_shown", { season: state.season });
     }
   };
 
@@ -548,6 +577,12 @@
     if (focusable.length) {
       focusable[0].focus();
     }
+  };
+
+  const openLocationModal = (source) => {
+    if (!selectors.locationModal) return;
+    trackEvent("location_prompt_shown", { season: state.season, source });
+    openModal(selectors.locationModal);
   };
 
   const closeModal = (modal) => {
@@ -620,7 +655,7 @@
 
     openModal(selectors.welcomeModal);
     storage.setSession(SESSION_KEYS.welcomeShown, "true");
-    trackEvent("first_visit_modal_shown");
+    trackEvent("welcome_shown", { season: state.season });
 
     const startButton = selectors.welcomeModal.querySelector("[data-modal-start]");
     if (startButton) {
@@ -635,7 +670,7 @@
       setSeason(nextSeason);
       renderList();
       updateLocationRow();
-      trackEvent("season_changed", { season: nextSeason });
+      trackEvent("season_change", { season: nextSeason });
     });
   };
 
@@ -653,7 +688,7 @@
   const initLocationModal = () => {
     if (selectors.locationAction && selectors.locationModal) {
       selectors.locationAction.addEventListener("click", () => {
-        openModal(selectors.locationModal);
+        openLocationModal("manual");
       });
     }
 
@@ -668,7 +703,7 @@
         const value = select.value.trim();
         if (value) {
           storage.set(getLocationKey(state.season), value);
-          trackEvent("location_chosen", { location: value });
+          trackEvent("location_set", { location: value, season: state.season });
         }
         storage.set(getDismissedKey(state.season), "true");
         updateLocationRow();
@@ -716,15 +751,17 @@
   const initMerlinCTA = () => {
     const merlinLink = document.querySelector("[data-merlin-cta]");
     if (merlinLink) {
-      merlinLink.addEventListener("click", () => trackEvent("merlin_cta_click"));
+      merlinLink.addEventListener("click", () =>
+        trackEvent("merlin_cta_click", { season: state.season })
+      );
     }
   };
 
   const initAssetTracking = () => {
-    document.querySelectorAll('[data-track="asset_download"]').forEach((link) => {
+    document.querySelectorAll('[data-track="asset_view"]').forEach((link) => {
       link.addEventListener("click", () => {
         const label = link.dataset.trackLabel || link.getAttribute("href") || "unknown";
-        trackEvent("asset_download", { file: label });
+        trackEvent("asset_view", { file: label });
       });
     });
   };
