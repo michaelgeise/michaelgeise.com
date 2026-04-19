@@ -1,0 +1,183 @@
+/* Optional: Makes the sample page fill the window. */
+html, body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	color: #666;
+}
+h1, h2, h3, h4 {
+	font-family: 'Italianno', cursive;
+}
+
+/* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+.load + #map {
+	height: 0;
+	border-bottom: none;
+}
+#map {
+	height: calc(100vh - 49px);
+	border-bottom: 2vh solid #666666;
+}
+section, div {
+	box-sizing: border-box;
+}
+.header {
+	height: 48px;
+	padding: 6px 2%;
+	background-color: #f1f1f1;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+	margin-bottom: 1px;
+	transition: all 1s;
+}
+.header.load {
+	height: 100vh;
+	padding: 0;
+	background-color: #ffffff;
+	box-shadow: none;
+	margin: 0;
+	color: #006C46;
+}
+.load .hero {
+	height: 60vh;
+	background-image: url(../images/hero.svg);
+	background-position: 3% bottom;
+    background-size: 166%;
+	background-repeat: no-repeat;
+	transition: all 1s;
+}
+@media screen and (min-width: 600px) {
+	.load .hero {
+		background-position: 56% bottom;
+		background-size: contain;
+	}
+}
+h1 {
+	font-size: 22px;
+	margin-bottom: 0;
+	transition: all 1s;
+	margin-left: 0;
+}
+.load h1 {
+	font-size: 48px;
+	padding-top: 35vh;
+	display: inline-block;
+    margin-left: calc(50% - 101px);
+}
+.load .hint {
+	opacity: 0;
+	height: 0;
+}
+.hint {
+	font-size: 10px;
+	margin-top: 0;
+	color: #999;
+	transition: all .6s;
+	opacity: 1;
+	height: auto;
+}
+.header:not(.load) .hint {
+	transition-delay: 1s;
+}
+.header:not(.load) .enter-button {
+	opacity: 0;
+	height: 0;
+	margin: 0;
+	transition: all .3s;
+}
+.address {
+	opacity: 0;
+	height: 0;
+	margin: 0;
+	transition: all .6s;
+}
+.load .address {
+	display: inline-block;
+	height: auto;
+	opacity: 1;
+	transition-delay: 1s;
+	margin-top: calc(38vh - 108px);
+}
+.title {
+	opacity: 0;
+	height: 0;
+	margin: 0;
+	transition: all .6s;
+}
+.load .title {
+	display: inline-block;
+	height: auto;
+	opacity: 1;
+	transition-delay: 1s;
+	margin-left: calc(50% - 115px);
+}
+.sub-hero {
+	background-color: #f1f1f1;
+	text-align: center;
+	height: 0;
+	transition: all .3s;
+	padding-top: 30px;
+}
+.load .sub-hero {
+	background: rgb(229,255,237);
+	background: linear-gradient(180deg, rgba(229,255,237,1) 0%, rgba(52,255,114,1) 100%);
+	height: 40vh;
+	display: block;
+	border-bottom: 2vh solid #34ff72;
+}
+.load .btn-light {
+	position: absolute;
+	margin-top: -100px;
+}
+.btn-light {
+    color: #666;
+    background-color: #f1f1f1;
+    border-color: #f1f1f1;
+    margin-top: 0px;
+	transition: all .6s;
+}
+.btn-success {
+	background-color: #03B338;
+	border-color: #03B338;
+}
+.back-button {
+	margin-right: 5px;
+}
+a {
+	color: #03B338;
+}
+a:hover {
+	color: #20D356;
+}
+@-webkit-keyframes pulse {
+	0% { -webkit-transform: scale(0.9); opacity: 0.7; }
+	50% { -webkit-transform: scale(1); opacity: 1; }
+	100% { -webkit-transform: scale(0.9); opacity: 0.7; }
+}
+
+@keyframes pulse {
+	0% { transform: scale(0.9); opacity: 0.7; }
+	50% { transform: scale(1); opacity: 1; }
+	100% { transform: scale(0.9); opacity: 0.7; }
+}
+img[src^='images/position.svg']{
+	-webkit-animation: pulse 3s infinite ease-in-out;
+	-o-animation: pulse 3s infinite ease-in-out;
+	-ms-animation: pulse 3s infinite ease-in-out; 
+	-moz-animation: pulse 3s infinite ease-in-out; 
+	animation: pulse 3s infinite ease-in-out;
+	max-height: 30px;
+	max-width: 30px;
+}
+.modal-title {
+	color: #006C46;
+}
+.modal-title small {
+	color: #666;
+}
+
+.modal img {
+	margin-bottom: 1rem;
+}

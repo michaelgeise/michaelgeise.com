@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Portfolio | Michael Geise</title>
+    <link rel="icon" href="/images/MG-logo.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="/images/MG-logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="/images/MG-logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#152B52',
+                            gray: '#757575',
+                            light: '#f9fafb',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #FFFFFF; }
+        ::selection { background-color: #152B52; color: #FFFFFF; }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            box-shadow: 0 4px 24px -8px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-900 selection:bg-brand-blue selection:text-white">
+
+    <nav class="max-w-7xl mx-auto px-6 py-8 flex justify-between items-center bg-white/80 backdrop-blur-md sticky top-0 z-50">
+        <a href="/" class="text-xl font-semibold tracking-tight text-gray-900">Michael Geise</a>
+        <div class="flex items-center gap-6">
+            <a href="/" class="text-sm font-medium text-brand-gray hover:text-brand-blue transition-colors duration-200">Home</a>
+            <a href="https://www.linkedin.com/in/michael-geise/" target="_blank" class="text-sm font-medium text-brand-gray hover:text-brand-blue transition-colors duration-200">LinkedIn</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="max-w-7xl mx-auto px-6 pt-12 sm:pt-20 pb-16 sm:pb-24">
+            <div class="max-w-4xl">
+                <h1 class="text-4xl sm:text-6xl lg:text-[5rem] font-bold tracking-tight text-gray-900 leading-[1.05] mb-8">
+                    Selected product <span class="text-brand-blue">work.</span>
+                </h1>
+                <p class="text-xl sm:text-2xl text-brand-gray font-light leading-relaxed max-w-3xl">
+                    A private portfolio area for deeper product strategy, UX, leadership, and delivery case studies.
+                </p>
+            </div>
+        </section>
+
+        <section class="bg-brand-light border-y border-gray-200">
+            <div class="max-w-7xl mx-auto px-6 py-14 sm:py-24">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
+                    <div class="lg:col-span-4">
+                        <h2 class="text-xs font-semibold uppercase tracking-widest text-brand-gray mb-3">Portfolio Foundation</h2>
+                        <h3 class="text-3xl lg:text-4xl font-semibold text-gray-900 tracking-tight leading-tight">
+                            Protected case studies.
+                        </h3>
+                        <p class="mt-6 text-brand-gray leading-relaxed">
+                            This page is intentionally minimal for now. It is protected through Netlify and can become a private landing page for job applications, consulting conversations, and deeper project narratives.
+                        </p>
+                    </div>
+
+                    <div class="lg:col-span-8 grid sm:grid-cols-2 gap-6">
+                        <a href="/portfolio/case-study-template.html" class="glass-panel p-8 rounded-2xl transition-transform hover:-translate-y-1 duration-300 block">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center border border-gray-100 text-brand-blue flex-shrink-0">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414A1 1 0 0119 9.414V19a2 2 0 01-2 2z"></path></svg>
+                                </div>
+                                <h4 class="text-lg font-semibold text-gray-900">Case Study Template</h4>
+                            </div>
+                            <p class="text-brand-gray text-sm leading-relaxed">
+                                A reusable starting point for individual case studies with context, role, process, decisions, and outcomes.
+                            </p>
+                        </a>
+
+                        <a href="/portfolio/detailed-case-study-template.html" class="glass-panel p-8 rounded-2xl transition-transform hover:-translate-y-1 duration-300 block">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center border border-gray-100 text-brand-blue flex-shrink-0">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                                </div>
+                                <h4 class="text-lg font-semibold text-gray-900">Detailed Case Study Template</h4>
+                            </div>
+                            <p class="text-brand-gray text-sm leading-relaxed">
+                                A longer, more stylized structure for narrative depth, artifacts, process detail, metrics, and reflection.
+                            </p>
+                        </a>
+
+                        <div class="glass-panel p-8 rounded-2xl sm:col-span-2">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center border border-gray-100 text-brand-blue flex-shrink-0">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                                </div>
+                                <h4 class="text-lg font-semibold text-gray-900">Password Protection</h4>
+                            </div>
+                            <p class="text-brand-gray text-sm leading-relaxed">
+                                Every URL under /portfolio is checked by a Netlify Edge Function before the page HTML is served.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-gray-100 py-10 text-center text-sm text-brand-gray">
+        <p>&copy; 2026 Michael Geise. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

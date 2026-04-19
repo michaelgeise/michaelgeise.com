@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Case Study Template | Michael Geise</title>
+    <link rel="icon" href="/images/MG-logo.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="/images/MG-logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="/images/MG-logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#152B52',
+                            gray: '#757575',
+                            light: '#f9fafb',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #FFFFFF; }
+        ::selection { background-color: #152B52; color: #FFFFFF; }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            box-shadow: 0 4px 24px -8px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-900 selection:bg-brand-blue selection:text-white">
+
+    <nav class="max-w-7xl mx-auto px-6 py-8 flex justify-between items-center bg-white/80 backdrop-blur-md sticky top-0 z-50">
+        <a href="/" class="text-xl font-semibold tracking-tight text-gray-900">Michael Geise</a>
+        <div class="flex items-center gap-6">
+            <a href="/portfolio/" class="text-sm font-medium text-brand-gray hover:text-brand-blue transition-colors duration-200">Portfolio</a>
+            <a href="https://www.linkedin.com/in/michael-geise/" target="_blank" class="text-sm font-medium text-brand-gray hover:text-brand-blue transition-colors duration-200">LinkedIn</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="max-w-7xl mx-auto px-6 pt-12 sm:pt-20 pb-16 sm:pb-24">
+            <div class="max-w-4xl">
+                <p class="text-xs font-semibold uppercase tracking-widest text-brand-gray mb-5">Case Study Template</p>
+                <h1 class="text-4xl sm:text-6xl lg:text-[5rem] font-bold tracking-tight text-gray-900 leading-[1.05] mb-8">
+                    Project title and <span class="text-brand-blue">outcome.</span>
+                </h1>
+                <p class="text-xl sm:text-2xl text-brand-gray font-light leading-relaxed max-w-3xl">
+                    Replace this with a concise summary of the product challenge, your role, the team context, and the measurable result.
+                </p>
+            </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-6 py-14 sm:py-24 border-t border-gray-100">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
+                <aside class="lg:col-span-4">
+                    <h2 class="text-xs font-semibold uppercase tracking-widest text-brand-gray mb-3">Snapshot</h2>
+                    <div class="glass-panel p-8 rounded-2xl">
+                        <dl class="space-y-5 text-sm">
+                            <div>
+                                <dt class="font-semibold text-gray-900">Role</dt>
+                                <dd class="text-brand-gray mt-1">Product strategy, UX leadership, research, delivery</dd>
+                            </div>
+                            <div>
+                                <dt class="font-semibold text-gray-900">Team</dt>
+                                <dd class="text-brand-gray mt-1">Product, design, engineering, stakeholders</dd>
+                            </div>
+                            <div>
+                                <dt class="font-semibold text-gray-900">Timeline</dt>
+                                <dd class="text-brand-gray mt-1">Replace with project duration</dd>
+                            </div>
+                            <div>
+                                <dt class="font-semibold text-gray-900">Outcome</dt>
+                                <dd class="text-brand-gray mt-1">Replace with measurable impact</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </aside>
+
+                <div class="lg:col-span-8 space-y-12">
+                    <section>
+                        <h2 class="text-3xl lg:text-4xl font-semibold text-gray-900 tracking-tight leading-tight mb-6">Context</h2>
+                        <p class="text-brand-gray leading-relaxed">
+                            Describe the organization, user problem, business pressure, existing product state, constraints, and why the work mattered.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-3xl lg:text-4xl font-semibold text-gray-900 tracking-tight leading-tight mb-6">Approach</h2>
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div class="glass-panel p-8 rounded-2xl">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-4">Discovery</h3>
+                                <ul class="space-y-4 text-brand-gray text-sm leading-relaxed">
+                                    <li>Understand current state, goals, and constraints</li>
+                                    <li>Identify key challenges and opportunities</li>
+                                    <li>Validate product direction with evidence</li>
+                                </ul>
+                            </div>
+
+                            <div class="glass-panel p-8 rounded-2xl">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-4">Execution</h3>
+                                <ul class="space-y-4 text-brand-gray text-sm leading-relaxed">
+                                    <li>Define product vision and priorities</li>
+                                    <li>Align product, design, and engineering</li>
+                                    <li>Ship in small, validated increments</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="text-3xl lg:text-4xl font-semibold text-gray-900 tracking-tight leading-tight mb-6">Outcome</h2>
+                        <p class="text-brand-gray leading-relaxed">
+                            Summarize what changed for users, the team, and the business. Add metrics, qualitative evidence, decision improvements, adoption results, or delivery improvements where available.
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-gray-100 py-10 text-center text-sm text-brand-gray">
+        <p>&copy; 2026 Michael Geise. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
